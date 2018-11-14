@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="100"
+   width="100"
+   version="1.1"
+   viewBox="0 0 100 100"
+   id="svg27"
+   sodipodi:docname="icon-server.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata33">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>server</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs31" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
+     id="namedview29"
+     showgrid="false"
+     inkscape:zoom="3.1052632"
+     inkscape:cx="38"
+     inkscape:cy="38"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg27" />
+  <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">server</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <g
+     id="Homepage-final"
+     style="fill:none;fill-rule:evenodd"
+     transform="translate(12.013,11.510749)">
+    <g
+       id="Final-homepage"
+       transform="translate(-458,-1401)">
+      <g
+         id="Sections-strip"
+         transform="translate(0,1123)">
+        <g
+           id="illustration"
+           transform="translate(279,255)">
+          <g
+             id="ilustration">
+            <g
+               id="server"
+               transform="translate(179,23)">
+              <g
+                 id="Group"
+                 transform="rotate(-90,32.8015,32.7765)"
+                 style="fill:#666666">
+                <path
+                   id="Rectangle"
+                   d="M 64.6,1.9 62.7,0 v 1.9 z m 0,72.149 -1.9,1.9 v -1.9 z M 51.3,1.9 V 0 H 64.6 V 75.949 H 51.3 v -1.9 H 62.7 V 1.9 Z m 13.3,72.149 -1.9,1.9 v -1.9 z M 62.7,0 64.6,1.9 h -1.9 z m 0,1.9 H 51.3 V 0 H 64.6 V 75.949 H 51.3 v -1.9 h 11.4 z"
+                   inkscape:connector-curvature="0"
+                   style="fill-rule:nonzero" />
+                <path
+                   id="path7"
+                   d="M 1.9,74.049 H 21.85 V 1.9 H 1.9 Z M 0,0 H 23.75 V 75.949 H 0 Z"
+                   inkscape:connector-curvature="0"
+                   style="fill-rule:nonzero" />
+                <rect
+                   id="Rectangle-2"
+                   y="57.910999"
+                   x="30.4"
+                   height="11.392"
+                   width="3.8" />
+                <rect
+                   id="rect10"
+                   y="57.910999"
+                   x="10.45"
+                   height="11.392"
+                   width="3.8" />
+                <rect
+                   id="rect12"
+                   y="57.910999"
+                   x="50.349998"
+                   height="11.392"
+                   width="3.8" />
+                <path
+                   id="path14"
+                   d="m 41.8,1.9 h 1.9 L 41.8,0 Z m 1.9,72.149 -1.9,1.9 v -1.9 z M 41.8,1.9 H 30.4 V 0 H 43.7 V 75.949 H 30.4 v -1.9 h 11.4 z m 0,72.149 h 1.9 l -1.9,1.9 z M 41.8,0 43.7,1.9 h -1.9 z m 0,74.049 V 1.9 H 30.4 V 0 H 43.7 V 75.949 H 30.4 v -1.9 z"
+                   inkscape:connector-curvature="0"
+                   style="fill-rule:nonzero" />
+              </g>
+              <path
+                 id="Path-2"
+                 d="m 38,64.608 v 7.266"
+                 inkscape:connector-curvature="0"
+                 style="stroke:#666666;stroke-width:1.89999998" />
+              <path
+                 id="path18"
+                 d="M 75.843,72.203 H 0"
+                 inkscape:connector-curvature="0"
+                 style="stroke:#666666;stroke-width:1.89999998" />
+              <ellipse
+                 id="Oval"
+                 rx="3.8"
+                 ry="3.7974999"
+                 cy="72.203003"
+                 cx="38"
+                 style="fill:#666666" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

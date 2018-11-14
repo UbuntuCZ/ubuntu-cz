@@ -1,0 +1,12 @@
+{
+	"name": "releases",
+	"fetched": "2018-11-05 12:17",
+	"desktop": {
+		"number": "18.10",
+		"amd64": "http://releases.ubuntu.com/18.10/ubuntu-18.10-desktop-amd64.iso"
+	},
+	"server": {
+		"number": "18.10",
+		"amd64": "http://releases.ubuntu.com/18.10/ubuntu-18.10-live-server-amd64.iso"
+	}
+}

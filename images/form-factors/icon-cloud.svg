@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="100"
+   width="100"
+   version="1.1"
+   viewBox="0 0 100 100"
+   id="svg12"
+   sodipodi:docname="icon-cloud.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata18">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>path4154</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs16" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
+     id="namedview14"
+     showgrid="false"
+     inkscape:zoom="3.2328767"
+     inkscape:cx="53.5"
+     inkscape:cy="36.5"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg12" />
+  <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">path4154</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <g
+     id="Homepage-final"
+     style="fill:none;fill-rule:evenodd"
+     transform="matrix(0.9354537,0,0,0.9354537,-0.04677295,16.149672)">
+    <g
+       id="Final-homepage"
+       transform="translate(-278,-1401)"
+       style="stroke:#666666;stroke-width:1.89999998">
+      <g
+         id="Sections-strip"
+         transform="translate(0,1123)">
+        <g
+           id="illustration"
+           transform="translate(279,255)">
+          <g
+             id="ilustration">
+            <path
+               id="path4154"
+               transform="matrix(-1,0,0,1,105,0)"
+               d="m 44.564,24 c 8.393,0.012 16.089,4.639 19.986,12.027 2.565,-2.271 5.88,-3.529 9.316,-3.534 7.755,0 14.041,6.247 14.041,13.953 -10e-4,1.223 -0.165,2.441 -0.486,3.621 10.272,2.321 17.569,11.39 17.579,21.859 0,12.397 -10.113,22.446 -22.587,22.446 H 22.587 C 10.113,94.372 0,84.323 0,71.926 0.0085465,59.68 9.8921,49.702 22.213,49.499 22.064,48.488 21.985,47.468 21.977,46.446 21.977,34.05 32.089,24 44.564,24 Z"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
