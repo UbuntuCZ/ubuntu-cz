@@ -6,7 +6,7 @@
 		$url = "http://releases.ubuntu.com/${version}/";
 		$cache_file = "release${version}.json";
 		$file = "";
-		if(file_exists($cache_file) && (time() - filemtime($cache_file) < (60 * 60 * 24))) {
+		if(file_exists($cache_file) && (isset($_GET["old"]) || (time() - filemtime($cache_file) < (60 * 60 * 24)))) {
 			$JSON = file_get_contents($cache_file);
 			echo $JSON;
 			return;
@@ -17,7 +17,14 @@
 				"server" => "amd64"
 			);
 			
-			$file = file_get_contents($url);
+			$ctx = stream_context_create(array(
+				"http" => array(
+					"timeout" => 2
+					)
+				)
+			); 
+			
+			$file = file_get_contents($url, 0, $ctx);
 			$dataFound = false;
 			
 			$JSON = "{\n";

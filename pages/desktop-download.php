@@ -150,17 +150,32 @@
 	"use strict";
 	// Update release number and get other data
 	let translator = new ENCZTranslator();
-	new Release({
+	
+	let ltsRelase = new Release({
 		version: "<?php echo $ltsRelease->number; ?>",
 		type: "desktop",
 		url: "remoteContent/release.php",
+		old: true,
 		translator
 	}).appendTo(document.querySelector("a#lts-download-link"));
 	
-	new Release({
+	let standardRelease = new Release({
 		version: "<?php echo $relularRelease->number; ?>",
 		type: "desktop",
 		url: "remoteContent/release.php",
+		old: true,
 		translator
 	}).appendTo(document.querySelector("a#standard-download-link"));
+	
+	window.setTimeout(() => {
+		ltsRelase.refresh({
+			old: false
+		});
+	}, 1000);
+	
+	window.setTimeout(() => {
+		standardRelease.refresh({
+			old: false
+		});
+	}, 2000);
 </script>

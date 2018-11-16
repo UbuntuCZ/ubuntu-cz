@@ -190,7 +190,24 @@
 			$this->relDateTime = clone $tmpDateTime;
 			$this->readableRelDate = $this->relDateTime->format("d.m.Y");
 			
-			$this->endDateTime = $this->lts ? $tmpDateTime->modify("+5 years") : $tmpDateTime->modify("+9 months");
+			$this->endDateTime = $tmpDateTime;
+			if($this->lts) {
+				if($tmpDateTime >= new DateTime("2018-04-26")) {
+					$this->endDateTime = $tmpDateTime->modify("+10 years");
+				}
+				else {
+					$this->endDateTime = $tmpDateTime->modify("+5 years");
+				}
+			}
+			else {
+				if($tmpDateTime >= new DateTime("2013-04-25")) {
+					$this->endDateTime = $tmpDateTime->modify("+9 months");
+				}
+				else {
+					$this->endDateTime = $tmpDateTime->modify("+18 months");
+				}
+			}
+			
 			$this->readableEndDate = $this->endDateTime->format("d.m.Y");
 			$this->readableEndMonth = $this->endDateTime->format("F Y");
 			$this->readableEndMonthCS = $this->months[$this->endDateTime->format("n") - 1] . " " . $this->endDateTime->format("Y");

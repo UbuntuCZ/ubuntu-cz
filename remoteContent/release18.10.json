@@ -1,12 +1,20 @@
 {
 	"name": "releases",
-	"fetched": "2018-11-05 12:17",
+	"fetched": "2018-11-16 9:27",
 	"desktop": {
 		"number": "18.10",
+		"date": "2018-10-17",
+		"time": "22:44",
+		"size": "1.9G",
+		"description": "Desktop image for 64-bit PC (AMD64) computers (standard download)",
 		"amd64": "http://releases.ubuntu.com/18.10/ubuntu-18.10-desktop-amd64.iso"
 	},
 	"server": {
 		"number": "18.10",
+		"date": "2018-10-17",
+		"time": "23:39",
+		"size": "881M",
+		"description": "Server install image for 64-bit PC (AMD64) computers (standard download)",
 		"amd64": "http://releases.ubuntu.com/18.10/ubuntu-18.10-live-server-amd64.iso"
 	}
 }

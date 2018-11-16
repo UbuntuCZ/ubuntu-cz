@@ -8,6 +8,7 @@ class Release {
 		this.version = data.version || "18.04";
 		this.arch = data.arch || "amd64";
 		this.url = data.url || "remoteContent/release.php";
+		this.old = data.old || false;
 		this.xml = null;
 		this.object = null;
 		
@@ -27,7 +28,8 @@ class Release {
 				
 				let currentHref = this.object.href;
 				this.object.href = releaseTypeData[this.arch];
-				this.object.innerText = this.object.innerText.replace(this.version, releaseTypeData.number);
+				this.initialObjectText = this.initialObjectText || this.object.innerText;
+				this.object.innerText = this.initialObjectText.replace(this.version, releaseTypeData.number);
 				
 				let date = new Date(releaseTypeData.date + " " + releaseTypeData.time);
 				let options = { weekday: "long", year: "numeric", month: "long", day: "numeric", hour: "2-digit", minute: "2-digit" };
@@ -37,19 +39,19 @@ class Release {
 				size = size.replace(/g/i, " GB");
 				size = size.replace(/m/i, " MB");
 				size = size.replace(/k/i, " kB");
-										
-				let downloadDetails = document.createElement("span");
-				downloadDetails.classList.add("download-details");				
-				downloadDetails.innerText = localeDateString + " (" + size + ")";
-				this.object.appendChild(downloadDetails);
+				
+				this.downloadDetails = this.downloadDetails || document.createElement("span");
+				this.downloadDetails.classList.add("download-details");
+				this.downloadDetails.innerText = localeDateString + " (" + size + ")";
+				this.object.appendChild(this.downloadDetails);
 				
 				/* Local translations - load and apply */
 				if(!navigator.language || !navigator.language.match(/en/i)) {
-					downloadDetails.classList.add("fade-out");
-					this.translator.translate(downloadDetails.innerText).then((response) => {
-						downloadDetails.innerText = response;
-						downloadDetails.classList.remove("fade-out");
-						downloadDetails.classList.add("fade-in");
+					this.downloadDetails.classList.add("fade-out");
+					this.translator.translate(this.downloadDetails.innerText).then((response) => {
+						this.downloadDetails.innerText = response;
+						this.downloadDetails.classList.remove("fade-out");
+						this.downloadDetails.classList.add("fade-in");
 					}).catch((error) => {
 						console.error(error, "Couldn't fetch translations from Translator.js");
 					});
@@ -66,10 +68,31 @@ class Release {
 		return this;
 	}
 	
+	refresh(data) {
+		data = data || {};
+		
+		this.type = data.type || this.type;
+		this.version = data.version || this.version;
+		this.arch = data.arch || this.arch;
+		this.url = data.url || this.url;
+		this.old = data.old || this.old;
+		
+		this.init();
+		return this;
+	}
+	
 	loadData() {
 		let url = this.url;
 		if(this.version) {
 			url += "?version=" + this.version;
+		}
+		if(this.old) {
+			if(url.match(/\?/)) {
+				url += "&old";
+			}
+			else {
+				url += "?old";
+			}
 		}
 		
 		return new Promise(function(resolve, reject) {
