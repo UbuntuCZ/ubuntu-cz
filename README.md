@@ -1,7 +1,7 @@
 
 # iUbuntu.cz
 
-[![Build Status](https://travis-ci.org/MikkCZ/iubuntu-cz.svg?branch=master)](https://travis-ci.org/MikkCZ/iubuntu-cz)
+[![Build Status](https://api.travis-ci.com/UbuntuCZ/iubuntu-cz.svg?branch=master)](https://travis-ci.com/UbuntuCZ/iubuntu-cz)
 
 Repositář pro web iUbuntu.cz. Autorem jeho vzhledu, obsahu a původní verze v PHP je [Martin Kozub](https://github.com/zubozrout). O přepis do statického generátoru [Jekyll](https://jekyllrb.com/) se postaral [Michal Stanke](https://github.com/MikkCZ/).
 
