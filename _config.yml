@@ -1,0 +1,24 @@
+title: Ubuntu | Česká republika
+description: Ubuntu je operační systém se svobodnou licencí, který nachází uplatnění na osobních počítačích a serverech stejně jako v cloudu a ve světě internetu věcí.
+keywords: Ubuntu, free, opensource, software, operační systém, Linux, zdarma, bezplatný, windows, náhrada, svižný, bezpečný, inovace, novinky, aktualizace, obchod, bez virů, herní
+
+remote_content:
+  - name: 'ubuntu_blog.xml'
+    url: 'https://blog.ubuntu.com/feed/'
+  - name: 'omgubuntu.xml'
+    url: 'https://feeds.feedburner.com/d0od?format=xml'
+
+# Build settings
+markdown: kramdown
+include: [
+    '/_pages',
+]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - CNAME
+  - README.md
+  - release.sh
+plugins:
+  - jekyll-redirect-from

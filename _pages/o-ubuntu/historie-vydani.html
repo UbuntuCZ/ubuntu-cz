@@ -1,0 +1,69 @@
+---
+title: Historie vydání
+description: Předchozí i aktuálně podporovaná vydání Ubuntu v uceleném přehledu všech verzí.
+permalink: /o-ubuntu/historie-vydani/
+layout: default
+---
+<section class="hero">
+	<div class="img-container">
+		<div class="bg-container fixed-container" style="background-image: url('{{ 'images/sea.jpg' | relative_url }}');"></div>
+		<div class="wrapper">
+			<div class="intro">
+				<h1>Jednotlivá vydání Ubuntu</h1>
+				<p>Projekt Ubuntu započal v roce 2005 jako produkt nově registrované softwarové firmy Canonical. Jeho cílem bylo vytvořit uživatelsky přívětivý operační systém, díky čemuž se Ubuntu stalo velmi krátce hojně instalovaným a oblíbeným systémem.</p>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="padded">
+	<div class="wrapper">
+		<article>
+			<div class="padded">
+				<h2>Seznam vydaných a budoucích verzí Ubuntu</h2>
+			</div>
+			<div class="row-boxes mobile-reverse">
+				<ul>
+					<li>
+						<div class="box">
+							<ol class="releases">
+								{% assign counter = 0 %}
+								{% assign now = 'now' | date: "%s" %}
+								{% for release in site.data.ubuntu_releases.all reversed %}
+									{% assign released = release.released | date: "%s" %}
+									{% assign deprecated = release.eol | date: "%s" %}
+									{% if released > now %}
+										{% assign state = "future" %}
+									{% elsif deprecated > now %}
+										{% assign state = "current" %}
+									{% else %}
+										{% assign state = "past" %}
+									{% endif %}
+									<li class="{{ state }}{% if release.lts == true %} lts{% endif %}">
+										{{ release.released | date: "%-d. %-m. %Y" }} - {{ release.name }}{% if release.lts == true %} LTS{% endif %}
+										{% if counter <= 10 %}
+											<br>
+											Podporováno do {{ release.eol | date: "%-d. %-m. %Y" }}
+										{% endif %}
+										<div class="baloon"></div>
+									</li>
+									{% assign counter = counter | plus: 1 %}
+								{% endfor %}
+							</ol>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<h3>Vysvětlivky</h3>
+							<ul>
+								<li>Aktuálně podporovaná vydání Ubuntu s dostupnými bezpečnostními aktualizacemi jsou označena oranžovou barvou, doprovázena zelenou potvrzovací ikonkou.</li>
+								<li>Nadcházející zatím nehotová vydání jsou zařazena v horní části seznamu.</li>
+								<li>Předešlá již dále nepodporovaná vydání jsou zobrazeny šedivě a označeny červenou ikonkou.</li>
+								<li><strong>LTS vydání s dlouhodobou podporou jsou zvýrazněna tučně.</strong></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</div>
+</section>

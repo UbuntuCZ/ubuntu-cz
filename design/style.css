@@ -451,6 +451,11 @@ header nav ul {
 	margin: 0px;
 	padding: 0px;
 	list-style-type: none;
+	font-size: 0; /* Ignore whitespaces */
+}
+
+header nav li {
+	font-size: initial; /* Reset font-size */
 }
 
 header nav > ul > li {
@@ -708,7 +713,7 @@ nav.breadcrumbs ul {
 	padding: 0px;
 	list-style-type: none;
 	white-space: nowrap;
-	transition: 
+	font-size: 0; /* Ignore whitespaces */
 }
 
 nav.breadcrumbs ul.scroll {
@@ -719,6 +724,7 @@ nav.breadcrumbs ul li {
 	position: relative;
 	display: inline-block;
 	vertical-align: middle;
+	font-size: 14px; /* Reset font-size */
 }
 
 nav.breadcrumbs ul li a {

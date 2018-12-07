@@ -1,0 +1,107 @@
+---
+title: Stáhnout Ubuntu Server
+description: Získejte instalační obraz Ubuntu pro váš osobní či firemní server, cloud nebo třeba zařízení z kategorie IoT.
+permalink: /ziskat-ubuntu/stahnout-server/
+layout: default
+---
+<section class="hero">
+	<div class="img-container">
+		<div class="bg-container fixed-container" style="background-image: url('{{ 'images/server-livepatch-hero.jpg' | relative_url }}');"></div>
+		<div class="wrapper">
+			<div class="intro higher">
+				<h1>Stáhnout Ubuntu server</h1>
+				<p>Ubuntu Server přináší široké možnosti ekonomického a technického škálování, tedy úprav tak, aby přesně odpovídalo požadavkům vašeho veřejného či privátního datacentra. Ať již chcete provozovat OpenStack cloud, Hadoop cluster nebo farmu sestávající z 50 tisíc jednotek, Ubuntu Server poskytuje nejlepší možnosti v rozmanitosti a výkonu vůbec.</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="padded grey">
+	<div class="wrapper">
+		<article>
+			<div class="row-boxes vertical-center two">
+				<ul>
+					<li>
+						<div class="box">
+							<h2 id="lts">Ubuntu {{ site.data.ubuntu_latest.lts.version }} LTS</h2>
+							<p>Ubuntu {{ site.data.ubuntu_latest.lts.version }} LTS {{ site.data.ubuntu_latest.lts.name }} je vydaní s dlouhodobou podporou, která činí 5 let od {{ site.data.ubuntu_latest.lts.released | date: "%-d. %-m. %Y" }}.</p>
+							<p><a href="http://releases.ubuntu.com/{{ site.data.ubuntu_latest.lts.version }}/ubuntu-{{ site.data.ubuntu_latest.lts.version }}-live-server-amd64.iso" id="lts-download-link" class="button green">Stáhnout Ubuntu {{ site.data.ubuntu_latest.lts.version }} (64bit)</a></p>
+							<p><a href="http://cdimage.ubuntu.com/releases/{{ site.data.ubuntu_latest.lts.version }}/release" class="text blue">Alternativní obrazy pro další architektury</a></p>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<img src="{{ 'images/small/image-server.svg' | relative_url }}" alt="ubuntu on raspberry-pi" class="responsive">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</div>
+</section>
+{% if site.data.ubuntu_latest.lts.version != site.data.ubuntu_latest.release.version %}
+	<section class="padded grey border-top">
+		<div class="wrapper">
+			<div class="row-boxes two vertical-center">
+				<ul>
+					<li>
+						<div class="box">
+							<h2 id="standard">Ubuntu {{ site.data.ubuntu_latest.release.version }}</h2>
+							<p>Nejnovější vydání Ubuntu pro počítače a notebooky. Ubuntu {{ site.data.ubuntu_latest.release.version }} {{ site.data.ubuntu_latest.release.name }} přináší 9 měcíců bezpečnostních a údržbových aktualizací.</p>
+							<p>Pro konzervativnější a déle podporované vydání stahujte <a href="{{ site.baseurl }}{% link _pages/ziskat-ubuntu/stahnout-server.html %}#lts" class="text blue">Ubuntu s dlouhodobou podporou výše</a></p>
+							<p><a href="http://releases.ubuntu.com/{{ site.data.ubuntu_latest.release.version }}/ubuntu-{{ site.data.ubuntu_latest.release.version }}-live-server-amd64.iso" id="standard-download-link" class="button green">Stáhnout Ubuntu {{ site.data.ubuntu_latest.release.version }} (64bit)</a></p>
+							<p><a href="http://cdimage.ubuntu.com/releases/{{ site.data.ubuntu_latest.release.version }}/release" class="text blue">Alternativní obrazy pro další architektury</a></p>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+{% endif %}
+
+<section class="padded">
+	<div class="wrapper">
+		<article>
+			<div class="padded">
+				<h2>K čemu můžete Ubuntu server využít</h2>
+			</div>
+			<div class="row-boxes two">
+				<ul>
+					<li>
+						<div class="box">
+							<h3>OpenStack</h3>
+							<p>Postavte si vlastní cloud s Autopilotem, nejsnazším způsobem jak vytvořit a spravovat cloud OpenStack.</p>
+							<a href="http://www.ubuntu.com/download/cloud" class="text blue">Začněte s Autopilotem</a>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<h3>Ubuntu Server pro ARM</h3>
+							<p>Optimalizováno pro obrovská nasazení a certifikováno na mnoha ARM čipsetech - Ubuntu Server pro ARM zahrnuje 64-bitové ARMv8 platformy.</p>
+							<a href="http://www.ubuntu.com/download/server/arm" class="button green">Stáhnout Ubuntu Server pro ARM</a>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<h3>Ubuntu pro POWER</h3>
+							<p>Ubuntu je nyní dostupné také na platformě IBM POWER, přinášející kompletní Ubuntu a OpenStack ekosystém na IBM POWER.</p>
+							<a href="http://www.ubuntu.com/download/server/power" class="text blue">Získat Ubuntu pro POWER</a>
+						</div>
+					</li>
+					<li>
+						<div class="box">
+							<h3>Ubuntu pro IBM Z a IBM LinuxONE</h3>
+							<p>IBM LinuxONE a z Systems využívají otevřená technologická řešení aby naplnily požadavky zadavatelů. Ubuntu je nyní dostupné s Juju a technologii OpenStack.</p>
+							<a href="http://www.ubuntu.com/download/server/s390x" class="text blue">Získat Ubuntu pro IBM Z a LinuxONE</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</article>
+	</div>
+</section>

@@ -1,0 +1,8 @@
+{% for p in site.pages %}
+  {% if p.permalink == include.item.url %}
+    <li class="{% if p.url == page.url %}current{% endif %} {% if p.url == include.parent.url %}current-section{% endif %}">
+      <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+    </li>
+    {% break %}
+  {% endif %}
+{% endfor %}

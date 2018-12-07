@@ -1,0 +1,9 @@
+<ul class="footer-menu">
+  {% for item in include.items %}
+    {% if include.hide_without_sub == false or item.sub %}
+      {% if include.parent.url != item.url %}
+        {% include footermenu_item.html item=item parent=include.parent hide_without_sub=hide_without_sub %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+</ul>

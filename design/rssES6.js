@@ -107,14 +107,14 @@ class RSSChannel {
 class RSS {
 	constructor(data) {
 		data = data || {};
-		this.url = data.url || "remoteContent/insights.php";
+		this.url = data.url || "remote_content/ubuntu_blog.xml";
 		this.xml = null;
 		this.object = null;
 		this.loadingOverlay = null;
 		this.count = data.count || 4;
 		this.channels = [];
 		
-		this.translator = data.translator || new ENCZTranslator();
+		this.translator = data.translator;
 		
 		this.loadData().then((response) => {
 			this.xml = response;

@@ -75,7 +75,7 @@ class Header {
 	
 	getMenuItemHash(index) {
 		let menuItemHref = this.menuItems[index].querySelector("a").href;
-		let baseName = menuItemHref.substring(menuItemHref.lastIndexOf("/") + 1);
+		let baseName = menuItemHref.split('/').filter(it => it != '').pop();
 		return baseName;
 	}
 	

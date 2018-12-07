@@ -1,0 +1,151 @@
+all:
+  - version: "4.10"
+    name: Warty Warthog
+    lts: false
+    released: 2004-10-20
+    eol: 2006-04-30
+  - version: "5.04"
+    name: Hoary Hedgehog
+    lts: false
+    released: 2005-04-08
+    eol: 2006-10-31
+  - version: "5.10"
+    name: Breezy Badger
+    lts: false
+    released: 2005-10-13
+    eol: 2007-04-13
+  - version: "6.06"
+    name: Dapper Drake
+    lts: true
+    released: 2006-06-01
+    eol: 2009-07-14
+  - version: "6.10"
+    name: Edgy Eft
+    lts: false
+    released: 2006-10-26
+    eol: 2008-04-25
+  - version: "7.04"
+    name: Feisty Fawn
+    lts: false
+    released: 2007-04-19
+    eol: 2007-04-19
+  - version: "7.10"
+    name: Gutsy Gibbon
+    lts: false
+    released: 2007-10-18
+    eol: 2009-04-18
+  - version: "8.04"
+    name: Hardy Heron
+    lts: true
+    released: 2008-04-08
+    eol: 2011-05-12
+  - version: "8.10"
+    name: Intrepid Ibex
+    lts: false
+    released: 2008-10-30
+    eol: 2010-04-30
+  - version: "9.04"
+    name: Jaunty Jackalope
+    lts: false
+    released: 2009-04-23
+    eol: 2010-10-23
+  - version: "9.10"
+    name: Karmic Koala
+    lts: false
+    released: 2009-10-29
+    eol: 2011-04-30
+  - version: "10.04"
+    name: Lucid Lynx
+    lts: true
+    released: 2010-04-29
+    eol: 2013-05-09
+  - version: "10.10"
+    name: Maverick Meerkat
+    lts: false
+    released: 2010-10-10
+    eol: 2012-04-10
+  - version: "11.04"
+    name: Natty Narwhal
+    lts: false
+    released: 2011-04-28
+    eol: 2012-10-28
+  - version: "11.10"
+    name: Oneiric Ocelot
+    lts: false
+    released: 2011-10-13
+    eol: 2013-05-09
+  - version: "12.04"
+    name: Precise Pangolin
+    lts: true
+    released: 2012-04-26
+    eol: 2017-04-28
+  - version: "12.10"
+    name: Quantal Quetzal
+    lts: false
+    released: 2012-10-18
+    eol: 2014-05-16
+  - version: "13.04"
+    name: Raring Ringtail
+    lts: false
+    released: 2013-04-25
+    eol: 2014-01-27
+  - version: "13.10"
+    name: Saucy Salamander
+    lts: false
+    released: 2013-10-17
+    eol: 2014-07-17
+  - version: "14.04"
+    name: Trusty Tahr
+    lts: true
+    released: 2014-04-17
+    eol: 2019-04
+  - version: "14.10"
+    name: Utopic Unicorn
+    lts: false
+    released: 2014-10-23
+    eol: 2015-07-23
+  - version: "15.04"
+    name: Vivid Vervet
+    lts: false
+    released: 2015-04-23
+    eol: 2016-02-04
+  - version: "15.10"
+    name: Wily Werewolf
+    lts: false
+    released: 2015-10-22
+    eol: 2016-07-28
+  - version: "16.04"
+    name: Xenial Xerus
+    lts: true
+    released: 2016-04-21
+    eol: 2021-04
+  - version: "16.10"
+    name: Yakkety Yak
+    lts: false
+    released: 2016-10-13
+    eol: 2017-07-20
+  - version: "17.04"
+    name: Zesty Zapus
+    lts: false
+    released: 2017-04-10
+    eol: 2018-01-13
+  - version: "17.10"
+    name: Artful Aardvark
+    lts: false
+    released: 2017-10-19
+    eol: 2018-07-19
+  - version: "18.04"
+    name: Bionic Beaver
+    lts: true
+    released: 2018-04-26
+    eol: 2028-04
+  - version: "18.10"
+    name: Cosmic Cuttlefish
+    lts: false
+    released: 2018-10-18
+    eol: 2019-07
+  - version: "19.04"
+    name: Disco Dingo
+    lts: false
+    released: 2019-04-18
+    eol: 2020-01

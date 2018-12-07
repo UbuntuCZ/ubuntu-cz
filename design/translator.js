@@ -9,7 +9,7 @@ class ENCZTranslator {
 		this.nonWordBegining = "(^|[^" + this.wordCharacters + "])";
 		this.nonWordEnd = "(?![" + this.wordCharacters + "])";
 		this.capitalizeFirst = data.capitalizeFirst || false;
-		this.dataLocation = data.dataLocation || "design/translator/data.json";
+		this.dataLocation = data.dataLocation;
 	}
 	
 	/* This method finds the best (the longest) match from the DB to replace the passed string */

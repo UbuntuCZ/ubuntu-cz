@@ -1,0 +1,11 @@
+{% for p in site.pages %}
+  {% if p.permalink == include.item.url %}
+    <li class="{% if p.url == page.url %}current{% endif %} {% if include.item.sub %}top-level{% endif %}">
+      <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+      {% if include.item.sub %}
+        {% include footermenu.html items=include.item.sub parent=p hide_without_sub=false %}
+      {% endif %}
+    </li>
+    {% break %}
+  {% endif %}
+{% endfor %}

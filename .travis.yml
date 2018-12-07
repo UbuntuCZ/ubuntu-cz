@@ -1,0 +1,36 @@
+language: ruby
+bundler_args: --path $HOME/.bundle --with test
+cache:
+  directories:
+    - $HOME/.bundle
+
+before_script:
+ - repo_name=$(echo "$TRAVIS_REPO_SLUG" | cut -d '/' -f 2)
+
+script:
+ - bundle exec jekyll build --baseurl "/${repo_name}" --destination "_site/gh-pages/${repo_name}"
+ - bundle exec htmlproofer _site/gh-pages --disable-external
+
+before_deploy:
+ - bundle exec jekyll build --destination _site/production
+ - LAST_GIT_TAG="$(git describe --abbrev=0 --tags || echo 'HEAD')"
+ - tar -cvzf "$LAST_GIT_TAG.tar.gz" -C _site/production/ .
+
+deploy:
+- provider: pages
+  skip-cleanup: true
+  local-dir: "_site/gh-pages/${repo_name}"
+  github-token: $GITHUB_TOKEN
+  on:
+    branch: jekyll
+#- provider: releases
+#  skip_cleanup: true
+#  file: "$LAST_GIT_TAG.tar.gz"
+#  api_key: $GITHUB_TOKEN
+#  on:
+#    branch: master
+#    tags: true
+
+env:
+  global:
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer

@@ -1,0 +1,21 @@
+pages:
+  - url: /desktop/
+    sub:
+      - url: /desktop/
+      - url: /desktop/vlastnosti/
+  - url: /server/
+  - url: /telefony-a-tablety/
+  - url: /ziskat-ubuntu/
+    sub:
+      - url: /ziskat-ubuntu/
+      - url: /ziskat-ubuntu/stahnout-desktop/
+      - url: /ziskat-ubuntu/stahnout-desktop/instalace/
+      - url: /ziskat-ubuntu/stahnout-desktop/aktualizace/
+      - url: /ziskat-ubuntu/stahnout-server/
+      - url: /ziskat-ubuntu/ubuntu-zarizeni/
+      - url: /ziskat-ubuntu/odnoze-ubuntu/
+  - url: /o-ubuntu/
+    sub:
+      - url: /o-ubuntu/
+      - url: /o-ubuntu/cyklus-vydani/
+      - url: /o-ubuntu/historie-vydani/
