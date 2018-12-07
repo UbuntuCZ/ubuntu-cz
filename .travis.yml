@@ -22,14 +22,14 @@ deploy:
   local-dir: "_site/gh-pages/${repo_name}"
   github-token: $GITHUB_TOKEN
   on:
-    branch: jekyll
-#- provider: releases
-#  skip_cleanup: true
-#  file: "$LAST_GIT_TAG.tar.gz"
-#  api_key: $GITHUB_TOKEN
-#  on:
-#    branch: master
-#    tags: true
+    branch: master
+- provider: releases
+  skip_cleanup: true
+  file: "$LAST_GIT_TAG.tar.gz"
+  api_key: $GITHUB_TOKEN
+  on:
+    branch: master
+    tags: true
 
 env:
   global:
