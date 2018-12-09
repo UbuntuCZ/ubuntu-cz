@@ -1,8 +1,10 @@
 {% for p in site.pages %}
-  {% if p.permalink == include.item.url %}
+  {% if include.item.external or p.permalink == include.item.url %}
     <li class="{% if page.url contains p.url %}current{% endif %} {% if include.item.sub %}top-level{% endif %}">
-      <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
-      {% if include.show_description %}<span class="description">{{ p.description }}</span>{% endif %}
+      <a href="{% if include.item.external %}{{ include.item.url }}{% else %}{{ site.baseurl }}{{ p.url }}{% endif %}">
+        {% if include.item.title %}{{ include.item.title }}{% else %}{{ p.title }}{% endif %}
+      </a>
+      {% if include.show_description %}<span class="description">{% if include.item.description %}{{ include.item.description }}{% else %}{{ p.description }}{% endif %}</span>{% endif %}
       {% if include.item.sub %}
         <div class="submenu">
           {% include menu.html items=include.item.sub show_description=true %}

@@ -1,7 +1,9 @@
 {% for p in site.pages %}
-  {% if p.permalink == include.item.url %}
+  {% if include.item.external or p.permalink == include.item.url %}
     <li class="{% if p.url == page.url %}current{% endif %} {% if p.url == include.parent.url %}current-section{% endif %}">
-      <a href="{{ site.baseurl }}{{ p.url }}">{{ p.title }}</a>
+      <a href="{% if include.item.external %}{{ include.item.url }}{% else %}{{ site.baseurl }}{{ p.url }}{% endif %}">
+        {% if include.item.title %}{{ include.item.title }}{% else %}{{ p.title }}{% endif %}
+      </a>
     </li>
     {% break %}
   {% endif %}
