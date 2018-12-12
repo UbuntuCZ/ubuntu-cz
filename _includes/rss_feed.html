@@ -1,0 +1,19 @@
+<section class="padded bordered {{ include.class }}">
+  <div class="wrapper">
+    <article class="padded" id="{{ include.id }}">
+      <div class="rss-feed">
+        <h2><a href="{{ include.rss.url }}">{{ include.rss.title | strip_html | escape }}</a></h2>
+        <ul>
+          {% for item in include.rss.items limit:include.limit %}
+            <li>
+              <div class="item">
+                <h3><a href="{{ item.url }}" title="{{ item.title | strip_html | escape | truncate: 80 }}" class="fade-in">{{ item.title | strip_html | escape | truncate: 80 }}</a></h3>
+                <time datetime="{{ item.published }}">{{ item.published | date: "%-d. %-m. %Y" }}</time>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>

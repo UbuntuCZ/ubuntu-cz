@@ -3,9 +3,9 @@ description: Ubuntu je operační systém se svobodnou licencí, který nacház�
 keywords: Ubuntu, free, opensource, software, operační systém, Linux, zdarma, bezplatný, windows, náhrada, svižný, bezpečný, inovace, novinky, aktualizace, obchod, bez virů, herní
 
 remote_content:
-  - name: 'ubuntu_blog.xml'
+  - name: 'ubuntublog'
     url: 'https://blog.ubuntu.com/feed/'
-  - name: 'omgubuntu.xml'
+  - name: 'omgubuntu'
     url: 'https://feeds.feedburner.com/d0od?format=xml'
 
 # Build settings

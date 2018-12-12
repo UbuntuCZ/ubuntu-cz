@@ -37,11 +37,7 @@ layout: default
 </section>
 -->
 
-<section class="padded bordered">
-	<div class="wrapper">
-		<article class="padded" id="rss-feed"></article>
-	</div>
-</section>
+{% include rss_feed.html id='rss-feed' rss=site.data.ubuntublog limit=4 %}
 <section class="center higher-padded beige">
 	<div class="wrapper">
 		<article class="padded">
@@ -108,11 +104,7 @@ layout: default
 		</article>
 	</div>
 </section>
-<section class="padded beige bordered">
-	<div class="wrapper">
-		<article class="padded" id="rss-feed-omgubuntu"></article>
-	</div>
-</section>
+{% include rss_feed.html class='beige' id='rss-feed-omgubuntu' rss=site.data.omgubuntu limit=4 %}
 <section class="padded center">
 	<div class="wrapper">
 		<article class="padded info">
@@ -123,20 +115,16 @@ layout: default
 </section>
 
 <script src="{{ 'design/translator.js' | relative_url }}"></script>
-<script src="{{ 'design/rssES6.js' | relative_url }}"></script>
 <script>
-	let translator = new ENCZTranslator({
-		capitalizeFirst: true,
-		dataLocation: "{{ 'design/translator/data.json' | relative_url }}"
-	});
-	new RSS({
-		url: "{{ site.baseurl }}{% link remote_content/ubuntu_blog.xml %}",
-		count: 4,
-		translator
-	}).appendTo(document.getElementById("rss-feed"));
-	new RSS({
-		url: "{{ site.baseurl }}{% link remote_content/omgubuntu.xml %}",
-		count: 4,
-		translator
-	}).appendTo(document.getElementById("rss-feed-omgubuntu"));
+  const translator = new ENCZTranslator({
+    capitalizeFirst: true,
+    dataLocation: "{{ 'design/translator/data.json' | relative_url }}"
+  });
+  [...document.querySelectorAll('.rss-feed h3 a')].forEach(titleLink => {
+    translator.translate(titleLink.textContent).then((response) => {
+      titleLink.textContent = response;
+    }).catch((error) => {
+      console.error(error, 'Could not fetch translations from Translator.js');
+    });
+  });
 </script>
