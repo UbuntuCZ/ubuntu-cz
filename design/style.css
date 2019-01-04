@@ -217,26 +217,26 @@ section.hero .intro.text-white a.text {
 	section.hero .wrapper {
 		position: relative;
 	}
-	
+
 	section.hero .img-container {
 		height: auto;
 	}
-	
+
 	section.hero .img-container .fixed-container {
 		display: none;
 	}
-	
+
 	section.hero .img-container .bg-container:not(.mobile-bg) {
 		background-image: none !important;
 	}
-	
+
 	section.hero .intro, section.hero .intro.smaller, section.hero .intro.higher {
 		position: relative;
 		padding: 30px;
 		width: auto;
 		height: auto;
 	}
-	
+
 	section.hero .intro.text-white {
 		color: #333;
 	}
@@ -619,23 +619,23 @@ header nav > ul > li .submenu > ul > li:hover > span {
 	header {
 		overflow: visible;
 	}
-	
+
 	header.show {
 		height: auto;
 	}
-	
+
 	header .wrapper {
 		justify-content: space-between;
 	}
-	
+
 	header a.title {
 		display: block;
 	}
-	
+
 	header .menuHide {
 		display: block;
 	}
-	
+
 	header nav {
 		position: absolute;
 		top: 48px;
@@ -646,32 +646,32 @@ header nav > ul > li .submenu > ul > li:hover > span {
 		overflow-y: scroll;
 		transition: max-height 0.25s ease-in-out;
 	}
-	
+
 	header.show nav {
 		max-height: calc(100vh - 48px);
 	}
-	
+
 	header nav > ul > li {
 		display: block;
 	}
-	
+
 	header nav > ul > li:hover .submenu > ul {
 		display: none;
 	}
-	
+
 	header nav > ul > li.top-level > a::after {
 		display: none;
 	}
-	
+
 	header nav > ul > li.open > a {
 		color: inherit;
 		background: inherit;
 	}
-	
+
 	header nav > ul > li.open:hover > a {
 		background: #1b1b1b;
 	}
-	
+
 	section.higher-padded {
 		padding: 20px 0px;
 	}
@@ -760,11 +760,11 @@ nav.breadcrumbs ul li.current:not(.current-section):not(.not-exact) a, nav.bread
 		border-bottom: 4px solid #ddd;
 		overflow-x: scroll;
 	}
-	
+
 	nav.breadcrumbs ul li {
 		border-right: 1px solid #ddd;
 	}
-	
+
 	nav.breadcrumbs ul li:last-child {
 		border-right: none;
 	}
@@ -839,57 +839,44 @@ footer nav ul li.social ul li a {
 	margin: 5px;
 	padding: 0px;
 	font-size: 0px;
-	background: #ddd;
+	background-color: #ddd;
 	border-radius: 100%;
+	width: 25px;
+	height: 25px;
+	padding: 10px;
 }
 
-footer nav ul li.social ul li a svg {
-	width: 30px;
-}
-
-footer nav ul li.social ul li a svg path.logo {
+footer nav ul li.social ul li a svg path {
 	fill: #fff;
 }
 
-footer nav ul li.social ul li a svg path.icon {
-	fill: #666;
+footer nav ul li.social ul li.twitter a:hover {
+	background-color: #1da1f2;
 }
 
-footer nav ul li.social ul li.twitter a:hover svg path.icon {
-	fill: #1da1f2;
-}
-
-footer nav ul li.social ul li.facebook a:hover svg path.icon {
-	fill: #3b5898;
-}
-
-footer nav ul li.social ul li.linkedin a:hover svg path.icon {
-	fill: #0274b3;
-}
-
-footer nav ul li.social ul li.google-plus a:hover svg path.icon {
-	fill: #dc4e41;
+footer nav ul li.social ul li.telegram a:hover {
+	background-color: #179cde;
 }
 
 footer nav ul li span {
 	opacity: 0.75;
 }
 
-@media screen and (max-width: 960px) {	
+@media screen and (max-width: 960px) {
 	footer nav > ul {
 		display: block;
 	}
-	
+
 	footer nav ul li,
 	footer nav ul li.social {
 		display: block;
 		width: auto;
 	}
-	
+
 	footer nav > ul > li {
 		margin-top: 20px;
 	}
-	
+
 	footer nav > ul > li:not(:last-child),
 	footer nav > ul.footer-menu > li:not(:last-child) {
 		border-right: none;
