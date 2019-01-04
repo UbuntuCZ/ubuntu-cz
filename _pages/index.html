@@ -37,7 +37,8 @@ layout: default
 </section>
 -->
 
-{% include rss_feed.html id='rss-feed' rss=site.data.ubuntublog limit=4 %}
+{% include rss_feed.html id='rss-feed-ubuntuczblog' rss=site.data.ubuntuczblog limit=4 %}
+
 <section class="center higher-padded beige">
 	<div class="wrapper">
 		<article class="padded">
@@ -104,7 +105,8 @@ layout: default
 		</article>
 	</div>
 </section>
-{% include rss_feed.html class='beige' id='rss-feed-omgubuntu' rss=site.data.omgubuntu limit=4 %}
+{% include rss_feed.html classes='translate beige' id='rss-feed-ubuntublog' rss=site.data.ubuntublog limit=4 %}
+{% include rss_feed.html classes='translate beige' id='rss-feed-omgubuntu' rss=site.data.omgubuntu limit=4 %}
 <section class="padded center">
 	<div class="wrapper">
 		<article class="padded info">
@@ -120,7 +122,7 @@ layout: default
     capitalizeFirst: true,
     dataLocation: "{{ 'design/translator/data.json' | relative_url }}"
   });
-  [...document.querySelectorAll('.rss-feed h3 a')].forEach(titleLink => {
+  [...document.querySelectorAll('.translate .rss-feed h3 a')].forEach(titleLink => {
     translator.translate(titleLink.textContent).then((response) => {
       titleLink.textContent = response;
     }).catch((error) => {
