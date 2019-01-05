@@ -31,6 +31,8 @@ GEM
       parallel (~> 1.3)
       typhoeus (~> 1.3)
       yell (~> 2.0)
+    htmlbeautifier (1.3.1)
+    htmlcompressor (0.4.0)
     http_parser.rb (0.6.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
@@ -54,6 +56,10 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (2.5.0)
       jekyll (~> 3.3)
+    jekyll-tidy (0.2.2)
+      htmlbeautifier
+      htmlcompressor
+      jekyll
     jekyll-watch (2.1.2)
       listen (~> 3.0)
     json (2.1.0)
@@ -109,6 +115,7 @@ DEPENDENCIES
   jekyll (~> 3.8, >= 3.8.5)
   jekyll-redirect-from (~> 0.14.0)
   jekyll-seo-tag (~> 2.5)
+  jekyll-tidy (~> 0.2.2)
   json (~> 2.1)
   open_uri_redirections (~> 0.2.1)
 
