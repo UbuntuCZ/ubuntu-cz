@@ -52,6 +52,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
+    jekyll-seo-tag (2.5.0)
+      jekyll (~> 3.3)
     jekyll-watch (2.1.2)
       listen (~> 3.0)
     json (2.1.0)
@@ -106,6 +108,7 @@ DEPENDENCIES
   html-proofer (~> 3.9, >= 3.9.2)
   jekyll (~> 3.8, >= 3.8.5)
   jekyll-redirect-from (~> 0.14.0)
+  jekyll-seo-tag (~> 2.5)
   json (~> 2.1)
   open_uri_redirections (~> 0.2.1)
 

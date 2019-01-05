@@ -1,20 +1,15 @@
-<title>Ubuntu - {{ page.title }} | Česká republika</title>
 <meta charset="utf-8">
 <base href="{{ site.baseurl }}">
+
+{% seo %}
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" />
+<meta property="og:type" content="website">
+<link rel="icon" href="{{ site.logo | relative_url }}" type="image/svg+xml">
+<link rel="icon" href="{{ 'design/icon.ico' | relative_url }}" type="image/x-icon">
+<meta property="og:image" content="{{ site.logo | relative_url }}">
+
 <link rel="stylesheet" href="{{ 'design/style.css' | relative_url }}">
 <link rel="stylesheet" href="{{ 'design/fonts/fonts.css' | relative_url }}">
-<meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}" />
-<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}{{ site.keywords }}{% endif %}" />
-<meta name="author" content="Martin Kozub">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="google-site-verification" content="google98a19569eb1c873d">
 <meta name="theme-color" content="#E95420" />
-<link rel="canonical" href="{{ site.baseurl }}{{ page.url }}">
-<link rel="shortcut icon" href="{{ 'design/icon.ico' | relative_url }}" type="image/x-icon">
-<!-- <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,300,400italic,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"> -->
-<meta property="og:type" content="website">
-<meta property="og:title" content="{{ page.title }}">
-<meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
-<meta property="og:image" content="{{ 'images/icons/picto-ubuntu.svg' | relative_url }}">
-<meta property="og:site_name" content="iUbuntu.cz">

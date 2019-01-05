@@ -1,6 +1,10 @@
 title: Ubuntu | Česká republika
 description: Ubuntu je operační systém se svobodnou licencí, který nachází uplatnění na osobních počítačích a serverech stejně jako v cloudu a ve světě internetu věcí.
+logo: /images/icons/picto-ubuntu.svg
+lang: cs
 keywords: Ubuntu, free, opensource, software, operační systém, Linux, zdarma, bezplatný, windows, náhrada, svižný, bezpečný, inovace, novinky, aktualizace, obchod, bez virů, herní
+author:
+    name: Martin Kozub
 
 remote_content:
   - name: 'ubuntublog'
@@ -23,4 +27,5 @@ exclude:
   - README.md
   - release.sh
 plugins:
+  - jekyll-seo-tag
   - jekyll-redirect-from
