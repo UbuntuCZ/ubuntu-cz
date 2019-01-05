@@ -28,5 +28,7 @@ exclude:
   - release.sh
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-last-modified-at
   - jekyll-tidy
   - jekyll-redirect-from
