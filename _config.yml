@@ -8,7 +8,7 @@ author:
 
 remote_content:
   - name: 'ubuntublog'
-    url: 'https://blog.ubuntu.com/feed/'
+    url: 'https://blog.ubuntu.com/feed'
   - name: 'ubuntuczblog'
     url: 'http://blog.ubuntu.cz/rss.xml'
   - name: 'omgubuntu'
