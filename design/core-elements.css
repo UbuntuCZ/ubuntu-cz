@@ -360,6 +360,11 @@ a.button.green {
 	background-color: #0e8420;
 }
 
+a.button.grey {
+	color: #333;
+	background-color: #eee;
+}
+
 a.button:hover {
 	background-color: #f63;
 	text-decoration: inherit;
@@ -367,6 +372,11 @@ a.button:hover {
 
 a.button.green:hover {
 	background-color: #095615;
+}
+
+a.button.grey:hover {
+	color: #000;
+	background-color: #ddd;
 }
 
 a.button:after {
@@ -732,6 +742,21 @@ ol.releases li.past .baloon {
 	font-size: 16px;
 	line-height: 1.5;
 	font-weight: 300;
+}
+
+.rss-feed .credits-wrapper {
+	text-align: center;
+}
+
+.rss-feed .credits-wrapper .credits {
+	display: inline-block;
+	margin: 10px;
+	white-space: nowrap;
+}
+
+.rss-feed .credits-wrapper a.alternate {
+	margin: 0px 20px;
+	cursor: pointer;
 }
 
 .loading-overlay {
