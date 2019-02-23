@@ -23,7 +23,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
-  - CNAME
   - README.md
   - release.sh
 plugins:
