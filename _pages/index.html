@@ -37,7 +37,7 @@ layout: default
 </section>
 -->
 
-{% include rss_feed.html id='rss-feed-ubuntuczblog' rss=site.data.ubuntuczblog limit=4 %}
+{% include rss_feed.html classes='translate' id='rss-feed-ubuntublog' rss=site.data.ubuntublog limit=4 %}
 
 <section class="center higher-padded beige">
 	<div class="wrapper">
@@ -105,7 +105,6 @@ layout: default
 		</article>
 	</div>
 </section>
-{% include rss_feed.html classes='translate beige' id='rss-feed-ubuntublog' rss=site.data.ubuntublog limit=4 %}
 {% include rss_feed.html classes='translate beige' id='rss-feed-omgubuntu' rss=site.data.omgubuntu limit=4 %}
 <section class="padded center">
 	<div class="wrapper">
@@ -125,13 +124,13 @@ layout: default
 		translator.translate(titleLink.textContent).then((response) => {
 			if(response.text) {
 				titleLink.textContent = response.text;
-				
+
 				const container = titleLink.closest('.rss-feed');
 				if(container && response.credits && !container.querySelector('.credits-wrapper')) {
 					const creditsWrapper = document.createElement('div');
 					creditsWrapper.classList.add('credits-wrapper');
 					container.appendChild(creditsWrapper);
-					
+
 					const credits = document.createElement('span');
 					credits.classList.add('credits');
 					credits.innerHTML = response.credits;

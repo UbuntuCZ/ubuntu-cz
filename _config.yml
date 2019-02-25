@@ -9,8 +9,6 @@ author:
 remote_content:
   - name: 'ubuntublog'
     url: 'https://blog.ubuntu.com/feed'
-  - name: 'ubuntuczblog'
-    url: 'http://blog.ubuntu.cz/rss.xml'
   - name: 'omgubuntu'
     url: 'https://feeds.feedburner.com/d0od?format=xml'
 
