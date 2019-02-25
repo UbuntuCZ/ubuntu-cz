@@ -1,7 +1,7 @@
 "use strict";
 
 /* An object definition used for translating English words and sentences to Czech */
-class ENCZTranslator {
+class TranslationService {
 	constructor(data) {
 		data = data || {};
 		this.log = data.log || false;
@@ -9,13 +9,31 @@ class ENCZTranslator {
 		this.nonWordBegining = "(^|[^" + this.wordCharacters + "])";
 		this.nonWordEnd = "(?![" + this.wordCharacters + "])";
 		this.capitalizeFirst = data.capitalizeFirst || false;
-		this.dataLocation = data.dataLocation;
+		this.dataLocation = data.dataLocation || data.scriptsPath + "/data.json" || "data.json";
+		this.callBacks = [];
+	}
+	
+	/* Make string transformations for characters beginning with \char */
+	knownTransform(string) {
+		let newString = string.replace(/(\\\!.)/g, (match) => {
+			return match.replace(/\\\!/, "").toLowerCase();
+		});
+		newString = newString.replace(/(\\\^.)/g, (match) => {
+			return match.replace(/\\\^/, "").toUpperCase();
+		});
+		
+		return {
+			string: newString,
+			strict: string !== newString
+		};
 	}
 	
 	/* This method finds the best (the longest) match from the DB to replace the passed string */
 	findBestStringDbMatches(knownTranslations, string) {
 		let bestMatches = [];
 		for(let key in knownTranslations) {
+			let transformedKey = this.knownTransform(key);
+			
 			let prefix = "";
 			if(!key.match(/^(?!\\\^?).*(\^|\\s(\+)?)/)) {
 				prefix = this.nonWordBegining;
@@ -24,14 +42,13 @@ class ENCZTranslator {
 			if(!key.match(/^(?!\\\$?).*(\$|\\s(\+)?)$/)) {
 				suffix = this.nonWordEnd;
 			}
-			let regexSearchString = prefix + key + suffix;
+			let regexSearchString = prefix + transformedKey.string + suffix;
 			let translationRegEx = new RegExp(regexSearchString, "gi");
 			let stringMatch = translationRegEx.exec(string);
-			let addNewItem = true;
 			if(stringMatch && stringMatch.length > 0) {
 				bestMatches.push({
-					key: key,
-					regex: new RegExp(key, "gi"),
+					key,
+					regex: new RegExp(transformedKey.string, transformedKey.strict ? "g" : "gi"),
 					substring: stringMatch[0]
 				});
 			}
@@ -122,12 +139,11 @@ class ENCZTranslator {
 			let isUpperCase = firstLetter === firstLetter.toUpperCase();
 			let partToUpdate = bestMatches[index].substring;
 			let replacementString = partToUpdate.replace(bestMatches[index].regex, knownTranslations[bestMatches[index].key]);
-			
 			if(isUpperCase) {
 				replacementString = this.makeFirstStringLetterUppercase(replacementString);
 			}
-			/* Force Lower Case for characters beginning with \! */
-			replacementString = replacementString.replace(/\\\!(.)/g, "$1".toLowerCase());
+			
+			replacementString = this.knownTransform(replacementString).string;
 			translation = translation.replace(partToUpdate, replacementString);
 		}
 		return translation;
@@ -135,7 +151,7 @@ class ENCZTranslator {
 	
 	/* This method assigns all the matches to update and passes them one by one to "updateStringSingleMatch" */
 	updateString(knownTranslations, string, bestMatches) {
-		let translation = string;		
+		let translation = string;
 		for(let i = 0; i < bestMatches.length; i++) {
 			translation = this.updateStringSingleMatch({
 				knownTranslations,
@@ -158,7 +174,7 @@ class ENCZTranslator {
 					console.log(bestMatches.length, bestMatches, string);
 				}
 				let finalString = this.updateString(knownTranslations, string, bestMatches);
-						
+				
 				/* Repeat once agin to complete full translation */
 				let secondRoundBestMatches = this.findBestStringDbMatches(knownTranslations, finalString);
 				if(this.log) {
@@ -174,7 +190,9 @@ class ENCZTranslator {
 					finalString = this.makeFirstStringLetterUppercase(finalString);
 				}
 				
-				resolve(finalString);
+				resolve({
+					text: finalString.trim()
+				});
 			}).catch((error) => {
 				console.error(error, "In Translator component");
 				reject(error);

@@ -111,22 +111,35 @@ layout: default
 	<div class="wrapper">
 		<article class="padded info">
 			<h2>Vaše oblíbené aplikace a služby k dispozici</h2>
-      {% include apps-games-overview.html %}
+			{% include apps-games-overview.html %}
 		</article>
 	</div>
 </section>
 
-<script src="{{ 'design/translator.js' | relative_url }}"></script>
+<script src="{{ 'design/translator/generic.js' | relative_url }}"></script>
 <script>
-  const translator = new ENCZTranslator({
-    capitalizeFirst: true,
-    dataLocation: "{{ 'design/translator/data.json' | relative_url }}"
-  });
-  [...document.querySelectorAll('.translate .rss-feed h3 a')].forEach(titleLink => {
-    translator.translate(titleLink.textContent).then((response) => {
-      titleLink.textContent = response;
-    }).catch((error) => {
-      console.error(error, 'Could not fetch translations from Translator.js');
-    });
-  });
+	const translator = new Translator({
+		engine: 'yandex'
+	});
+	[...document.querySelectorAll('.translate .rss-feed h3 a')].forEach(titleLink => {
+		translator.translate(titleLink.textContent).then((response) => {
+			if(response.text) {
+				titleLink.textContent = response.text;
+				
+				const container = titleLink.closest('.rss-feed');
+				if(container && response.credits && !container.querySelector('.credits-wrapper')) {
+					const creditsWrapper = document.createElement('div');
+					creditsWrapper.classList.add('credits-wrapper');
+					container.appendChild(creditsWrapper);
+					
+					const credits = document.createElement('span');
+					credits.classList.add('credits');
+					credits.innerHTML = response.credits;
+					creditsWrapper.appendChild(credits);
+				}
+			}
+		}).catch((error) => {
+			console.error(error, 'Could not fetch translations');
+		});
+	});
 </script>

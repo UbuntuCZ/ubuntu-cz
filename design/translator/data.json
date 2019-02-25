@@ -60,8 +60,7 @@
 	},
 	"names": {
 		"Europe": "\\!Evropa",
-		"London": "\\!Londýn",
-		"Life Is Strange: Before the Storm": "Lif\\e I\\s Strang\\e: Befor\\e th\\e Stor\\m"
+		"London": "\\!Londýn"
 	},
 	"currencies": {
 		"^\\$([\\d]+)": "$2 dolarový",
