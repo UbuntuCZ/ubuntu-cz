@@ -4,5 +4,5 @@ redirect_from:
   - /podpora/dokumentace
   - /komunita/zapojtese/dokumentace
 redirect_to:
-  - http://wiki.ubuntu.cz/
+  - https://wiki.ubuntu.cz/
 ---
