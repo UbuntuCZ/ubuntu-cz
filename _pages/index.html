@@ -115,12 +115,12 @@ layout: default
 	</div>
 </section>
 
-<script src="{{ 'design/translator/generic.js' | relative_url }}"></script>
+<script src="{{ 'design/translator/google-translator.js' | relative_url }}"></script>
 <script>
-	const translator = new Translator({
-		engine: 'yandex'
-	});
+	const translator = new TranslationService();
 	[...document.querySelectorAll('.translate .rss-feed h3 a')].forEach(titleLink => {
+		titleLink.classList.remove('fade-in');
+		titleLink.classList.add('fade-out');
 		translator.translate(titleLink.textContent).then((response) => {
 			if(response.text) {
 				titleLink.textContent = response.text;
@@ -139,6 +139,9 @@ layout: default
 			}
 		}).catch((error) => {
 			console.error(error, 'Could not fetch translations');
+		}).finally(() => {
+			titleLink.classList.remove('fade-out');
+			titleLink.classList.add('fade-in');
 		});
 	});
 </script>
