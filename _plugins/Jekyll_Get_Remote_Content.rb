@@ -19,6 +19,7 @@ module Jekyll_Get_Remote_Content
         open(remote['url'], 'r', :allow_redirections => :all) do |remote_content|
           site.data['rss_feeds'].push(remote['name'])
           site.data[remote['name']] = JSON.parse(FeedParser::Parser.parse(remote_content.read).to_json)
+          site.data[remote['name']]['url'] = remote['url']
         end
       end
     end

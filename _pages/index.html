@@ -37,7 +37,7 @@ layout: default
 </section>
 -->
 
-{% include rss_feed.html classes='translate' id='rss-feed-ubuntublog' rss=site.data.ubuntublog limit=4 %}
+{% include rss_feed.html id='rss-feed-root-cz-ubuntu' rss=site.data.rootcz-ubuntu limit=4 %}
 
 <section class="center higher-padded beige">
 	<div class="wrapper">
@@ -105,6 +105,7 @@ layout: default
 		</article>
 	</div>
 </section>
+{% include rss_feed.html classes='translate beige' id='rss-feed-ubuntublog' rss=site.data.ubuntublog limit=4 %}
 {% include rss_feed.html classes='translate beige' id='rss-feed-omgubuntu' rss=site.data.omgubuntu limit=4 %}
 <section class="padded center">
 	<div class="wrapper">

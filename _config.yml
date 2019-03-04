@@ -7,6 +7,8 @@ author:
     name: Martin Kozub
 
 remote_content:
+  - name: 'rootcz-ubuntu'
+    url: 'https://www.root.cz/rss/n/ubuntu/'
   - name: 'ubuntublog'
     url: 'https://blog.ubuntu.com/feed'
   - name: 'omgubuntu'

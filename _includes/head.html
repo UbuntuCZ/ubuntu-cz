@@ -13,3 +13,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="theme-color" content="#E95420" />
+
+{% for rss_feed in site.data.rss_feeds %}
+  {%- assign protocol = site.data[rss_feed].url | split: ':' | first -%}
+  {% if protocol == "https" %}
+    <link rel="alternate" type="application/rss+xml" title="{{ site.data[rss_feed].title }}" href="{{ site.data[rss_feed].url }}" />
+  {% endif %}
+{% endfor %}
