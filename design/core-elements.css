@@ -99,7 +99,7 @@
 		display: block;
 		min-height: 0;
 	}
-	
+
 	.user-switchable ul li {
 		display: block;
 		width: auto;
@@ -107,17 +107,17 @@
 		background: #fff !important;
 		border-bottom: 1px solid #ddd;
 	}
-	
+
 	.user-switchable ul li a, .user-switchable ul li:nth-child(even) a {
 		padding: 0px;
 	}
-	
+
 	.user-switchable ul li a .content {
 		display: block;
 		margin: 0px;
 		background: none;
 	}
-	
+
 	.user-switchable ul li a .content:hover {
 		background: #f7f7f7;
 	}
@@ -175,7 +175,7 @@ ul.inline-icons li img.dark {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: center;
+	justify-content: left;
 	align-items: stretch;
 	align-content: stretch;
 	margin: 0px;
@@ -249,15 +249,15 @@ ul.inline-icons li img.dark {
 	.row-boxes > ul {
 		justify-content: flex-start;
 	}
-	
+
 	.row-boxes > ul > li {
 		width: 50%;
 	}
-	
+
 	.row-boxes .row-boxes > ul > li {
 		width: 100%;
 	}
-	
+
 	.row-boxes:not(.two) > ul > li:nth-child(3n-2) .box, .row-boxes.two > ul > li:nth-child(odd) .box {
 		margin-left: 10px;
 	}
@@ -271,17 +271,17 @@ ul.inline-icons li img.dark {
 	.row-boxes > ul {
 		display: block;
 	}
-	
+
 	.row-boxes > ul > li, .row-boxes.two > ul > li {
 		display: block;
 		width: auto;
 	}
-	
+
 	.row-boxes.mobile-reverse > ul {
 		display: flex;
 		flex-direction: column-reverse;
 	}
-	
+
 	.row-boxes.mobile-bg > ul > li .box, .row-boxes > ul > li .box.mobile-bg {
 		color: #333;
 		background: rgba(255, 255, 255, 0.9);
@@ -698,15 +698,15 @@ ol.releases li.past .baloon {
 	.rss-feed ul li {
 		width: 50%;
 	}
-	
+
 	.rss-feed ul li .item {
 		padding: 0px;
 	}
-	
+
 	.rss-feed ul li:nth-child(even) .item {
 		padding-left: 20px;
 	}
-	
+
 	.rss-feed ul li:nth-child(odd) .item {
 		padding-right: 20px;
 	}
@@ -716,15 +716,15 @@ ol.releases li.past .baloon {
 	.rss-feed ul {
 		display: block;
 	}
-	
+
 	.rss-feed ul li {
 		width: 100%;
 	}
-	
+
 	.rss-feed ul li:nth-child(even) .item {
 		padding-left: 0px;
 	}
-	
+
 	.rss-feed ul li:nth-child(odd) .item {
 		padding-right: 0px;
 	}
