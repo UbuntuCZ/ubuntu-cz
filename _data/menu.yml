@@ -27,7 +27,7 @@ pages:
       - external: true
         url: http://forum.ubuntu.cz/
         title: Fórum
-        description: České fórum podpory, kde se můžete zeptat, poradit ostatním nebo jentak diskutovat o Ubuntu.
+        description: České fórum podpory, kde se můžete zeptat, poradit ostatním nebo jen tak diskutovat o Ubuntu.
       - external: true
         url: https://wiki.ubuntu.cz/
         title: Wiki
