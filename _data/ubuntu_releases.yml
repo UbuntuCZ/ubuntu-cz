@@ -149,3 +149,8 @@ all:
     lts: false
     released: 2019-04-18
     eol: 2020-01
+  - version: "19.10"
+    name: Eoan Eanimal
+    lts: false
+    released: 2019-10-18
+    eol: 2020-07

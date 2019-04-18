@@ -12,7 +12,7 @@ module Jekyll_Ubuntu_Latest
     end
 
     def self.get_precise_version(base_version)
-      url = 'http://releases.ubuntu.com/'+base_version+'/SHA256SUMS'
+      url = 'http://releases.ubuntu.cz/'+base_version+'/SHA256SUMS'
       open(url, 'r', :allow_redirections => :all) do |remote_content|
         return /[0-9]+\.[0-9]+(\.[0-9])?/.match(remote_content.read).to_s
       end

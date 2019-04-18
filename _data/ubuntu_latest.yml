@@ -1,6 +1,6 @@
 release:
-  version: "18.10"
-  name: Cosmic Cuttlefish
+  version: "19.04"
+  name: Disco Dingo
 lts:
   version: "18.04"
   name: Bionic Beaver
