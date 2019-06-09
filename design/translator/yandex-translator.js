@@ -9,11 +9,11 @@ class TranslationService {
 		this.destinationLanguage = data.destinationLanguage || "cs";
 		this.fallback = data.fallback || null;
 		this.forceFallback = data.forceFallback || false;
-		this.credits = "<a href=\"http://translate.yandex.com/\">Powered by Yandex.Translate</a>";
-		
+		this.credits = "<a href=\"https://translate.yandex.com/\">Powered by Yandex.Translate</a>";
+
 		this.cachedReplies = {};
 	}
-	
+
 	serialize(object) {
 		var serializedString = [];
 		for(let key in object) {
@@ -23,7 +23,7 @@ class TranslationService {
 		}
 		return serializedString.join("&");
 	}
-	
+
 	fetch(string) {
 		let data = {
 			key: this.apiKey,
@@ -41,7 +41,7 @@ class TranslationService {
 			body: this.serialize(data)
 		}).then(response => response.json());
 	}
-	
+
 	fallbackTranslate(string) {
 		console.log("fallbackTranslate");
 		return new Promise((resolve, reject) => {
@@ -52,7 +52,7 @@ class TranslationService {
 				this.scriptTag = this.scriptTag || document.createElement("script");
 				this.scriptTag.src = this.fallback;
 				document.head.appendChild(this.scriptTag);
-				
+
 				this.scriptTag.addEventListener("load", (event) => {
 					this.fallBackTranslator = new ENCZTranslator({
 						capitalizeFirst: true
@@ -62,14 +62,14 @@ class TranslationService {
 			}
 		});
 	}
-	
+
 	translate(string, forceFetch, forceFallback) {
 		return new Promise((resolve, reject) => {
 			if(this.forceFallback || forceFallback) {
 				this.fallbackTranslate(string).then((data) => resolve(data)).catch((error) => reject(error));
 				return;
 			}
-			
+
 			if(!forceFetch && this.cachedReplies[string]) {
 				resolve({
 					text: this.cachedReplies[string].text,
@@ -79,7 +79,7 @@ class TranslationService {
 				});
 				return;
 			}
-			
+
 			this.fetch(string).then((response) => {
 				if(response.code === 200) {
 					if(response.text) {
@@ -98,7 +98,7 @@ class TranslationService {
 				else {
 					console.error("[TranslationService] Couldn't fetch translation for: " + string);
 					console.error("[TranslationService] Error Code:", response.code);
-					
+
 					if(this.fallBackTranslator) {
 						this.fallbackTranslate(string).then((data) => resolve(data)).catch((error) => reject(error));
 					}

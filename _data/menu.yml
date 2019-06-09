@@ -25,7 +25,7 @@ pages:
     sub:
       - url: /komunita/
       - external: true
-        url: http://forum.ubuntu.cz/
+        url: https://forum.ubuntu.cz/
         title: Fórum
         description: České fórum podpory, kde se můžete zeptat, poradit ostatním nebo jen tak diskutovat o Ubuntu.
       - external: true
