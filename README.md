@@ -11,10 +11,10 @@ Repositář pro web Ubuntu.cz. Autorem jeho vzhledu, obsahu a původní verze (j
 Soubory tvořící základní HTML šablonu se nachází v adresářích `_includes` a `_layouts`, styly v adresáři `design`.
 
 ### Obsah
-Obsah všech stránek je v adresáři `_pages` a je psaný v HTML. Použité obrázky jsou nahraní v adresáři `images`.
+Obsah všech stránek je v adresáři `_pages` a je psaný v HTML. Použité obrázky jsou nahrané v adresáři `images`.
 
 ### Příprava
-Abyste byli schopni spustit níže uvedené příkazy, je nutné mít nainstalovaný [Ruby](https://www.ruby-lang.org/en/documentation/installation/) a [Bundler](https://bundler.io/#getting-started).
+Abyste byli schopni spustit níže uvedené příkazy, je nutné mít nainstalované [Ruby](https://www.ruby-lang.org/en/documentation/installation/) a [Bundler](https://bundler.io/#getting-started).
 
 Před prvním zobrazením (nebo po změně souboru `Gemfile`) je potřeba stáhnout potřebné závislosti.
 ```
