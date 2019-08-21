@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'jekyll', '~> 3.8', '>= 3.8.6'
+gem 'jekyll', '~> 4.0'
 gem 'jekyll-seo-tag', '~> 2.6', '>= 2.6.1'
 gem 'jekyll-sitemap', '~> 1.3', '>= 1.3.1'
 gem 'jekyll-last-modified-at', '~> 1.1'

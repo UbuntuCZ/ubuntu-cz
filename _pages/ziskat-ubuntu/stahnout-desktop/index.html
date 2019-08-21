@@ -32,7 +32,7 @@ layout: default
 						<h2 id="lts">Ubuntu {{ site.data.ubuntu_latest.lts.version }} LTS</h2>
 						<p>Ubuntu {{ site.data.ubuntu_latest.lts.version }} LTS {{ site.data.ubuntu_latest.lts.name }} je vydání s dlouhodobou podporou, která činí 5 let počínaje {{ site.data.ubuntu_latest.lts.released | date: "%-d. %-m. %Y" }}.</p>
 						<p><a href="http://releases.ubuntu.cz/{{ site.data.ubuntu_latest.lts.version }}/ubuntu-{{ site.data.ubuntu_latest.lts.version }}-desktop-amd64.iso" id="lts-download-link" class="button">Stáhnout Ubuntu {{ site.data.ubuntu_latest.lts.version }} (64bit)</a></p>
-						<p>Ubuntu již nadále nevydává instalační obrazy pro 32-bitové architektury Intel.<br>Pokud stále vlastníte takovýto počítač, můžete standardně provést <a href="{{ site.baseurl }}{% link _pages/ziskat-ubuntu/stahnout-desktop/aktualizace.html %}" class="text">aktualizaci</a> z některé z předchozích verzí nebo provést instalaci ručně <a href="https://wiki.ubuntu.cz/instalace/z_minimalcd" class="text">z minimálního obrazu</a>.</p>
+						<p>Ubuntu již nadále nevydává instalační obrazy pro 32-bitové architektury Intel.<br>Pokud stále vlastníte takovýto počítač, můžete standardně provést <a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/aktualizace.html %}" class="text">aktualizaci</a> z některé z předchozích verzí nebo provést instalaci ručně <a href="https://wiki.ubuntu.cz/instalace/z_minimalcd" class="text">z minimálního obrazu</a>.</p>
 
 						<h3>Doporučené systémové požadavky</h3>
 						<ul>
@@ -49,7 +49,7 @@ layout: default
 						<img src="{{ 'images/icons/picto-ubuntu.svg' | relative_url }}" alt="ubuntu" class="responsive icon right">
 						<h3>Aktualizace Ubuntu</h3>
 						<p>Pokud již používáte Ubuntu, můžete snadno aktualizovat na nejnovější verzi jen v páru kliknutí.</p>
-						<a href="{{ site.baseurl }}{% link _pages/ziskat-ubuntu/stahnout-desktop/aktualizace.html %}" class="text">Chcete systém aktualizovat?<br>Následujte jednoduchý postup</a>
+						<a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/aktualizace.html %}" class="text">Chcete systém aktualizovat?<br>Následujte jednoduchý postup</a>
 					</div>
 				</li>
 			</ul>
@@ -65,9 +65,9 @@ layout: default
   					<div class="box">
               <h2 id="standard">Ubuntu {{ site.data.ubuntu_latest.release.version }}</h2>
               <p>Nejnovější vydání Ubuntu pro počítače a notebooky. Ubuntu {{ site.data.ubuntu_latest.release.version }} {{ site.data.ubuntu_latest.release.name }} přináší 9 měsíců bezpečnostních a údržbových aktualizací.</p>
-  						<p>Pro konzervativnější a déle podporované vydání stahujte <a href="{{ site.baseurl }}{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}#lts" class="text">Ubuntu s dlouhodobou podporou výše</a></p>
+  						<p>Pro konzervativnější a déle podporované vydání stahujte <a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}#lts" class="text">Ubuntu s dlouhodobou podporou výše</a></p>
               <p><a href="http://releases.ubuntu.cz/{{ site.data.ubuntu_latest.release.version }}/ubuntu-{{ site.data.ubuntu_latest.release.version }}-desktop-amd64.iso" id="standard-download-link" class="button">Stáhnout Ubuntu {{ site.data.ubuntu_latest.release.version }} (64bit)</a></p>
-              <p>Pro 32-bitové počítače si můžete stáhnout například některou z <a href="{{ site.baseurl }}{% link _pages/ziskat-ubuntu/odnoze-ubuntu.html %}" class="text">odnoží Ubuntu.</a></p>
+              <p>Pro 32-bitové počítače si můžete stáhnout například některou z <a href="{% link _pages/ziskat-ubuntu/odnoze-ubuntu.html %}" class="text">odnoží Ubuntu.</a></p>
   					</div>
   				</li>
   				<li>
@@ -112,7 +112,7 @@ layout: default
 	<div class="wrapper">
 		<article class="padded">
 			<h2>Stáhli jste si Ubuntu, ale nevíte, jak postupovat při jeho instalaci?</h2>
-			<p>Máte-li uložený .iso obraz Ubuntu na vašem počítači, musíte tento nejprve zapsat na médium typu CD/DVD nebo USB flash disk. Pro více informací o postupu před samotnou instalací si přečtěte <a href="{{ site.baseurl }}{% link _pages/ziskat-ubuntu/stahnout-desktop/instalace.html %}" class="text">stránku dedikovanou instalaci Ubuntu</a>.</p>
+			<p>Máte-li uložený .iso obraz Ubuntu na vašem počítači, musíte tento nejprve zapsat na médium typu CD/DVD nebo USB flash disk. Pro více informací o postupu před samotnou instalací si přečtěte <a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/instalace.html %}" class="text">stránku dedikovanou instalaci Ubuntu</a>.</p>
 			<p><em>Postup není složitý a je možné ho provést během několika málo minut, včetně zavedení instalátoru.</em></p>
 		</article>
 	</div>

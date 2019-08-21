@@ -20,8 +20,6 @@ include: [
     '/_pages',
 ]
 exclude:
-  - Gemfile
-  - Gemfile.lock
   - vendor
   - README.md
   - release.sh

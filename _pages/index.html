@@ -15,8 +15,8 @@ layout: default
 		<div class="wrapper">
 			<div class="intro transparent text-white">
 				<h1>Ubuntu {{ site.data.ubuntu_latest.release.version }}{% if site.data.ubuntu_latest.lts.version == site.data.ubuntu_latest.release.version %} LTS{% endif %}</h1>
-				<p>Nové Ubuntu je tady a přináší rychlejší uživatelské rozhraní, nejnovější softwarovou výbavu a množství oprav a menších vylepšení. <a href="{{ site.baseurl }}{% link _pages/desktop/index.html %}" class="text">Zjistěte o Ubuntu více</a></p>
-				<a href="{{ site.baseurl }}{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}#{% if site.data.ubuntu_latest.lts.version == site.data.ubuntu_latest.release.version %}lts{% else %}standard{% endif %}" class="button">Stáhnout Ubuntu {{ site.data.ubuntu_latest.release.version }}{% if site.data.ubuntu_latest.lts.version == site.data.ubuntu_latest.release.version %} LTS{% endif %}</a>
+				<p>Nové Ubuntu je tady a přináší rychlejší uživatelské rozhraní, nejnovější softwarovou výbavu a množství oprav a menších vylepšení. <a href="{% link _pages/desktop/index.html %}" class="text">Zjistěte o Ubuntu více</a></p>
+				<a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}#{% if site.data.ubuntu_latest.lts.version == site.data.ubuntu_latest.release.version %}lts{% else %}standard{% endif %}" class="button">Stáhnout Ubuntu {{ site.data.ubuntu_latest.release.version }}{% if site.data.ubuntu_latest.lts.version == site.data.ubuntu_latest.release.version %} LTS{% endif %}</a>
 			</div>
 		</div>
 	</div>
@@ -62,25 +62,25 @@ layout: default
 		<div class="user-switchable">
 			<ul>
 				<li class="desktop">
-					<a href="{{ site.baseurl }}{% link _pages/desktop/index.html %}">
+					<a href="{% link _pages/desktop/index.html %}">
 						<div class="content">
 							<span>Ubuntu Desktop</span>
 						</div>
 					</a>
 				</li><li class="server">
-					<a href="{{ site.baseurl }}{% link _pages/server.html %}">
+					<a href="{% link _pages/server.html %}">
 						<div class="content">
 							<span>Ubuntu Cloud a Server</span>
 						</div>
 					</a>
 				</li><li class="phone">
-					<a href="{{ site.baseurl }}{% link _pages/telefony-a-tablety.html %}">
+					<a href="{% link _pages/telefony-a-tablety.html %}">
 						<div class="content">
 							<span>Ubuntu Telefony a Tablety</span>
 						</div>
 					</a>
 				</li><li class="about">
-					<a href="{{ site.baseurl }}{% link _pages/o-ubuntu/index.html %}">
+					<a href="{% link _pages/o-ubuntu/index.html %}">
 						<div class="content">
 							<span>O Ubuntu</span>
 						</div>

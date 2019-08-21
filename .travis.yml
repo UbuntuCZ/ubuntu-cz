@@ -4,6 +4,7 @@ bundler_args: --path $HOME/.bundle --with test
 cache:
   directories:
     - $HOME/.bundle
+    - .jekyll-cache
 
 script:
  - bundle exec jekyll build
