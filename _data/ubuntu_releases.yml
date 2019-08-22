@@ -1,3 +1,5 @@
+# https://en.wikipedia.org/wiki/Ubuntu_version_history#Table_of_versions
+
 all:
   - version: "4.10"
     name: Warty Warthog
@@ -98,7 +100,7 @@ all:
     name: Trusty Tahr
     lts: true
     released: 2014-04-17
-    eol: 2019-04
+    eol: 2019-04-30
   - version: "14.10"
     name: Utopic Unicorn
     lts: false
@@ -127,7 +129,7 @@ all:
   - version: "17.04"
     name: Zesty Zapus
     lts: false
-    released: 2017-04-10
+    released: 2017-04-13
     eol: 2018-01-13
   - version: "17.10"
     name: Artful Aardvark
@@ -143,7 +145,7 @@ all:
     name: Cosmic Cuttlefish
     lts: false
     released: 2018-10-18
-    eol: 2019-07
+    eol: 2019-07-18
   - version: "19.04"
     name: Disco Dingo
     lts: false
@@ -152,5 +154,5 @@ all:
   - version: "19.10"
     name: Eoan Eanimal
     lts: false
-    released: 2019-10-18
+    released: 2019-10-17
     eol: 2020-07
