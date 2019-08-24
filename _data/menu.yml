@@ -17,7 +17,6 @@ pages:
   - url: /o-ubuntu/
     sub:
       - url: /o-ubuntu/
-      - url: /o-ubuntu/cyklus-vydani/
       - url: /o-ubuntu/historie-vydani/
       - url: /komunita/
   - url: /komunita/
