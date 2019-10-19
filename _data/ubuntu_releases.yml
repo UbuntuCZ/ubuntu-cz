@@ -152,7 +152,12 @@ all:
     released: 2019-04-18
     eol: 2020-01
   - version: "19.10"
-    name: Eoan Eanimal
+    name: Eoan Ermine
     lts: false
     released: 2019-10-17
     eol: 2020-07
+  - version: "20.04"
+    name: Focal Fossa
+    lts: true
+    released: 2020-04-23
+    eol: 2030-04

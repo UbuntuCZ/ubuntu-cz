@@ -1,6 +1,6 @@
 release:
-  version: "19.04"
-  name: Disco Dingo
+  version: "19.10"
+  name: Eoan Ermine
 lts:
   version: "18.04"
   name: Bionic Beaver
