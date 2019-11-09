@@ -437,6 +437,10 @@ ol.releases li.current {
 	background: #fff;
 }
 
+li.current + li.current {
+	border-top: 1px solid #efefef;
+}
+
 ol.releases li.current .baloon {
 	background: #3b0;
 }

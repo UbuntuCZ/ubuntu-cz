@@ -29,9 +29,9 @@ layout: default
 			<ul>
 				<li>
 					<div class="box">
-						<h2 id="lts">Ubuntu {{ site.data.ubuntu_latest.lts.version }} LTS</h2>
-						<p>Ubuntu {{ site.data.ubuntu_latest.lts.version }} LTS {{ site.data.ubuntu_latest.lts.name }} je vydání s dlouhodobou podporou, která činí 5 let počínaje {{ site.data.ubuntu_latest.lts.released | date: "%-d. %-m. %Y" }}.</p>
-						<p><a href="http://releases.ubuntu.cz/{{ site.data.ubuntu_latest.lts.version }}/ubuntu-{{ site.data.ubuntu_latest.lts.version }}-desktop-amd64.iso" id="lts-download-link" class="button">Stáhnout Ubuntu {{ site.data.ubuntu_latest.lts.version }} (64bit)</a></p>
+						<h2 id="lts">Ubuntu {{ site.data.ubuntu_releases.latest.lts.version }} LTS</h2>
+						<p>Ubuntu {{ site.data.ubuntu_releases.latest.lts.version }} LTS {{ site.data.ubuntu_releases.latest.lts.name }} je vydání s dlouhodobou podporou, která činí 5 let počínaje {{ site.data.ubuntu_releases.latest.lts.released | date: "%-d. %-m. %Y" }}.</p>
+						<p><a href="http://releases.ubuntu.cz/{{ site.data.ubuntu_releases.latest.lts.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.lts.version }}-desktop-amd64.iso" id="lts-download-link" class="button">Stáhnout Ubuntu {{ site.data.ubuntu_releases.latest.lts.version }} (64bit)</a></p>
 						<p>Ubuntu již nadále nevydává instalační obrazy pro 32-bitové architektury Intel.<br>Pokud stále vlastníte takovýto počítač, můžete standardně provést <a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/aktualizace.html %}" class="text">aktualizaci</a> z některé z předchozích verzí nebo provést instalaci ručně <a href="https://wiki.ubuntu.cz/instalace/z_minimalcd" class="text">z minimálního obrazu</a>.</p>
 
 						<h3>Doporučené systémové požadavky</h3>
@@ -56,23 +56,23 @@ layout: default
 		</div>
 	</div>
 </section>
-{% if site.data.ubuntu_latest.lts.version != site.data.ubuntu_latest.release.version %}
+{% if site.data.ubuntu_releases.latest.lts.version != site.data.ubuntu_releases.latest.release.version %}
   <section class="padded border-top">
   	<div class="wrapper">
   		<div class="row-boxes two vertical-center">
   			<ul>
   				<li>
   					<div class="box">
-              <h2 id="standard">Ubuntu {{ site.data.ubuntu_latest.release.version }}</h2>
-              <p>Nejnovější vydání Ubuntu pro počítače a notebooky. Ubuntu {{ site.data.ubuntu_latest.release.version }} {{ site.data.ubuntu_latest.release.name }} přináší 9 měsíců bezpečnostních a údržbových aktualizací.</p>
+              <h2 id="standard">Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}</h2>
+              <p>Nejnovější vydání Ubuntu pro počítače a notebooky. Ubuntu {{ site.data.ubuntu_releases.latest.release.version }} {{ site.data.ubuntu_releases.latest.release.name }} přináší 9 měsíců bezpečnostních a údržbových aktualizací.</p>
   						<p>Pro konzervativnější a déle podporované vydání stahujte <a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}#lts" class="text">Ubuntu s dlouhodobou podporou výše</a></p>
-              <p><a href="http://releases.ubuntu.cz/{{ site.data.ubuntu_latest.release.version }}/ubuntu-{{ site.data.ubuntu_latest.release.version }}-desktop-amd64.iso" id="standard-download-link" class="button">Stáhnout Ubuntu {{ site.data.ubuntu_latest.release.version }} (64bit)</a></p>
+              <p><a href="http://releases.ubuntu.cz/{{ site.data.ubuntu_releases.latest.release.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.release.version }}-desktop-amd64.iso" id="standard-download-link" class="button">Stáhnout Ubuntu {{ site.data.ubuntu_releases.latest.release.version }} (64bit)</a></p>
               <p>Pro 32-bitové počítače si můžete stáhnout například některou z <a href="{% link _pages/ziskat-ubuntu/odnoze-ubuntu.html %}" class="text">odnoží Ubuntu.</a></p>
   					</div>
   				</li>
   				<li>
   					<div class="box">
-              <p>Doporučené systémové požadavky jsou stejné, jako pro Ubuntu {{ site.data.ubuntu_latest.lts.version }} LTS.</p>
+              <p>Doporučené systémové požadavky jsou stejné, jako pro Ubuntu LTS.</p>
   					</div>
   				</li>
   			</ul>
