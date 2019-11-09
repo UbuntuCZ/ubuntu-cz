@@ -14,12 +14,11 @@ module Jekyll_Get_Remote_Content
       if !config.kind_of?(Array)
         config = [config]
       end
-      site.data['rss_feeds'] = []
+      site.data['rss_feeds'] = Hash.new
       config.each do |remote|
         open(remote['url'], 'r', :allow_redirections => :all) do |remote_content|
-          site.data['rss_feeds'].push(remote['name'])
-          site.data[remote['name']] = JSON.parse(FeedParser::Parser.parse(remote_content.read).to_json)
-          site.data[remote['name']]['url'] = remote['url']
+          site.data['rss_feeds'][remote['name']] = JSON.parse(FeedParser::Parser.parse(remote_content.read).to_json)
+          site.data['rss_feeds'][remote['name']]['url'] = remote['url']
         end
       end
     end
