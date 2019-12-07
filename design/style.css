@@ -841,27 +841,33 @@ footer nav ul li.current:not(.not-exact) > a, footer nav ul li a:hover {
 	text-decoration: underline;
 }
 
-footer nav ul li.social ul li a {
+footer nav ul li.social ul a {
 	display: block;
 	margin: 5px;
-	padding: 0px;
-	font-size: 0px;
 	background-color: #ddd;
 	border-radius: 100%;
-	width: 25px;
-	height: 25px;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	text-align: center;
 	padding: 10px;
 }
 
-footer nav ul li.social ul li a svg path {
-	fill: #fff;
+footer nav ul li.social .fab, footer nav ul li.social .svg-inline--fa {
+    display: inline-block;
+    font-size: 2em;
+    color: #fff;
 }
 
-footer nav ul li.social ul li.twitter a:hover {
+footer nav ul li.social ul .mastodon a:hover {
+	background-color: #3088d4;
+}
+
+footer nav ul li.social ul .twitter a:hover {
 	background-color: #1da1f2;
 }
 
-footer nav ul li.social ul li.telegram a:hover {
+footer nav ul li.social ul .telegram a:hover {
 	background-color: #179cde;
 }
 
