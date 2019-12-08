@@ -4,7 +4,8 @@ class TranslationService {
 	constructor(data) {
 		data = data || {};
 		this.url = data.url || "https://translate.yandex.net/api/v1.5/tr.json/translate";
-		this.apiKey = data.apiKey || "trnsl.1.1.20190204T213725Z.9709ed8c8986727b.302abc56d72c7343ae9d3a2405dd4c0ba63a1b53";
+		this.apiKey = data.apiKey || "trnsl.1.1.20191205T123612Z.e2a9db7510e50025.7dfff24fa0c905410f4d4fbd70c268858af8726a";
+		// Old fall-back api key: "trnsl.1.1.20190204T213725Z.9709ed8c8986727b.302abc56d72c7343ae9d3a2405dd4c0ba63a1b53"
 		this.sourceLanguage = data.sourceLanguage || "en";
 		this.destinationLanguage = data.destinationLanguage || "cs";
 		this.fallback = data.fallback || null;
