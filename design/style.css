@@ -859,6 +859,10 @@ footer nav ul li.social .fab, footer nav ul li.social .svg-inline--fa {
     color: #fff;
 }
 
+footer nav ul li.social ul .github a:hover {
+	background-color: #24292e;
+}
+
 footer nav ul li.social ul .mastodon a:hover {
 	background-color: #3088d4;
 }
