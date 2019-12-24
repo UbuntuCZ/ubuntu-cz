@@ -16,14 +16,14 @@ layout: default
 	</div>
 </section>
 
-<section class="padded grey">
+<section class="padded grey" id="lts">
 	<div class="wrapper">
 		<article>
-			<div class="row-boxes vertical-center two">
+			<div class="row-boxes two">
 				<ul>
 					<li>
 						<div class="box">
-							<h2 id="lts">Ubuntu {{ site.data.ubuntu_releases.latest.lts.version }} LTS</h2>
+							<h2>Ubuntu {{ site.data.ubuntu_releases.latest.lts.version }} LTS</h2>
 							<p>Ubuntu {{ site.data.ubuntu_releases.latest.lts.version }} LTS {{ site.data.ubuntu_releases.latest.lts.name }} je vydaní s dlouhodobou podporou, která činí 5 let od {{ site.data.ubuntu_releases.latest.lts.released | date: "%-d. %-m. %Y" }}.</p>
 							<p><a href="http://releases.ubuntu.cz/{{ site.data.ubuntu_releases.latest.lts.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.lts.version }}-live-server-amd64.iso" id="lts-download-link" class="button green">Stáhnout Ubuntu {{ site.data.ubuntu_releases.latest.lts.version }} (64bit)</a></p>
 							<p><a href="http://cdimage.ubuntu.com/releases/{{ site.data.ubuntu_releases.latest.lts.version }}/release" class="text blue">Alternativní obrazy pro další architektury</a></p>
@@ -40,22 +40,17 @@ layout: default
 	</div>
 </section>
 {% if site.data.ubuntu_releases.latest.lts.version != site.data.ubuntu_releases.latest.release.version %}
-	<section class="padded grey border-top">
+	<section class="padded grey border-top" id="standard">
 		<div class="wrapper">
-			<div class="row-boxes two vertical-center">
+			<div class="row-boxes two">
 				<ul>
 					<li>
 						<div class="box">
-							<h2 id="standard">Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}</h2>
+							<h2>Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}</h2>
 							<p>Nejnovější vydání Ubuntu pro počítače a notebooky. Ubuntu {{ site.data.ubuntu_releases.latest.release.version }} {{ site.data.ubuntu_releases.latest.release.name }} přináší 9 měsíců bezpečnostních a údržbových aktualizací.</p>
 							<p>Pro konzervativnější a déle podporované vydání stahujte <a href="{% link _pages/ziskat-ubuntu/stahnout-server.html %}#lts" class="text blue">Ubuntu s dlouhodobou podporou výše</a></p>
 							<p><a href="http://releases.ubuntu.cz/{{ site.data.ubuntu_releases.latest.release.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.release.version }}-live-server-amd64.iso" id="standard-download-link" class="button green">Stáhnout Ubuntu {{ site.data.ubuntu_releases.latest.release.version }} (64bit)</a></p>
 							<p><a href="http://cdimage.ubuntu.com/releases/{{ site.data.ubuntu_releases.latest.release.version }}/release" class="text blue">Alternativní obrazy pro další architektury</a></p>
-						</div>
-					</li>
-					<li>
-						<div class="box">
-
 						</div>
 					</li>
 				</ul>
