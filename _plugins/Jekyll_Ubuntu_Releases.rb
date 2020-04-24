@@ -14,9 +14,8 @@ module Jekyll_Ubuntu_Releases
       site.data['ubuntu_releases']['latest']['lts'] = Hash.new
       site.data['ubuntu_releases']['all'].each do |release|
         if release['active_and_supported'] then
-          if !release['lts'] then
-            site.data['ubuntu_releases']['latest']['release'] = release
-          else
+          site.data['ubuntu_releases']['latest']['release'] = release
+          if release['lts'] then
             site.data['ubuntu_releases']['latest']['lts'] = release
           end
         end
