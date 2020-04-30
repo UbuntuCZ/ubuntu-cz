@@ -6,9 +6,6 @@ pages:
       - url: /ziskat-ubuntu/stahnout-desktop/
       - url: /ziskat-ubuntu/odnoze-ubuntu/
   - url: /server/
-    sub:
-      - url: /server/
-      - url: /ziskat-ubuntu/stahnout-server/
   - url: /telefony-a-tablety/
   - url: /ziskat-ubuntu/
     sub:
@@ -17,7 +14,7 @@ pages:
       - url: /ziskat-ubuntu/stahnout-desktop/instalace/
       - url: /ziskat-ubuntu/stahnout-desktop/aktualizace/
       - url: /ziskat-ubuntu/odnoze-ubuntu/
-      - url: /ziskat-ubuntu/stahnout-server/
+      - url: /server/
       - url: /telefony-a-tablety/
   - url: /o-ubuntu/
     sub:
