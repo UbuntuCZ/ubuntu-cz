@@ -2,13 +2,17 @@
 title: Telefony a tablety
 description: Ubuntu pod záštitou komunity UBports pro telefony a tablety.
 permalink: /telefony-a-tablety/
+redirect_from:
+  - /ziskat-ubuntu/ubuntu-zarizeni
+  - /telefony-a-tablety/rada-nexus
+  - /telefony-a-tablety/zarizeni-s-ubuntu
 layout: default
 ---
 <section class="hero">
 	<div class="img-container">
-		<div class="bg-container fixed-container" style="background-image: url('{{ 'images/ubports/phone-taking-photo-hero.jpg' | relative_url }}');"></div>
+		<div class="bg-container fixed-container bottom" style="background-image: url('{{ 'images/ubports/phone-hero.jpg' | relative_url }}');"></div>
 		<div class="wrapper">
-			<div class="intro higher transparent text-white">
+			<div class="intro higher">
 				<img src="{{ 'images/ubports/logo/ubports-logo.png' | relative_url }}" alt="ubports-logo" style="float: right; width: 64px; background: rgba(255, 255, 255, 0.5); box-shadow: 0px 0px 20px 30px rgba(255, 255, 255, 0.5);">
 				<h1>Ubuntu Touch</h1>
 				<h2>Bezpečnější, atraktivní,<br>volně dostupný a zdarma.</h2>
@@ -16,47 +20,58 @@ layout: default
 				<a href="https://ubuntu-touch.io/" class="button">Domovská stránka projektu</a>
 			</div>
 		</div>
-		<script>
-			"use strict";
-			function heroAdapt() {
-				if(window.innerHeight > 900) {
-					document.querySelector(".hero .bg-container.fixed-container").classList.add("bottom");
-				}
-				else {
-					document.querySelector(".hero .bg-container.fixed-container").classList.remove("bottom");
-				}
-			}
-
-			heroAdapt();
-
-			window.addEventListener("resize", (event) => {
-				heroAdapt();
-			});
-		</script>
 	</div>
 </section>
-<section class="padded">
+
+<section class="padded grey semi-transparent">
 	<div class="wrapper">
-		<div class="row-boxes vertical-center two mobile-reverse">
+		<div class="padded">
+			<h2>Dostupné na celé řadě zařízení</h2>
+		</div>
+		<div class="row-boxes two">
 			<ul>
 				<li>
 					<div class="box">
-						<h3>Vývoj</h3>
-						<p>UBports je skupina vývojářů i celá komunita, kteří původně pracovali na portování mobilního Ubuntu na nová zařízení, a v dubnu 2017 převzali, v návaznosti na ukončení vývoje ze strany Canonicalu, celý projekt pod svá křídla.</p>
-						<p>V rámci mobilního Ubuntu dochází také k údržbě a dalšímu vývoji plánovaného konvergentního prostředí Unity&nbsp;8 a také několika klíčových mobilních aplikací.</p>
-						<p>Teamu UBports se také úspěšně daří rozšiřovat základnu podporovaných zařízení, stejně jako implementovat nová rozšíření. Aktuálně je na horizontu například podpora mobilních aplikací pro platformu Android či aktualizace softwarové základny včetně Unity 8 a grafické vrstvy Mir na jejich nejnovější verze.</p>
-						<a href="https://open-store.io" class="button green">Obchod OpenStore s mobilními aplikacemi Ubuntu</a>
+            <p>Pokud jste majiteli některého z podporovaných mobilních zařízení nebo uvažujete o nákupu mobilního telefonu, jež umožňuje běh Ubuntu Touch, můžete si Ubuntu na tento telefon nainstalovat sami s pomocí instalátoru UBports.</p>
+						<p>Instalátor podporuje tři hlavní platformy, takže jej můžete spustit takřka na každém počítači. Jednoduše připojte své mobilní (podporované) zařízení k počítači a následujte průvodce instalací.</p>
+						<a href="https://ubuntu-touch.io/get-ut" class="button">Stáhněte si instalátor</a>
+            <p><a href="https://devices.ubuntu-touch.io/" class="text">Aktuální seznam podporovaných zařízení</a></p>
+            <p><a href="{% link _pages/telefony-a-tablety/old.html %}" class="text">Zařízení v minulosti v prodeji se systémem Ubuntu Touch</a></p>
 					</div>
 				</li>
 				<li>
 					<div class="box">
-						<img src="{{ 'images/ubports/convergence.gif' | relative_url }}" alt="UBports devices overview" class="responsive">
+						<img src="{{ 'images/ubports/phone-devices-row.png' | relative_url }}" alt="Ubuntu devices overview" class="responsive" style="max-height: 18em;">
 					</div>
 				</li>
 			</ul>
 		</div>
 	</div>
 </section>
+
+<section class="padded">
+	<div class="wrapper">
+		<div class="row-boxes vertical-center two mobile-reverse">
+			<ul>
+        <li>
+					<div class="box">
+						<img src="{{ 'images/ubports/image-developers.jpg' | relative_url }}" alt="ubuntu phone" class="responsive">
+					</div>
+				</li>
+				<li>
+					<div class="box">
+						<h3>Vývoj</h3>
+						<p>Ubuntu Touch je díky živé komunitě a projektu UBports pravidelně aktualizovaný operační systém dostupný na stále rostoucím počtu zařízení.</p>
+						<p>UBports je skupina vývojářů i celá komunita, která v dubnu 2017 v návaznosti na ukončení vývoje ze strany Canonicalu převzala celý projekt pod svá křídla.</p>
+						<p>V rámci mobilního Ubuntu dochází také k údržbě a dalšímu vývoji plánovaného konvergentního prostředí Unity 8 a také klíčových mobilních aplikací.</p>
+						<a href="https://open-store.io" class="button green">Obchod OpenStore s mobilními aplikacemi Ubuntu</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+
 <section class="padded black">
 	<div class="wrapper">
 		<div class="row-boxes vertical-center two">
@@ -76,6 +91,7 @@ layout: default
 		</div>
 	</div>
 </section>
+
 <section class="hero">
 	<div class="img-container">
 		<div class="img-container">
@@ -100,26 +116,7 @@ layout: default
 		</div>
 	</div>
 </section>
-<section class="padded">
-	<div class="wrapper">
-		<div class="row-boxes vertical-center two mobile-reverse">
-			<ul>
-				<li>
-					<div class="box">
-						<img src="{{ 'images/ubports/phone-devices-row.png' | relative_url }}" alt="Ubuntu devices overview" class="responsive">
-					</div>
-				</li>
-				<li>
-					<div class="box">
-						<h3>Dostupné na celé řadě zařízení</h3>
-						<p>Pokud jste majiteli některého z podporovaných mobilních zařízení nebo uvažujete o nákupu mobilního telefonu, jež umožňuje běh Ubuntu Touch, můžete si Ubuntu na tento telefon nainstalovat sami s pomocí instalátoru UBports.</p>
-						<a href="{% link _pages/ziskat-ubuntu/ubuntu-zarizeni/index.html %}" class="button">Zařízení s Ubuntu</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-</section>
+
 <section class="padded grey">
 	<div class="wrapper">
 		<div class="row-boxes vertical-center two">
@@ -140,6 +137,7 @@ layout: default
 		</div>
 	</div>
 </section>
+
 <section class="padded">
 	<div class="wrapper">
 		<div class="row-boxes stretch-content">
@@ -175,6 +173,7 @@ layout: default
 		</div>
 	</div>
 </section>
+
 <section class="padded">
 	<div class="wrapper">
 		<div class="row-boxes">

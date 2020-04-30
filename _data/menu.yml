@@ -10,9 +10,6 @@ pages:
       - url: /server/
       - url: /ziskat-ubuntu/stahnout-server/
   - url: /telefony-a-tablety/
-    sub:
-      - url: /telefony-a-tablety/
-      - url: /ziskat-ubuntu/ubuntu-zarizeni/
   - url: /ziskat-ubuntu/
     sub:
       - url: /ziskat-ubuntu/
@@ -21,7 +18,7 @@ pages:
       - url: /ziskat-ubuntu/stahnout-desktop/aktualizace/
       - url: /ziskat-ubuntu/odnoze-ubuntu/
       - url: /ziskat-ubuntu/stahnout-server/
-      - url: /ziskat-ubuntu/ubuntu-zarizeni/
+      - url: /telefony-a-tablety/
   - url: /o-ubuntu/
     sub:
       - url: /o-ubuntu/
