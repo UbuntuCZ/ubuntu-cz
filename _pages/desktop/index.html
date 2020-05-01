@@ -14,9 +14,9 @@ layout: default
     <div class="bg-container top" style="background-image: url('{{ 'images/screenshots/ubuntu-20.04/plocha.png' | relative_url }}');"></div>
     <div class="wrapper">
       <div class="intro higher transparent text-white">
-        <h1>Ubuntu pro desktop</h1>
-        <p>Rychlé, zdarma a až neuvěřitelně použitelné a snadné. Operační systém Ubuntu pohání miliony desktopových počítačů, notebooků, serverů i nejrůznějších mobilních zařízení, chytrých telefonů a tabletů po celém světě.</p>
-        <p><a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}" class="button">Stáhnout Ubuntu</a></p>
+        <h1>Ubuntu pro počítač</h1>
+        <p>Rychlé, zdarma a až neuvěřitelně použitelné a snadné. Operační systém Ubuntu pohání miliony notebooků, stolních počítačů, serverů i nejrůznějších mobilních zařízení po celém světě.</p>
+        <p><a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}" class="button">Stáhnout</a></p>
         <a href="{% link _pages/desktop/vlastnosti.html %}" class="text">Prohlédněte si Ubuntu detailněji</a>
       </div>
     </div>
@@ -61,7 +61,7 @@ layout: default
         <li>
           <div class="box">
             <iframe style="width: 590px; height: 332px; max-width: 100%; border: 0px;" src="https://www.youtube.com/embed/8WbyB_2HthM"></iframe>
-            <p>Video je k dispozici v jazyce: Angličtina, zdroj: <a href="https://www.omgubuntu.co.uk/">OMG! Ubuntu!</a></p>
+            <p>Video je k dispozici v jazyce: Angličtina, zdroj: <a href="https://www.omgubuntu.co.uk/" target="_blank">OMG! Ubuntu!</a></p>
           </div>
         </li>
       </ul>
@@ -117,6 +117,45 @@ layout: default
     </div>
   </div>
 </section>
+
+<section class="padded center grey">
+  <div class="wrapper">
+    <article class="padded info">
+      <h2>Celý svět aplikací</h2>
+      <p>Ubuntu nabízí tisíce aplikací ke stažení. Většina je k dispozici zdarma a pro jejich instalaci stačí jen pár kliknutí.</p>
+      <h3>Internet a komunikace</h3>
+      <ul class="inline-icons highlightable">
+      	<li title="Firefox"><a href="https://snapcraft.io/firefox" target="_blank"><img src="{{ 'images/icons/firefox.svg' | relative_url }}" alt="Firefox">Mozilla Firefox</a></li>
+      	<li title="Google Chrome"><a href="https://wiki.ubuntu.cz/programy/internet/google_chrome" target="_blank"><img src="{{ 'images/icons/chrome.svg' | relative_url }}" alt="Google Chrome">Google Chrome</a></li>
+      	<li title="Opera"><a href="https://snapcraft.io/opera" target="_blank"><img src="{{ 'images/icons/opera.png' | relative_url }}" alt="Opera">Opera</a></li>
+      	<li title="Skype"><a href="https://snapcraft.io/skype" target="_blank"><img src="{{ 'images/icons/skype.png' | relative_url }}" alt="Skype">Skype</a></li>
+      	<li title="Slack"><a href="https://snapcraft.io/slack" target="_blank"><img src="{{ 'images/icons/slack.png' | relative_url }}" alt="Slack">Slack</a></li>
+      	<li title="Telegram Desktop"><a href="https://snapcraft.io/telegram-desktop" target="_blank"><img src="{{ 'images/icons/telegram.png' | relative_url }}" alt="Telegram">Telegram</a></li>
+      </ul>
+      <h3>Zábava</h3>
+      <ul class="inline-icons highlightable">
+      	<li title="Steam"><a href="https://wiki.ubuntu.cz/steam" target="_blank"><img src="{{ 'images/icons/steam.png' | relative_url }}" alt="Steam">Steam</a></li>
+      	<li title="VLC"><a href="https://snapcraft.io/vlc" target="_blank"><img src="{{ 'images/icons/vlc.png' | relative_url }}" alt="VLC media player">VLC media player</a></li>
+      	<li title="Spotify"><a href="https://snapcraft.io/spotify" target="_blank"><img src="{{ 'images/icons/spotify.png' | relative_url }}" alt="Spotify">Spotify</a></li>
+      	<li title="Netflix"><a href="https://www.netflix.com/cz/" target="_blank"><img src="{{ 'images/icons/netflix.png' | relative_url }}" alt="Netflix">Netflix</a></li>
+      </ul>
+      <h3>Produktivita</h3>
+      <ul class="inline-icons highlightable">
+      	<li title="Gimp"><a href="https://snapcraft.io/gimp" target="_blank"><img src="{{ 'images/icons/gimp.png' | relative_url }}" alt="Gimp">Gimp</a></li>
+      	<li title="Inkscape"><a href="https://snapcraft.io/inkscape" target="_blank"><img src="{{ 'images/icons/inkscape.png' | relative_url }}" alt="Inkscape">Inkscape</a></li>
+      	<li title="Android Studio"><a href="https://snapcraft.io/android-studio" target="_blank"><img src="{{ 'images/icons/android-studio.png' | relative_url }}" alt="Android Studio">Android Studio</a></li>
+      	<li title="VSCode"><a href="https://snapcraft.io/vscode" target="_blank"><img src="{{ 'images/icons/visual-studio-code.png' | relative_url }}" alt="Visual Studio Code">Visual Studio Code</a></li>
+      	<li title="Sublime Text"><a href="https://snapcraft.io/sublime-text" target="_blank"><img src="{{ 'images/icons/sublime-text.png' | relative_url }}" alt="Sublime Text">Sublime Text</a></li>
+      	<li title="IntelliJ IDEA Community"><a href="https://snapcraft.io/intellij-idea-community" target="_blank"><img src="{{ 'images/icons/idea-community.png' | relative_url }}" alt="IDEA Community">IDEA Community</a></li>
+      </ul>
+      <ul class="inline-icons">
+      	<li title="LibreOffice"><a href="https://snapcraft.io/libreoffice" target="_blank"><img src="{{ 'images/icons/libreoffice.png' | relative_url }}" alt="LibreOffice"></a></li>
+      </ul>
+      <a class="button green" href="https://snapcraft.io/store" target="_blank">Další aplikace naleznete v obchodě s balíčky Snap</a>
+    </article>
+  </div>
+</section>
+
 <section class="padded anchor">
   <div class="wrapper">
     <div class="row-boxes white">
@@ -193,14 +232,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="padded center">
-  <div class="wrapper">
-    <article class="padded info">
-      <h2>Vaše oblíbené aplikace a služby k dispozici</h2>
-      {% include apps-games-overview.html %}
-    </article>
-  </div>
-</section>
+
 <section class="higher-padded blue vertical-center">
   <div class="wrapper">
     <article class="padded">

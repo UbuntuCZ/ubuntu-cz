@@ -17,21 +17,13 @@ layout: default
     <div class="wrapper">
       <div class="intro higher">
         <h1>Vlastnosti Ubuntu</h1>
-        <p>Ubuntu samo o sobě nabízí velmi robustní a uživatelsky přívětivou základnu pro jakoukoliv vaši práci. Má také širokou podporu vývojářů nejrůznějšího softwaru. Naleznete zde několik různých kancelářských balíků, grafických a multimediálních nástrojů, velké množství her i nespočet nástrojů pro pokročilé uživatele.</p>
+        <p>Ubuntu nabízí uživatelsky velmi přívětivou základnu pro jakoukoliv vaši práci. Má širokou podporu vývojářů nejrůznějšího softwaru. Naleznete v něm předinstalovaný kancelářský balík, grafické i multimediální nástroje a nainstalovat můžete velké množství her nebo nástrojů pro pokročilé uživatele.</p>
         <a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}" class="button">Stáhnout Ubuntu</a>
       </div>
     </div>
   </div>
 </section>
-<section class="padded center grey">
-  <div class="wrapper">
-    <article class="padded info">
-      <h2>Celý svět aplikací</h2>
-      <p>Ubuntu nabízí tisíce aplikací ke stažení. Většina je k dispozici zdarma a pro jejich instalaci stačí jen pár kliknutí.</p>
-      {% include apps-games-overview-rich.html %}
-    </article>
-  </div>
-</section>
+
 <section class="padded">
   <div class="wrapper">
     <div class="row-boxes vertical-center two">
@@ -39,7 +31,7 @@ layout: default
         <li>
           <div class="box">
             <h2>Kancelářský software</h2>
-            <p>Typickým zástupcem v této kategorii, který se nachází také ve výchozích instalacích Ubuntu, je nástroj LibreOffice, kompatibilní s dokumenty Microsoft Office. Můžete tak vytvářet a otevírat dokumenty Microsoft Word, Excel či PowerPoint a dále je sdílet s ostatními. Kromě toho existují i další alternativní kancelářské balíky, jako jsou například <a href="https://www.wps.com/linux" class="text">WPS Office</a> nebo <a href="https://snapcraft.io/onlyoffice-desktopeditors" class="text">OnlyOffice</a>. Dále je možné využívat i nespočet online nástrojů, včetně oblíbených Google Dokumentů.</p>
+            <p>Typickým zástupcem v této kategorii, který se nachází také ve výchozích instalacích Ubuntu, je nástroj LibreOffice, kompatibilní s dokumenty Microsoft Office. Můžete tak vytvářet a otevírat dokumenty Microsoft Word, Excel či PowerPoint a dále je sdílet s ostatními. Kromě toho existují i další alternativní kancelářské balíky, jako jsou například WPS Office nebo OnlyOffice. Dále je možné využívat i nespočet online nástrojů, včetně oblíbených Google Dokumentů.</p>
           </div>
         </li>
         <li>
@@ -102,13 +94,19 @@ layout: default
         <div class="row-boxes vertical-center two">
           <ul>
             <li>
-              <div class="box semi-transparent">
-                <h2>Fotografie</h2>
-                <p>Pro Ubuntu je k dispozici nespočet zdarma dostupných aplikací, které vám pomohou spravovat, upravovat, sdílet či si jen procházet vaše fotografie. Se skvělou podporou kamer a mobilních telefonů nebudete potřebovat žádné dodatečné ovladače k jejich zprovoznění s Ubuntu - jednoduše vaše zařízení připojte a bez čekání přistupujte k jeho obsahu.</p>
+              <div class="box">
+                <ul class="inline-icons highlightable" style="margin: 8em auto;">
+                  <li title="Gimp"><a href="https://snapcraft.io/gimp" target="_blank"><img src="{{ 'images/icons/gimp.png' | relative_url }}" alt="Gimp"></a></li>
+                  <li title="Inkscape"><a href="https://snapcraft.io/inkscape" target="_blank"><img src="{{ 'images/icons/inkscape.png' | relative_url }}" alt="Inkscape"></a></li>
+                  <li title="Blender"><a href="https://snapcraft.io/blender" target="_blank"><img src="{{ 'images/icons/blender.png' | relative_url }}" alt="Blender"></a></li>
+                </ul>
               </div>
             </li>
             <li>
-              <div class="box" style="height: 400px;"></div>
+              <div class="box semi-transparent">
+                <h2>Fotografie</h2>
+                <p>S předinstalovanou aplikací Shotwell můžete rychle a jednoduše importovat, organizovat, upravovat i sdílet, nebo jen prohlížet všechny své fotografie. S aplikacemi jako Gimp nebo Inkscape zase vytváříte profesionální návrhy a ilustrace. A díky skvělé podpoře kamer a mobilních telefonů nebudete potřebovat žádné dodatečné ovadače.</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -116,33 +114,7 @@ layout: default
     </div>
   </div>
 </section>
-<section class="padded">
-  <div class="wrapper">
-    <div class="row-boxes two">
-      <ul>
-        <li>
-          <div class="box">
-            <h2>Organizujte vaše fotografie</h2>
-            <p>S předinstalovanou aplikací Shotwell můžete rychle a jednoduše importovat, organizovat, upravovat a prohlížet vaše fotografie. Snímky můžete také sdílet nejen s rodinou, kamarády a známými, ale také přímo na oblíbených stránkách a sociálních sítích.</p>
-            <img src="{{ 'images/screenshots/shotwell.jpg' | relative_url }}" alt="screehshot" class="responsive">
-          </div>
-        </li>
-        <li>
-          <div class="box">
-            <h2>Upravujte a tvořte</h2>
-            <p>Upravujte fotografie nebo vytvářejte profesionální návrhy a ilustrace s velmi oblíbenými nástroji jako jsou Gimp nebo Inkscape, dostupnými zdarma přímo v obchodě Ubuntu.</p>
-            <ul class="inline-icons highlightable">
-              <li title="Gimp"><a href="https://snapcraft.io/gimp"><img src="{{ 'images/icons/gimp.png' | relative_url }}" alt="Gimp"></a></li>
-              <li title="Inkscape"><a href="https://snapcraft.io/inkscape"><img src="{{ 'images/icons/inkscape.png' | relative_url }}" alt="Inkscape"></a></li>
-              <li title="Blender"><a href="https://www.blender.org/"><img src="{{ 'images/icons/blender.png' | relative_url }}" alt="Blender"></a></li>
-              <li title="Lightworks"><a href="https://www.lwks.com/"><img src="{{ 'images/icons/lightworks.png' | relative_url }}" alt="Lightworks"></a></li>
-            </ul>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
+
 <section class="padded grey">
   <div class="wrapper">
     <div class="row-boxes vertical-center two">
@@ -184,7 +156,69 @@ layout: default
     </div>
   </div>
 </section>
-<section class="padded grey">
+
+<section class="padded center grey">
+	<div class="wrapper">
+    <div class="padded">
+      <h2>Herní katalogy podporující Ubuntu</h2>
+      <p>Pro maximální výkon nezapomeňte nainstalovat a pravidelně aktualizovat ovladač grafické karty. Dostupnost dodatečných ovladačů pro vaši konkrétní počítačovou sestavu vám umožní ověřit nástroj "Software &amp; Aktualizace", kterou naleznete v hlavním menu Dash.</p>
+    </div>
+    <div class="row-boxes white">
+      <ul>
+        <li>
+          <a href="https://store.steampowered.com/" target="_blank" class="box">
+            <img src="{{ 'images/icons/steam.png' | relative_url }}" alt="Steam" class="responsive icon medium right">
+            <h2>Steam</h2>
+            <p>Prohlédnout obchod Steam</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.humblebundle.com/store" target="_blank" class="box">
+            <h2><img src="{{ 'images/icons/humblebundle.png' | relative_url }}" alt="HubmleBundle" class="responsive large"></h2>
+            <p>Prohlédnout obchod HumbleBundle</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.gog.com/" target="_blank" class="box">
+            <h2><img src="{{ 'images/icons/gog.png' | relative_url }}" alt="GOG.com" class="responsive large"></h2>
+            <p>Prohlédnout obchod GOG</p>
+          </a>
+        </li>
+        <li>
+          <a href="https://snapcraft.io/store" target="_blank" class="box">
+            <h2><img src="{{ 'images/icons/snapcraft.svg' | relative_url }}" alt="Obchod Ubuntu" class="responsive large" style="width: 100%"></h2>
+            <p>Množství aplikací a her lze zdarma nainstalovat nebo zakoupit přímo v obchodě Ubuntu.</p>
+          </a>
+        </li>
+        <li>
+          <div class="box">
+            <h2>Výběr obchodů konkrétních vývojářů</h2>
+            <p><a href="https://www.feralinteractive.com/en/linux-games/" target="_blank" class="text">Feral Interactive</a><br>
+            <a href="https://www.paradoxplaza.com/" target="_blank" class="text">Paradox Interactive</a></p>
+          </div>
+        </li>
+        <li>
+          <a href="https://itch.io/" target="_blank" class="box">
+            <h2><img src="{{ 'images/icons/itch-io.png' | relative_url }}" alt="itch.io" class="responsive large"></h2>
+            <p>Prohlédnout obchod itch.io</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="padded">
+			<ul class="inline-icons">
+				<li title="Cities Skylines"><img src="{{ 'images/icons/games/citiesskylines.png' | relative_url }}" alt="Cities Skylines" class="responsive"></li>
+				<li title="CounterStrike"><img src="{{ 'images/icons/games/counterstrike.png' | relative_url }}" alt="CounterStrike" class="responsive"></li>
+				<li title="Dota 2"><img src="{{ 'images/icons/games/dota2.png' | relative_url }}" alt="Dota 2" class="responsive"></li>
+				<li title="GRID Autosport"><img src="{{ 'images/icons/games/gridautosport.png' | relative_url }}" alt="GRID Autosport" class="responsive"></li>
+				<li title="XCOOM2"><img src="{{ 'images/icons/games/xcoom2.png' | relative_url }}" alt="XCOOM2" class="responsive"></li>
+			</ul>
+			<p>... a stovky dalších her</p>
+		</div>
+	</div>
+</section>
+
+<section class="padded">
   <div class="wrapper">
     <div class="row-boxes two">
       <ul>
@@ -204,7 +238,8 @@ layout: default
     </div>
   </div>
 </section>
-<section class="padded">
+
+<section class="padded grey">
   <div class="wrapper">
     <div class="row-boxes three">
       <ul>
@@ -212,15 +247,14 @@ layout: default
           <div class="box">
             <h3>Začněte ještě dnes</h3>
             <p>Stáhněte si Ubuntu pro váš osobní počítač a začněte ho používat ještě dnes, ať již chcete nahradit váš stávající operační systém nebo provozovat Ubuntu vedle něj.</p>
-            <a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}" class="text">Získat Ubuntu</a>
+            <a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}" class="button">Získat Ubuntu</a>
           </div>
         </li>
         <li>
           <div class="box">
             <h3>Profesionální podpora</h3>
-            <p>Získejte profesionální podporu od Canonicalu. Ta vám zajistí plynulý provoz vašich zařízení s Ubuntu - ať již se jedná o desktop, server či cloud.</p>
-            <p><a href="https://buy.ubuntu.com/" class="button">Kupte si Ubuntu Advantage</a></p>
-            <a href="https://www.ubuntu.com/support" class="text">Zjistěte více</a>
+            <p>Získejte profesionální podporu od Canonicalu. Ta vám zajistí plynulý provoz vašich zařízení s Ubuntu - ať již se jedná o počítač, server či cloud.</p>
+            <a href="https://www.ubuntu.com/support" target="_blank" class="text">Kupte si Ubuntu Advantage</a>
           </div>
         </li>
         <li>

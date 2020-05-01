@@ -16,47 +16,29 @@ layout: default
 			<div class="intro transparent text-white">
 				<h1>Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %} LTS{% endif %}</h1>
 				<p>Nové Ubuntu je tady a přináší vylepšené uživatelské rozhraní GNOME 3.36 s množstvím nových funkcí a možností přizpůsobení. <a href="{% link _pages/desktop/index.html %}" class="text">Zjistěte o Ubuntu více</a></p>
-				<a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}#{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %}lts{% else %}standard{% endif %}" class="button">Stáhnout Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %} LTS{% endif %}</a>
+				<a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}#{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %}lts{% else %}standard{% endif %}" class="button">Stáhnout Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %} LTS{% endif %} pro počítač</a>
 			</div>
 		</div>
 	</div>
 </section>
-
-<!--
-<section class="hero">
-	<div class="img-container">
-		<div class="bg-container top natural right" style="background-image: url('{{ 'images/linux-birthday.jpg' | relative_url }}');"></div>
-		<div class="wrapper">
-			<div class="intro center transparent text-white">
-				<h1>27 let Linuxu</h1>
-				<p>Všechno nejlepší nejrozšířejěnšímu operačnímu systému, bez kterého by se dnešní svět IT již dávno neobešel.</p>
-				<a href="https://www.linuxfoundation.org/"><img src="{{ 'images/partners/linux-foundation.png' | relative_url }}" alt="The Linux Foundation" style="margin: 30px auto; width: auto; max-width: 200px;"></a>
-			</div>
-		</div>
-	</div>
-</section>
--->
 
 {% include rss_feed.html id='rss-feed-root-cz-ubuntu' rss=site.data.rss_feeds.rootcz-ubuntu limit=4 %}
 
 <section class="center higher-padded beige">
 	<div class="wrapper">
 		<article class="padded">
-			<h2>Ubuntu je&nbsp;otevřená softwarová platforma, která běží na&nbsp;mnoha zařízeních od&nbsp;cloudu, přes osobní počítače <!--a&nbsp;chytré telefony -->až&nbsp;po&nbsp;malá zařízení spadající do&nbsp;kategorie Internet of Things&nbsp;(IoT)</h2>
+      <h2>Ubuntu je otevřená softwarová platforma pro laptopy, osobní počítače, servery, cloud i malá zařízení internetu věcí (IoT).</h2>
 			<ul class="inline-icons stretched padded">
-				<li><img src="{{ 'images/form-factors/icon-cloud.svg' | relative_url }}" alt="cloud" title="Cloud" class="dark">Cloud</li>
+        <li><img src="{{ 'images/form-factors/icon-laptop.svg' | relative_url }}" alt="laptop" title="Počítač" class="dark">Počítač</li>
 				<li><img src="{{ 'images/form-factors/icon-server.svg' | relative_url }}" alt="server" title="Server" class="dark">Server</li>
 				<li><img src="{{ 'images/form-factors/icon-containers.svg' | relative_url }}" alt="kontejnery" title="Kontejnery" class="dark">Kontejnery</li>
-				<li><img src="{{ 'images/form-factors/icon-laptop.svg' | relative_url }}" alt="desktop" title="Desktop" class="dark">Desktop</li>
-				<!--
-				<li><img src="{{ 'images/form-factors/icon-intro-phone.svg' | relative_url }}" alt="telefon" title="Telefon" class="dark">Telefony</li>
-				<li><img src="{{ 'images/form-factors/icon-intro-tablet.svg' | relative_url }}" alt="tablet" title="Tablet" class="dark">Tablety</li>
-				-->
+        <li><img src="{{ 'images/form-factors/icon-cloud.svg' | relative_url }}" alt="cloud" title="Cloud" class="dark">Cloud</li>
 				<li><img src="{{ 'images/form-factors/icon-iot.svg' | relative_url }}" alt="internet věcí" title="Internet věcí" class="dark">Internet věcí</li>
 			</ul>
 		</article>
 	</div>
 </section>
+
 <section class="grey">
 	<div class="wrapper">
 		<div class="user-switchable">
@@ -64,7 +46,7 @@ layout: default
 				<li class="desktop">
 					<a href="{% link _pages/desktop/index.html %}">
 						<div class="content">
-							<span>Ubuntu Desktop</span>
+							<span>Ubuntu pro počítač</span>
 						</div>
 					</a>
 				</li><li class="server">
@@ -76,7 +58,7 @@ layout: default
 				</li><li class="phone">
 					<a href="{% link _pages/telefony-a-tablety/index.html %}">
 						<div class="content">
-							<span>Ubuntu Telefony a Tablety</span>
+							<span>Telefony a tablety</span>
 						</div>
 					</a>
 				</li><li class="about">
@@ -90,31 +72,44 @@ layout: default
 		</div>
 	</div>
 </section>
-<section class="padded bordered">
-	<div class="wrapper">
-		<article class="padded border-bottom">
-			<h3>Nezaplatíte ani korunu</h3>
-			<p>Za instalaci ani aktualizace operačního systému Ubuntu nezaplatíte ani korunu. To ale neznamená, že by byl software nepoužitelný či nekvalitní. Model OpenSource funguje jinak, než jak jste zvyklí z ekosystémů Windows a macOS. Peníze na vývoj a údržbu pocházejí především od větších a velkých firem, které si ale také nekupují samotný software, ale platí za podporu, kterou jim společnost <strong>Canonical</strong>, vyvíjející Ubuntu, poskytuje.</p>
 
-			<h3>Ubuntu je a vždy bude zdarma</h3>
-			<p>Filozofií Ubuntu je poskytovat vyvíjený software zdarma s licencí otevřeného softwaru, který můžete nejen studovat, ale i modifikovat. Pro běžného uživatele je ovšem důležitější, že se může spolehnout na dvouletý cyklus vydání verzí Ubuntu s dlouhodobou podporou, označovaných <strong>LTS</strong> (long term support), <strong>s bezplatnými bezpečnostními aktualizacemi</strong>, v době trvající podpory aktuální verze Ubuntu, která činní 5 let, i <strong>bezplatnými systémovými aktualizacemi</strong> včetně přechodů na novější verze Ubuntu.</p>
-		</article>
+<section class="padded">
+	<div class="wrapper">
 		<article class="padded">
-			<h2>Vyvíjeno společností Canonical</h2>
+			<h3>Ubuntu je a vždy bude zdarma</h3>
+			<p>Filozofií Ubuntu je poskytovat software zdarma včetně zdrojového kódu, který můžete studovat i modifikovat. Pro běžného uživatele je ovšem důležitější, že se může spolehnout na dvouletý cyklus vydání verzí Ubuntu s dlouhodobou podporou, označovaných <strong>LTS</strong> (long term support), <strong>s bezplatnými bezpečnostními aktualizacemi</strong>, v době trvající podpory aktuální verze Ubuntu, která činní 5 let, i <strong>bezplatnými systémovými aktualizacemi</strong> včetně přechodů na novější verze Ubuntu.</p>
+      <p>Za instalaci ani aktualizace operačního systému Ubuntu <strong>nezaplatíte ani korunu</strong>. To ale neznamená, že by byl software nepoužitelný či nekvalitní. Model open source funguje jinak, než jak jste zvyklí z ekosystémů Windows a macOS. Peníze na vývoj a údržbu pocházejí především od velkých firem, které neplatí za software samotný, ale za podporu, kterou jim společnost <strong>Canonical</strong>, vyvíjející Ubuntu, poskytuje.</p>
+
+			<h3>Vyvíjeno společností Canonical</h3>
 			<p>Canonical Ltd. je společnost působící po celém světě s hlavním sídlem v Anglii. V březnu roku 2004 ji založil Mark Shuttleworth, který se stal kromě zakladatele firmy také druhým vesmírným turistou.</p>
 		</article>
 	</div>
 </section>
-{% include rss_feed.html classes='translate beige' id='rss-feed-ubuntublog' rss=site.data.rss_feeds.ubuntublog limit=4 %}
-{% include rss_feed.html classes='translate beige' id='rss-feed-omgubuntu' rss=site.data.rss_feeds.omgubuntu limit=4 %}
-<section class="padded center">
-	<div class="wrapper">
-		<article class="padded info">
-			<h2>Vaše oblíbené aplikace a služby k dispozici</h2>
-			{% include apps-games-overview.html %}
-		</article>
-	</div>
+
+<section class="padded center grey">
+  <div class="wrapper">
+    <article class="padded info">
+      <h2>Všechny saše oblíbené aplikace a služby</h2>
+      <ul class="inline-icons highlightable">
+        <li title="Firefox"><a href="https://snapcraft.io/firefox" target="_blank"><img src="{{ 'images/icons/firefox.svg' | relative_url }}" alt="Firefox">Mozilla Firefox</a></li>
+        <li title="Google Chrome"><a href="https://wiki.ubuntu.cz/programy/internet/google_chrome" target="_blank"><img src="{{ 'images/icons/chrome.svg' | relative_url }}" alt="Google Chrome">Google Chrome</a></li>
+        <li title="Skype"><a href="https://snapcraft.io/skype" target="_blank"><img src="{{ 'images/icons/skype.png' | relative_url }}" alt="Skype">Skype</a></li>
+        <li title="Slack"><a href="https://snapcraft.io/slack" target="_blank"><img src="{{ 'images/icons/slack.png' | relative_url }}" alt="Slack">Slack</a></li>
+        <li title="Steam"><a href="https://wiki.ubuntu.cz/steam" target="_blank"><img src="{{ 'images/icons/steam.png' | relative_url }}" alt="Steam">Steam</a></li>
+        <li title="VLC"><a href="https://snapcraft.io/vlc" target="_blank"><img src="{{ 'images/icons/vlc.png' | relative_url }}" alt="VLC media player">VLC media player</a></li>
+        <li title="Spotify"><a href="https://snapcraft.io/spotify" target="_blank"><img src="{{ 'images/icons/spotify.png' | relative_url }}" alt="Spotify">Spotify</a></li>
+        <li title="Netflix"><a href="https://www.netflix.com/cz/" target="_blank"><img src="{{ 'images/icons/netflix.png' | relative_url }}" alt="Netflix">Netflix</a></li>
+      </ul>
+      <ul class="inline-icons">
+        <li title="LibreOffice"><a href="https://snapcraft.io/libreoffice" target="_blank"><img src="{{ 'images/icons/libreoffice.png' | relative_url }}" alt="LibreOffice"></a></li>
+      </ul>
+      <a class="button" href="{% link _pages/desktop/vlastnosti.html %}">Více o dostupných aplikacích a funkcích</a>
+    </article>
+  </div>
 </section>
+
+{% include rss_feed.html classes='translate' id='rss-feed-ubuntublog' rss=site.data.rss_feeds.ubuntublog limit=4 %}
+{% include rss_feed.html classes='translate' id='rss-feed-omgubuntu' rss=site.data.rss_feeds.omgubuntu limit=4 %}
 
 <script src="{{ 'design/translator/yandex-translator.js' | relative_url }}"></script>
 <script>

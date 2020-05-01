@@ -13,9 +13,6 @@ pages:
       - url: /ziskat-ubuntu/stahnout-desktop/
       - url: /ziskat-ubuntu/stahnout-desktop/instalace/
       - url: /ziskat-ubuntu/stahnout-desktop/aktualizace/
-      - url: /desktop/odnoze-ubuntu/
-      - url: /server/
-      - url: /telefony-a-tablety/
   - url: /o-ubuntu/
     sub:
       - url: /o-ubuntu/
