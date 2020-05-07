@@ -8,7 +8,7 @@ Repositář pro web Ubuntu.cz. Autorem jeho vzhledu, obsahu a původní verze (j
 ## Úpravy obsahu
 
 ### Šablona
-Soubory tvořící základní HTML šablonu se nachází v adresářích `_includes` a `_layouts`, styly v adresáři `design`.
+Soubory tvořící základní HTML šablonu se nachází v adresářích `_includes` a `_layouts`. Jako základní styl se používá [Vanilla Framework](https://vanillaframework.io/) od Canonicalu, doplněný o specifické úpravy v adresáři `design`.
 
 ### Obsah
 Obsah všech stránek je v adresáři `_pages` a je psaný v HTML. Použité obrázky jsou nahrané v adresáři `images`.

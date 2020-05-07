@@ -1,0 +1,10 @@
+{% for p in site.pages %}
+  {% if include.item.external or p.url == include.item.url %}
+    <li class="p-navigation__item {% if include.item.url == include.parent.url %}p-navigation__banner p-navigation__logo{% elsif p.url == page.url %}p-navigation__item--current{% endif %}">
+      <a class="p-navigation__link {% if include.item.external %}p-link--external{% endif %}" href="{% if include.item.external %}{{ include.item.url }}{% else %}{{ site.baseurl }}{{ p.url }}{% endif %}">
+        {% if include.item.title %}{{ include.item.title }}{% else %}{{ p.title }}{% endif %}
+      </a>
+    </li>
+    {% break %}
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,10 @@
+<nav class="p-navigation__nav">
+  <span class="u-off-screen">
+    <a href="#main-content">Hlavní obsah</a>
+  </span>
+  <ul class="p-navigation__items" role="menu">
+    {% for item in site.data.navigation.pages %}
+      {% include navigation_item.html item=item %}
+    {% endfor %}
+  </ul>
+</nav>

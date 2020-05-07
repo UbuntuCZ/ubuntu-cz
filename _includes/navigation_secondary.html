@@ -1,0 +1,12 @@
+{% for item in site.data.navigation.pages %}
+  {% if page.url contains item.url and item.sub %}
+    <nav class="p-navigation__nav">
+      <ul class="p-navigation__items" role="menu">
+        {% for sub_item in item.sub %}
+          {% include navigation_secondary_item.html item=sub_item parent=item %}
+        {% endfor %}
+      </ul>
+    </nav>
+    {% break %}
+  {% endif %}
+{% endfor %}

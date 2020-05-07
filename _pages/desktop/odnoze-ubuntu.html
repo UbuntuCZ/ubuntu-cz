@@ -10,78 +10,87 @@ redirect_from:
   - /produkty/cojeubuntu/xubuntu
 layout: default
 ---
-<section class="hero">
-	<div class="img-container">
-		<div class="bg-container fixed-container bottom" style="background-image: url('{{ 'images/ubuntu-flavours-hero.jpg' | relative_url }}');"></div>
-		<div class="wrapper">
-			<div class="intro">
-				<h1>Odnože Ubuntu</h1>
-				<p>Odnože Ubuntu nabízejí unikátní způsob práce s Ubuntu, každá z nich se svou osobitou tváří a různými výchozími aplikacemi a nastaveními. Uživatelé těchto verzí mají přístup do plného archivu Ubuntu pro instalaci aplikací a aktualizace.</p>
-			</div>
-		</div>
-	</div>
+<section class="p-strip--image is-dark" style="background-image: url('{{ 'images/ubuntu-flavours-hero.jpg' | relative_url }}'); background-size: cover; background-position: top 40% center;">
+  <div class="row">
+    <div class="col-6 p-card--overlay">
+      <h1>Odnože Ubuntu</h1>
+      <p class="p-card__content">
+        Odnože Ubuntu nabízejí unikátní způsob práce s Ubuntu, každá z nich se svou osobitou tváří a různými výchozími aplikacemi a nastaveními. Uživatelé těchto verzí mají přístup do plného archivu Ubuntu pro instalaci aplikací a aktualizace.
+      </p>
+    </div>
+  </div>
 </section>
-<section class="padded">
-	<div class="wrapper">
-		<div class="row-boxes grey">
-			<ul>
-				<li>
-					<div class="box">
-						<img src="{{ 'images/flavours/kubuntu.svg' | relative_url }}" alt="kubuntu" class="responsive right">
-						<h3>Kubuntu</h3>
-						<p>Kubuntu nabízí pracovní plochu KDE Plasma a dobře vypadající systém pro domácí a kancelářské použití.</p>
-						<a href="https://www.kubuntu.org/" target="_blank" class="text">Stránky projektu</a>
-					</div>
-				</li>
-				<li>
-					<div class="box">
-						<img src="{{ 'images/flavours/lubuntu.svg' | relative_url }}" alt="lubuntu" class="responsive right">
-						<h3>Lubuntu</h3>
-						<p>Lubuntu je rychlá, energeticky šetrná a lehká varianta Ubuntu používající prostředí LXQt. Je oblíbenou odnoží pro uživatele se slabšími počítači a notebooky.</p>
-						<a href="https://lubuntu.me/" target="_blank" class="text">Stránky projektu</a>
-					</div>
-				</li>
-				<li>
-					<div class="box">
-						<img src="{{ 'images/flavours/budgie.png' | relative_url }}" alt="budgie" class="responsive right" width="58" height="58">
-						<h3>Ubuntu Budgie</h3>
-						<p>Remix Ubuntu s univerzálním na distribuci nezávislým prostředím, využívající moderní technologie GNOME.</p>
-						<a href="https://ubuntubudgie.org/" target="_blank" class="text">Stránky projektu</a>
-					</div>
-				</li>
-				<li>
-					<div class="box">
-						<img src="{{ 'images/flavours/ubuntu-kylin.svg' | relative_url }}" alt="ubuntu kylin" class="responsive right">
-						<h3>Ubuntu Kylin</h3>
-						<p>Projekt Kylin je vyladěn potřebám Čínských uživatelů, poskytující promyšlený a elegantní zážitek přímo od základu.</p>
-						<a href="https://www.ubuntukylin.com/index.php?lang=en" target="_blank" class="text">Stránky projektu</a>
-					</div>
-				</li>
-				<li>
-					<div class="box">
-						<img src="{{ 'images/flavours/mate.svg' | relative_url }}" alt="mate" class="responsive right">
-						<h3>Ubuntu MATE</h3>
-						<p>Ubuntu MATE dává na odiv jednoduchost klasického prostředí. MATE je stále vyvíjeným pokračovatelem prostředí GNOME 2, které používalo i standardní Ubuntu až do října 2010.</p>
-						<a href="https://ubuntu-mate.org/" target="_blank" class="text">Stránky projektu</a>
-					</div>
-				</li>
-        <li>
-					<div class="box">
-						<img src="{{ 'images/flavours/xubuntu.svg' | relative_url }}" alt="xubuntu" class="responsive right">
-						<h3>Xubuntu</h3>
-						<p>Xubuntu je elegantní a jednoduše použitelný operační systém. Je postaveno na prostředí Xfce, které je stabilním, lehkým a velmi dobře konfigurovatelným rozhraním.</p>
-						<a href="https://xubuntu.org/" target="_blank" class="text">Stránky projektu</a>
-					</div>
-				</li>
-				<li>
-					<div class="box">
-						<img src="{{ 'images/flavours/ubuntustudio.svg' | relative_url }}" alt="ubuntu studio" class="responsive right">
-						<h3>Ubuntu Studio</h3>
-						<p>Ubuntu Studio je odnož Ubuntu zaměřená na tvůrce multimediálního obsahu, vhodná pro audio, video a grafické nadšence a profesionály.</p>
-						<a href="https://ubuntustudio.org/" target="_blank" class="text">Stránky projektu</a>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
+
+<section class="p-strip is-shallow is-bordered">
+  <div class="row">
+    <div class="col-12">
+      <ul class="p-matrix is-trisected">
+        <li class="p-matrix__item">
+          <img class="p-matrix__img" src="{{ 'images/flavours/kubuntu.svg' | relative_url }}" alt="kubuntu">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title"><a href="https://www.kubuntu.org/" class="p-link--external" target="_blank">Kubuntu</a></h3>
+            <p class="p-matrix__desc">
+              Kubuntu nabízí pracovní plochu KDE Plasma a dobře vypadající systém pro domácí a kancelářské použití.
+            </p>
+          </div>
+        </li>
+        <li class="p-matrix__item">
+          <img class="p-matrix__img" src="{{ 'images/flavours/lubuntu.svg' | relative_url }}" alt="lubuntu">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title"><a href="https://lubuntu.me/" class="p-link--external" target="_blank">Lubuntu</a></h3>
+            <p class="p-matrix__desc">
+              Lubuntu je rychlá, energeticky šetrná a lehká varianta Ubuntu používající prostředí LXQt. Je oblíbenou odnoží pro uživatele se slabšími počítači a notebooky.
+            </p>
+          </div>
+        </li>
+        <li class="p-matrix__item">
+          <img class="p-matrix__img" src="{{ 'images/flavours/budgie.png' | relative_url }}" alt="budgie">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title"><a href="https://ubuntubudgie.org/" class="p-link--external" target="_blank">Ubuntu Budgie</a></h3>
+            <p class="p-matrix__desc">
+              Remix Ubuntu s univerzálním na distribuci nezávislým prostředím, využívající moderní technologie GNOME.
+            </p>
+          </div>
+        </li>
+        <li class="p-matrix__item">
+          <img class="p-matrix__img" src="{{ 'images/flavours/ubuntu-kylin.svg' | relative_url }}" alt="ubuntu kylin">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title"><a href="https://www.ubuntukylin.com/index.php?lang=en" class="p-link--external" target="_blank">Ubuntu Kylin</a></h3>
+            <p class="p-matrix__desc">
+              Projekt Kylin je vyladěn potřebám Čínských uživatelů, poskytující promyšlený a elegantní zážitek přímo od základu.
+            </p>
+          </div>
+        </li>
+        <li class="p-matrix__item">
+          <img class="p-matrix__img" src="{{ 'images/flavours/mate.svg' | relative_url }}" alt="mate">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title"><a href="https://ubuntu-mate.org/" class="p-link--external" target="_blank">Ubuntu MATE</a></h3>
+            <p class="p-matrix__desc">
+              Ubuntu MATE dává na odiv jednoduchost klasického prostředí. MATE je stále vyvíjeným pokračovatelem prostředí GNOME 2, které používalo i standardní Ubuntu až do října 2010.
+            </p>
+          </div>
+        </li>
+        <li class="p-matrix__item">
+          <img class="p-matrix__img" src="{{ 'images/flavours/xubuntu.svg' | relative_url }}" alt="xubuntu">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title"><a href="https://xubuntu.org/" class="p-link--external" target="_blank">Xubuntu</a></h3>
+            <p class="p-matrix__desc">
+              Xubuntu je elegantní a jednoduše použitelný operační systém. Je postaveno na prostředí Xfce, které je stabilním, lehkým a velmi dobře konfigurovatelným rozhraním.
+            </p>
+          </div>
+        </li>
+        <li class="p-matrix__item">
+          <img class="p-matrix__img" src="{{ 'images/flavours/ubuntustudio.svg' | relative_url }}" alt="ubuntu studio">
+          <div class="p-matrix__content">
+            <h3 class="p-matrix__title"><a href="https://ubuntustudio.org/" class="p-link--external" target="_blank">Ubuntu Studio</a></h3>
+            <p class="p-matrix__desc">
+              Ubuntu Studio je odnož Ubuntu zaměřená na tvůrce multimediálního obsahu, vhodná pro audio, video a grafické nadšence a profesionály.
+            </p>
+          </div>
+        </li>
+        <li class="p-matrix__item u-hide--small"></li>
+        <li class="p-matrix__item u-hide--small"></li>
+      </ul>
+    </div>
+  </div>
 </section>

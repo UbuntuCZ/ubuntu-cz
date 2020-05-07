@@ -9,135 +9,213 @@ redirect_from:
   - /produkty/cojeubuntu
 layout: default
 ---
-<section class="hero">
-	<div class="img-container">
-		<div class="bg-container fixed-container top" style="background-image: url('{{ 'images/wallpaper-20.04.jpg' | relative_url }}');"></div>
-		<div class="wrapper">
-			<div class="intro transparent text-white">
-				<h1>Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %} LTS{% endif %}</h1>
-				<p>Nové Ubuntu je tady a přináší vylepšené uživatelské rozhraní GNOME 3.36 s množstvím nových funkcí a možností přizpůsobení. <a href="{% link _pages/desktop/index.html %}" class="text">Zjistěte o Ubuntu více</a></p>
-				<a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}#{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %}lts{% else %}standard{% endif %}" class="button">Stáhnout Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %} LTS{% endif %} pro počítač</a>
-			</div>
-		</div>
-	</div>
-</section>
-
-{% include rss_feed.html id='rss-feed-root-cz-ubuntu' rss=site.data.rss_feeds.rootcz-ubuntu limit=4 %}
-
-<section class="center higher-padded beige">
-	<div class="wrapper">
-		<article class="padded">
-      <h2>Ubuntu je otevřená softwarová platforma pro laptopy, osobní počítače, servery, cloud i malá zařízení internetu věcí (IoT).</h2>
-			<ul class="inline-icons stretched padded">
-        <li><img src="{{ 'images/form-factors/icon-laptop.svg' | relative_url }}" alt="laptop" title="Počítač" class="dark">Počítač</li>
-				<li><img src="{{ 'images/form-factors/icon-server.svg' | relative_url }}" alt="server" title="Server" class="dark">Server</li>
-				<li><img src="{{ 'images/form-factors/icon-containers.svg' | relative_url }}" alt="kontejnery" title="Kontejnery" class="dark">Kontejnery</li>
-        <li><img src="{{ 'images/form-factors/icon-cloud.svg' | relative_url }}" alt="cloud" title="Cloud" class="dark">Cloud</li>
-				<li><img src="{{ 'images/form-factors/icon-iot.svg' | relative_url }}" alt="internet věcí" title="Internet věcí" class="dark">Internet věcí</li>
-			</ul>
-		</article>
-	</div>
-</section>
-
-<section class="grey">
-	<div class="wrapper">
-		<div class="user-switchable">
-			<ul>
-				<li class="desktop">
-					<a href="{% link _pages/desktop/index.html %}">
-						<div class="content">
-							<span>Ubuntu pro počítač</span>
-						</div>
-					</a>
-				</li><li class="server">
-					<a href="{% link _pages/server.html %}">
-						<div class="content">
-							<span>Ubuntu Cloud a Server</span>
-						</div>
-					</a>
-				</li><li class="phone">
-					<a href="{% link _pages/telefony-a-tablety/index.html %}">
-						<div class="content">
-							<span>Telefony a tablety</span>
-						</div>
-					</a>
-				</li><li class="about">
-					<a href="{% link _pages/o-ubuntu/index.html %}">
-						<div class="content">
-							<span>O Ubuntu</span>
-						</div>
-					</a>
-				</li>
-			</ul>
-		</div>
-	</div>
-</section>
-
-<section class="padded">
-	<div class="wrapper">
-		<article class="padded">
-			<h3>Ubuntu je a vždy bude zdarma</h3>
-			<p>Filozofií Ubuntu je poskytovat software zdarma včetně zdrojového kódu, který můžete studovat i modifikovat. Pro běžného uživatele je ovšem důležitější, že se může spolehnout na dvouletý cyklus vydání verzí Ubuntu s dlouhodobou podporou, označovaných <strong>LTS</strong> (long term support), <strong>s bezplatnými bezpečnostními aktualizacemi</strong>, v době trvající podpory aktuální verze Ubuntu, která činní 5 let, i <strong>bezplatnými systémovými aktualizacemi</strong> včetně přechodů na novější verze Ubuntu.</p>
-      <p>Za instalaci ani aktualizace operačního systému Ubuntu <strong>nezaplatíte ani korunu</strong>. To ale neznamená, že by byl software nepoužitelný či nekvalitní. Model open source funguje jinak, než jak jste zvyklí z ekosystémů Windows a macOS. Peníze na vývoj a údržbu pocházejí především od velkých firem, které neplatí za software samotný, ale za podporu, kterou jim společnost <strong>Canonical</strong>, vyvíjející Ubuntu, poskytuje.</p>
-
-			<h3>Vyvíjeno společností Canonical</h3>
-			<p>Canonical Ltd. je společnost působící po celém světě s hlavním sídlem v Anglii. V březnu roku 2004 ji založil Mark Shuttleworth, který se stal kromě zakladatele firmy také druhým vesmírným turistou.</p>
-		</article>
-	</div>
-</section>
-
-<section class="padded center grey">
-  <div class="wrapper">
-    <article class="padded info">
-      <h2>Všechny saše oblíbené aplikace a služby</h2>
-      <ul class="inline-icons highlightable">
-        <li title="Firefox"><a href="https://snapcraft.io/firefox" target="_blank"><img src="{{ 'images/icons/firefox.svg' | relative_url }}" alt="Firefox">Mozilla Firefox</a></li>
-        <li title="Google Chrome"><a href="https://wiki.ubuntu.cz/programy/internet/google_chrome" target="_blank"><img src="{{ 'images/icons/chrome.svg' | relative_url }}" alt="Google Chrome">Google Chrome</a></li>
-        <li title="Skype"><a href="https://snapcraft.io/skype" target="_blank"><img src="{{ 'images/icons/skype.png' | relative_url }}" alt="Skype">Skype</a></li>
-        <li title="Slack"><a href="https://snapcraft.io/slack" target="_blank"><img src="{{ 'images/icons/slack.png' | relative_url }}" alt="Slack">Slack</a></li>
-        <li title="Steam"><a href="https://wiki.ubuntu.cz/steam" target="_blank"><img src="{{ 'images/icons/steam.png' | relative_url }}" alt="Steam">Steam</a></li>
-        <li title="VLC"><a href="https://snapcraft.io/vlc" target="_blank"><img src="{{ 'images/icons/vlc.png' | relative_url }}" alt="VLC media player">VLC media player</a></li>
-        <li title="Spotify"><a href="https://snapcraft.io/spotify" target="_blank"><img src="{{ 'images/icons/spotify.png' | relative_url }}" alt="Spotify">Spotify</a></li>
-        <li title="Netflix"><a href="https://www.netflix.com/cz/" target="_blank"><img src="{{ 'images/icons/netflix.png' | relative_url }}" alt="Netflix">Netflix</a></li>
-      </ul>
-      <ul class="inline-icons">
-        <li title="LibreOffice"><a href="https://snapcraft.io/libreoffice" target="_blank"><img src="{{ 'images/icons/libreoffice.png' | relative_url }}" alt="LibreOffice"></a></li>
-      </ul>
-      <a class="button" href="{% link _pages/desktop/vlastnosti.html %}">Více o dostupných aplikacích a funkcích</a>
-    </article>
+<section class="p-strip--image is-dark" style="background-image: url('{{ 'images/wallpaper-20.04.jpg' | relative_url }}'); background-size: cover; background-position: top 15% center;">
+  <div class="row">
+    <div class="col-6">
+      <h1>Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %} LTS{% endif %}</h1>
+      <p>
+        Nové Ubuntu je tady a přináší vylepšené uživatelské rozhraní GNOME 3.36 s množstvím nových funkcí a možností přizpůsobení.
+      </p>
+      <p>
+        <a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}#{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %}lts{% else %}standard{% endif %}" class="p-button--positive">Stáhnout Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %} LTS{% endif %} pro počítač</a>
+      </p>
+      <p>
+        <a href="{% link _pages/desktop/index.html %}">Zjistěte o Ubuntu více</a>
+      </p>
+    </div>
   </div>
 </section>
 
-{% include rss_feed.html classes='translate' id='rss-feed-ubuntublog' rss=site.data.rss_feeds.ubuntublog limit=4 %}
-{% include rss_feed.html classes='translate' id='rss-feed-omgubuntu' rss=site.data.rss_feeds.omgubuntu limit=4 %}
+{% include rss_feed.html classes='p-strip is-shallow' rss=site.data.rss_feeds.rootcz-ubuntu %}
 
-<script src="{{ 'design/translator/yandex-translator.js' | relative_url }}"></script>
+<section class="p-strip--light">
+  <div class="row u-equal-height u-vertically-center u-align--center">
+    <div class="col-12">
+      <h2>Ubuntu je otevřená softwarová platforma pro laptopy, osobní počítače, servery, cloud i malá zařízení internetu věcí (IoT).</h2>
+      <ul class="p-inline-images">
+        <li class="p-inline-images__item">
+          <img src="{{ 'images/form-factors/icon-laptop.svg' | relative_url }}" alt="laptop" title="Počítač">
+          <br>
+          Počítač
+        </li>
+        <li class="p-inline-images__item">
+          <img src="{{ 'images/form-factors/icon-server.svg' | relative_url }}" alt="server" title="Server">
+          <br>
+          Server
+        </li>
+        <li class="p-inline-images__item">
+          <img src="{{ 'images/form-factors/icon-containers.svg' | relative_url }}" alt="kontejnery" title="Kontejnery">
+          <br>
+          Kontejnery
+        </li>
+        <li class="p-inline-images__item">
+          <img src="{{ 'images/form-factors/icon-cloud.svg' | relative_url }}" alt="cloud" title="Cloud">
+          <br>
+          Cloud
+        </li>
+        <li class="p-inline-images__item">
+          <img src="{{ 'images/form-factors/icon-iot.svg' | relative_url }}" alt="internet věcí" title="Internet věcí">
+          <br>
+          Internet věcí
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="p-strip--dark is-shallow">
+  <div class="row u-equal-height u-vertically-center">
+    <a href="{% link _pages/desktop/index.html %}" class="col-6">
+      <div style="height: 18em; background-image: url('{{ 'images/tiles/desktop-tile.jpg' | relative_url }}'); background-size: cover; background-position: center center;">
+        <div class="p-card--overlay">
+          <h3 class="p-heading--four">Ubuntu pro počítač</h3>
+        </div>
+      </div>
+    </a>
+    <a href="{% link _pages/server.html %}" class="col-6">
+      <div style="height: 18em; background-image: url('{{ 'images/tiles/server-tile.jpg' | relative_url }}'); background-size: cover; background-position: center center;">
+        <div class="p-card--overlay">
+          <h3 class="p-heading--four">Ubuntu Cloud a Server</h3>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="row u-equal-height u-vertically-center">
+    <a href="{% link _pages/telefony-a-tablety/index.html %}" class="col-6">
+      <div style="height: 18em; background-image: url('{{ 'images/tiles/phone-tile.jpg' | relative_url }}'); background-size: cover; background-position: center center;">
+        <div class="p-card--overlay">
+          <h3 class="p-heading--four">Telefony a tablety</h3>
+        </div>
+      </div>
+    </a>
+    <a href="{% link _pages/o-ubuntu/index.html %}" class="col-6">
+      <div style="height: 18em; background-image: url('{{ 'images/tiles/about-tile.jpg' | relative_url }}'); background-size: cover; background-position: center center;">
+        <div class="p-card--overlay">
+          <h3 class="p-heading--four">O Ubuntu</h3>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="p-strip">
+  <div class="row">
+    <div class="col-12">
+      <h3 class="p-heading--four">Ubuntu je a vždy bude zdarma</h3>
+      <p>
+        Filozofií Ubuntu je poskytovat software zdarma včetně zdrojového kódu, který můžete studovat i modifikovat. Pro běžného uživatele je ovšem důležitější, že se může spolehnout na dvouletý cyklus vydání verzí Ubuntu s dlouhodobou podporou, označovaných <strong>LTS</strong> (long term support), <strong>s bezplatnými bezpečnostními aktualizacemi</strong>, v době trvající podpory aktuální verze Ubuntu, která činní 5 let, i <strong>bezplatnými systémovými aktualizacemi</strong> včetně přechodů na novější verze Ubuntu.
+      </p>
+      <p>
+        Za instalaci ani aktualizace operačního systému Ubuntu <strong>nezaplatíte ani korunu</strong>. To ale neznamená, že by byl software nepoužitelný či nekvalitní. Model open source funguje jinak, než jak jste zvyklí z ekosystémů Windows a macOS. Peníze na vývoj a údržbu pocházejí především od velkých firem, které neplatí za software samotný, ale za podporu, kterou jim společnost <strong>Canonical</strong>, vyvíjející Ubuntu, poskytuje.
+      </p>
+
+      <h3 class="p-heading--four">Vyvíjeno společností Canonical</h3>
+      <p>
+        Canonical Ltd. je společnost působící po celém světě s hlavním sídlem v Anglii. V březnu roku 2004 ji založil Mark Shuttleworth, který se stal kromě zakladatele firmy také druhým vesmírným turistou.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="p-strip--light">
+  <div class="row">
+    <div class="col-12 u-align--center">
+      <h2>Všechny vaše oblíbené aplikace a služby</h2>
+      <ul class="p-inline-images p-inline-images--narrow-margin">
+        <li class="p-inline-images__item" style="width: 5.25em;">
+          <a href="https://snapcraft.io/firefox" class="p-link--external" target="_blank">
+            <img src="{{ 'images/icons/firefox.svg' | relative_url }}" alt="Mozilla Firefox" title="Mozilla Firefox">
+            <br>
+            Firefox
+          </a>
+        </li>
+        <li class="p-inline-images__item" style="width: 5.25em;">
+          <a href="https://wiki.ubuntu.cz/programy/internet/google_chrome" class="p-link--external" target="_blank">
+            <img src="{{ 'images/icons/chrome.svg' | relative_url }}" alt="Google Chrome" title="Google Chrome">
+            <br>
+            Chrome
+          </a>
+        </li>
+        <li class="p-inline-images__item" style="width: 5.25em;">
+          <a href="https://snapcraft.io/skype" class="p-link--external" target="_blank">
+            <img src="{{ 'images/icons/skype.png' | relative_url }}" alt="Skype" title="Skype">
+            <br>
+            Skype
+          </a>
+        </li>
+        <li class="p-inline-images__item" style="width: 5.25em;">
+          <a href="https://snapcraft.io/slack" class="p-link--external" target="_blank">
+            <img src="{{ 'images/icons/slack.png' | relative_url }}" alt="Slack" title="Slack">
+            <br>
+            Slack
+          </a>
+        </li>
+        <li class="p-inline-images__item" style="width: 5.25em;">
+          <a href="https://wiki.ubuntu.cz/steam" class="p-link--external" target="_blank">
+            <img src="{{ 'images/icons/steam.png' | relative_url }}" alt="Steam" title="Steam">
+            <br>
+            Steam
+          </a>
+        </li>
+        <li class="p-inline-images__item" style="width: 5.25em;">
+          <a href="https://snapcraft.io/vlc" class="p-link--external" target="_blank">
+            <img src="{{ 'images/icons/vlc.png' | relative_url }}" alt="VLC media player" title="VLC media player">
+            <br>
+            VLC
+          </a>
+        </li>
+        <li class="p-inline-images__item" style="width: 5.25em;">
+          <a href="https://snapcraft.io/spotify" class="p-link--external" target="_blank">
+            <img src="{{ 'images/icons/spotify.png' | relative_url }}" alt="Spotify" title="Spotify">
+            <br>
+            Spotify
+          </a>
+        </li>
+        <li class="p-inline-images__item" style="width: 5.25em;">
+          <a href="https://www.netflix.com/cz/" class="p-link--external" target="_blank">
+            <img src="{{ 'images/icons/netflix.png' | relative_url }}" alt="Netflix" title="Netflix">
+            <br>
+            Netflix
+          </a>
+        </li>
+      </ul>
+      <ul class="p-inline-images">
+        <li class="p-inline-images__item">
+          <a href="https://snapcraft.io/libreoffice" class="p-link--external" target="_blank"><img src="{{ 'images/icons/libreoffice.png' | relative_url }}" alt="LibreOffice" title="LibreOffice"></a>
+        </li>
+      </ul>
+      <a href="{% link _pages/desktop/vlastnosti.html %}" class="p-button">Více o dostupných aplikacích a funkcích</a>
+    </div>
+  </div>
+</section>
+
+{% include rss_feed.html classes='p-strip is-shallow rss-feed-translate' rss=site.data.rss_feeds.ubuntublog %}
+{% include rss_feed.html classes='p-strip is-shallow rss-feed-translate' rss=site.data.rss_feeds.omgubuntu %}
+
+<section class="p-strip is-bordered is-shallow">
+  <div class="row">
+    <div class="col-12 u-align--center translation-credits" style="display: none">
+    </div>
+  </div>
+</section>
+
+<script src="{{ 'js/translator/yandex-translator.js' | relative_url }}"></script>
 <script>
-	const translator = new TranslationService();
-	[...document.querySelectorAll('.translate .rss-feed h3 a')].forEach(titleLink => {
-		titleLink.classList.remove('fade-in');
-		titleLink.classList.add('fade-out');
-		translator.translate(titleLink.textContent).then((response) => {
-			if(response.text) {
-				titleLink.textContent = response.text;
+  const translator = new TranslationService();
+  [...document.querySelectorAll('.rss-feed-translate h5 a')].forEach(toTranslate => {
+    translator.translate(toTranslate.textContent).then((response) => {
+      if (response.text) {
+        toTranslate.textContent = response.text;
 
-				const container = titleLink.closest('.rss-feed');
-				if(container && response.credits && !container.querySelector('.credits-wrapper')) {
-					const creditsWrapper = document.createElement('div');
-					creditsWrapper.classList.add('credits-wrapper');
-					container.appendChild(creditsWrapper);
-
-					const credits = document.createElement('span');
-					credits.classList.add('credits');
-					credits.innerHTML = response.credits;
-					creditsWrapper.appendChild(credits);
-				}
-			}
-		}).catch((error) => {
-			console.error(error, 'Could not fetch translations');
-		}).finally(() => {
-			titleLink.classList.remove('fade-out');
-			titleLink.classList.add('fade-in');
-		});
-	});
+        [...document.querySelectorAll('.translation-credits')]
+          .filter(it => it.textContent.trim().length === 0 && it.childElementCount === 0) // is still empty
+          .forEach(it => {
+            it.innerHTML = response.credits;
+            it.style.display = '';
+          });
+      }
+    }).catch((error) => {
+      console.error(error, 'Could not fetch translations');
+    });
+  });
 </script>

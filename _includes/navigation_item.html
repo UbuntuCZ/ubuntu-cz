@@ -1,0 +1,14 @@
+{% for p in site.pages %}
+  {% if include.item.external or p.url == include.item.url %}
+    {% assign subnav_id = 'navigation_' | append: p.url %}
+    <li class="p-navigation__item {% if include.item.sub %}p-subnav{% endif %} {% if page.url contains include.item.url %}p-navigation__item--current{% endif %}" role="menuitem">
+      <a aria-controls="{{ subnav_id }}" class="p-navigation__link {% if include.item.external %}p-link--external{% endif %} {% if include.item.sub %}p-subnav__toggle{% endif %}" href="{% if include.item.external %}{{ include.item.url }}{% else %}{{ site.baseurl }}{{ p.url }}{% endif %}">
+        {% if include.item.title %}{{ include.item.title }}{% else %}{{ p.title }}{% endif %}
+      </a>
+      {% if include.item.sub %}
+        {% include navigation_item_subnav.html items=include.item.sub id=subnav_id %}
+      {% endif %}
+    </li>
+    {% break %}
+  {% endif %}
+{% endfor %}

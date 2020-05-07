@@ -4,13 +4,16 @@ pages:
       - url: /desktop/
       - url: /desktop/vlastnosti/
       - url: /ziskat-ubuntu/stahnout-desktop/
+        title: Stáhnout
       - url: /desktop/odnoze-ubuntu/
   - url: /server/
   - url: /telefony-a-tablety/
   - url: /ziskat-ubuntu/
     sub:
       - url: /ziskat-ubuntu/
+        title: Získat
       - url: /ziskat-ubuntu/stahnout-desktop/
+        title: Pro počítač
       - url: /ziskat-ubuntu/stahnout-desktop/instalace/
       - url: /ziskat-ubuntu/stahnout-desktop/aktualizace/
   - url: /o-ubuntu/

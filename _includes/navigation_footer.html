@@ -1,0 +1,7 @@
+<nav class="row u-clearfix u-no-padding--left u-no-padding--right">
+  {% for item in include.items %}
+    {% if item.sub %}
+      {% include navigation_footer_item.html item=item %}
+    {% endif %}
+  {% endfor %}
+</nav>

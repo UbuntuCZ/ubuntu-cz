@@ -9,103 +9,108 @@ redirect_from:
   - /ziskejte/poznamkykvydani
 layout: default
 ---
-<section class="hero">
-  <div class="img-container">
-    <div class="bg-container fixed-container" style="background-image: url('{{ 'images/mountains-hero.jpg' | relative_url }}');"></div>
-    <div class="wrapper">
-      <div class="intro">
-        <h1>Vydání Ubuntu a jejich životní cyklus</h1>
-        <p>Projekt Ubuntu započal v roce 2005 jako produkt nově registrované firmy Canonical. Nová vydání Ubuntu vychází v pravidelném cyklu, což umožňuje komunitě, firmám a vývojářům vytvářet své plány s jistotou přístupu k nejnovějším dostupným open source možnostem.</p>
-      </div>
+<section class="p-strip--image is-light" style="background-image: url('{{ 'images/mountains-hero.jpg' | relative_url }}'); background-size: cover; background-position: top 25% center;">
+  <div class="row">
+    <div class="col-6 p-card--overlay">
+      <h1>Vydání Ubuntu a jejich životní cyklus</h1>
+      <p class="p-card__content">
+        Projekt Ubuntu započal v roce 2005 jako produkt nově registrované firmy Canonical. Nová vydání Ubuntu vychází v pravidelném cyklu, což umožňuje komunitě, firmám a vývojářům vytvářet své plány s jistotou přístupu k nejnovějším dostupným open source možnostem.
+      </p>
     </div>
   </div>
 </section>
-<section class="padded">
-  <div class="wrapper">
-    <article>
-      <div class="padded">
-        <h2>Číslování verzí ve formátu YY.MM (ROK.MĚSÍC)</h2>
-        <p>Všechna vydání Ubuntu nesou svá kódová označení, například "Breezy Badger", a jsou verzována podle roku a měsíce jejich finálního zveřejnění. Například Ubuntu 18.04 bylo vydáno v dubnu roku 2018.</p>
-      </div>
-    </article>
+
+<section class="p-strip">
+  <div class="row">
+    <div class="col-12">
+      <h2>Číslování verzí ve formátu YY.MM (ROK.MĚSÍC)</h2>
+      <p>
+        Všechna vydání Ubuntu nesou svá kódová označení, například "Breezy Badger", a jsou verzována podle roku a měsíce jejich finálního zveřejnění. Například Ubuntu 18.04 bylo vydáno v dubnu roku 2018.
+      </p>
+    </div>
   </div>
 </section>
-<section class="padded grey">
-  <div class="wrapper">
-    <article>
-      <div class="padded">
-        <h2>Vydání s dlouhodobou podporou a přechodná mezivydání</h2>
-        <p>LTS vydání (Long Term Support, tedy vydání s dlouhodobou podporou) jsou publikována každým druhým rokem, vždy v dubnu. Zaměřují se primárně na stabilitu a jsou proto vhodným materiálem pro firmy. Díky tomu se stávají také nejpoužívanějšími verzemi Ubuntu (cca 95% všech instalací Ubuntu jsou právě vydání LTS).</p>
-        <p>Naproti tomu stojí průběžná mezivydání, která jsou zveřejňována každých 6 měsíců. Jejich hlavním přínosem je rychlejší adaptace novinek, přesto se jedná o kvalitní vydání vhodná do produkčního prostředí. Canonical se ovšem nezavazuje k jejich dlouhodobé podpoře, která činí pouhých 9 měsíců. Je to však dostatečné množství času k tomu, aby uživatelé stihli postupně přecházet na novější verze.</p>
-      </div>
-    </article>
+
+<section class="p-strip--light">
+  <div class="row">
+    <div class="col-12">
+      <h2>Vydání s dlouhodobou podporou a přechodná mezivydání</h2>
+      <p>
+        LTS vydání (Long Term Support, tedy vydání s dlouhodobou podporou) jsou publikována každým druhým rokem, vždy v dubnu. Zaměřují se primárně na stabilitu a jsou proto vhodným materiálem pro firmy. Díky tomu se stávají také nejpoužívanějšími verzemi Ubuntu (cca 95% všech instalací Ubuntu jsou právě vydání LTS).
+      </p>
+      <p>
+        Naproti tomu stojí průběžná mezivydání, která jsou zveřejňována každých 6 měsíců. Jejich hlavním přínosem je rychlejší adaptace novinek, přesto se jedná o kvalitní vydání vhodná do produkčního prostředí. Canonical se ovšem nezavazuje k jejich dlouhodobé podpoře, která činí pouhých 9 měsíců. Je to však dostatečné množství času k tomu, aby uživatelé stihli postupně přecházet na novější verze.
+      </p>
+    </div>
   </div>
 </section>
-<section class="padded">
-  <div class="wrapper">
-    <article>
-      <div class="padded">
-        <h2>Seznam vydaných a budoucích verzí Ubuntu</h2>
-      </div>
-      <div class="row-boxes two mobile-reverse">
-        <ul>
-          <li>
-            <div class="box">
-              <ol class="releases">
-                {% assign counter = 1 %}
-                {% assign now = 'now' | date: "%s" %}
-                {% for release in site.data.ubuntu_releases.all reversed %}
-                  {% assign released = release.released | date: "%s" %}
-                  {% assign eol = release.eol | date: "%s" %}
-                  {% if release.active_and_supported %}
-                    {% assign state = "current" %}
-                  {% elsif released > now or released == blank %}
-                    {% assign state = "future" %}
-                  {% else %}
-                    {% assign state = "past" %}
-                  {% endif %}
-                  <li class="{{ state }}{% if release.lts == true %} lts{% endif %}">
-                    Ubuntu {{ release.version }}{% if release.lts == true %} LTS{% endif %} - {{ release.name }}
-                    {% if release.released != blank %}
-                      <br>
-                      {% if state == "future" %}
-                        Vyjde {{ release.released | date: "%-d. %-m. %Y" }}
-                      {% else %}
-                        Vydáno {{ release.released | date: "%-d. %-m. %Y" }}
-                      {% endif %}
-                    {% endif %}
-                    {% if release.eol != blank %}
-                      <br>
-                      {% if state == "past" %}
-                        Podpora ukončena {{ release.eol | date: "%-d. %-m. %Y" }}
-                      {% else %}
-                        Podporováno do {{ release.eol | date: "%-d. %-m. %Y" }}
-                      {% endif %}
-                    {% endif %}
-                    <div class="baloon"></div>
-                  </li>
-                  {% assign counter = counter | plus: 1 %}
-                  {% if counter > 12 %}
-                    {% break %}
-                  {% endif %}
-                {% endfor %}
-              </ol>
-            </div>
+
+<section class="p-strip is-bordered">
+  <div class="row">
+    <h2>Seznam vydaných a budoucích verzí Ubuntu</h2>
+    <div class="col-6">
+      <ol class="p-stepped-list">
+        {% assign counter = 1 %}
+        {% assign now = 'now' | date: "%s" %}
+        {% for release in site.data.ubuntu_releases.all reversed %}
+          {% assign released = release.released | date: "%s" %}
+          {% assign eol = release.eol | date: "%s" %}
+          {% if release.active_and_supported %}
+            {% assign state = "current" %}
+          {% elsif released > now or released == blank %}
+            {% assign state = "future" %}
+          {% else %}
+            {% assign state = "past" %}
+          {% endif %}
+          <li class="p-stepped-list__item">
+            <h6 class="p-stepped-list__title">
+              {% if release.lts == true %}
+                <strong>Ubuntu {{ release.version }} LTS - {{ release.name }}</strong>
+              {% else %}
+                Ubuntu {{ release.version }} - {{ release.name }}
+              {% endif %}
+              {% if state == "future" %}
+                &nbsp;<i class="p-icon--spinner" title="nadcházející vydání">- nadcházející vydání</i>
+              {% elsif state == "current" %}
+                &nbsp;<i class="p-icon--success" title="podporováno">- podporováno</i>
+              {% else %}
+                &nbsp;<i class="p-icon--error" title="nepodporováno">- nepodporováno</i>
+              {% endif %}
+            </h6>
+            <p class="p-stepped-list__content">
+            {% if release.released != blank %}
+              {% if state == "future" %}
+                Vyjde {{ release.released | date: "%-d. %-m. %Y" }}
+              {% else %}
+                Vydáno {{ release.released | date: "%-d. %-m. %Y" }}
+              {% endif %}
+            {% endif %}
+            {% if release.eol != blank %}
+              <br>
+              {% if state == "past" %}
+                Podpora ukončena {{ release.eol | date: "%-d. %-m. %Y" }}
+              {% else %}
+                Podporováno do {{ release.eol | date: "%-d. %-m. %Y" }}
+              {% endif %}
+            {% endif %}
+            </p>
           </li>
-          <li>
-            <div class="box">
-              <h3>Vysvětlivky</h3>
-              <ul>
-                <li>Aktuálně podporovaná vydání Ubuntu s dostupnými bezpečnostními aktualizacemi jsou označena oranžovou barvou, doprovázena zelenou potvrzovací ikonkou.</li>
-                <li>Nadcházející zatím nehotová vydání jsou zařazena v horní části seznamu.</li>
-                <li>Předešlá již dále nepodporovaná vydání jsou zobrazeny šedivě a označeny červenou ikonkou.</li>
-                <li>Kompletní seznam včetně starších verzí najdete <a href="https://wiki.ubuntu.com/Releases" class="text">na oficiální wiki Ubuntu</a>.</li>
-                <li><strong>LTS vydání s dlouhodobou podporou jsou zvýrazněna tučně.</strong></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </article>
+          {% assign counter = counter | plus: 1 %}
+          {% if counter > 12 %}
+            {% break %}
+          {% endif %}
+        {% endfor %}
+      </ol>
+    </div>
+    <div class="col-6">
+      <h3>Vysvětlivky</h3>
+      <ul>
+        <li><i class="p-icon--success" aria-hidden="true"></i> Aktuálně podporovaná vydání Ubuntu s dostupnými bezpečnostními aktualizacemi jsou označena zelenou potvrzovací ikonkou.</li>
+        <li><i class="p-icon--spinner" aria-hidden="true"></i> Nadcházející zatím nehotová vydání jsou zařazena v horní části seznamu.</li>
+        <li><i class="p-icon--error" aria-hidden="true"></i> Předešlá již dále nepodporovaná vydání jsou zobrazeny označena červenou ikonkou.</li>
+        <li><strong>LTS vydání s dlouhodobou podporou jsou zvýrazněna tučně.</strong></li>
+        <li>Kompletní seznam včetně starších verzí najdete <a href="https://wiki.ubuntu.com/Releases" class="p-link--external" target="_blank">na oficiální wiki Ubuntu</a>.</li>
+      </ul>
+    </div>
   </div>
 </section>

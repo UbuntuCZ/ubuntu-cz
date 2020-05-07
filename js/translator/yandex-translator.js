@@ -10,7 +10,7 @@ class TranslationService {
 		this.destinationLanguage = data.destinationLanguage || "cs";
 		this.fallback = data.fallback || null;
 		this.forceFallback = data.forceFallback || false;
-		this.credits = "<a href=\"https://translate.yandex.com/\">Powered by Yandex.Translate</a>";
+		this.credits = '<a href="https://translate.yandex.com/" class="p-link--external" target="_blank">Powered by Yandex.Translate</a>';
 
 		this.cachedReplies = {};
 	}

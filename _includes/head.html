@@ -8,16 +8,10 @@
 <link rel="icon" href="{{ 'design/icon.ico' | relative_url }}" type="image/x-icon">
 <meta property="og:image" content="{{ site.logo | relative_url }}">
 
-<link rel="stylesheet" href="{{ 'design/style.css' | relative_url }}">
-<link rel="stylesheet" href="{{ 'design/fonts/fonts.css' | relative_url }}">
+<link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-2.10.1.min.css" />
+<link rel="stylesheet" href="{{ 'design/ubuntu-cz.css' | relative_url }}" />
+<script type="text/javascript" src="{{ 'design/subnav-toggle.js' | relative_url }}" async></script>
 <script type='text/javascript' src='https://use.fontawesome.com/releases/v5.11.2/js/all.js' defer crossorigin="anonymous"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#E95420" />
-
-{% for rss_feed in site.data.rss_feeds %}
-  {%- assign protocol = site.data[rss_feed].url | split: ':' | first -%}
-  {% if protocol == "https" %}
-    <link rel="alternate" type="application/rss+xml" title="{{ site.data[rss_feed].title }}" href="{{ site.data[rss_feed].url }}" />
-  {% endif %}
-{% endfor %}
+<meta name="theme-color" content="#e95420" />

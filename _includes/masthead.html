@@ -1,0 +1,22 @@
+<header id="navigation" class="p-navigation is-dark">
+  <div class="p-navigation__row u-fixed-width">
+    <div class="p-navigation__banner">
+      <div class="p-navigation__logo">
+        <a class="p-navigation__item" href="{{ site.baseurl }}/" title="{{ site.title }}">
+          <img src="{{ 'design/navigation-logo.svg' | relative_url }}" alt="logo">
+        </a>
+      </div>
+      <a href="#navigation" class="p-navigation__toggle--open" title="menu">Menu</a>
+      <a href="#navigation-closed" class="p-navigation__toggle--close" title="zavřít menu">Zavřít menu</a>
+    </div>
+
+    {% include navigation.html %}
+
+  </div>
+</header>
+
+<header id="navigation--secondary" class="p-navigation p-navigation--secondary is-light">
+  <div class="p-navigation__row u-fixed-width">
+    {% include navigation_secondary.html %}
+  </div>
+</header>

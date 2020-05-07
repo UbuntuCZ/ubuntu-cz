@@ -11,65 +11,63 @@ redirect_from:
   - /ziskejte/stahnout
 layout: default
 ---
-<section class="hero">
-	<div class="img-container">
-		<div class="bg-container fixed-container top" style="background-image: url('{{ 'images/hero-banner-20.04.jpg' | relative_url }}');"></div>
-		<div class="wrapper">
-			<div class="intro">
-				<h1>Získejte Ubuntu</h1>
-				<p>Ať už chcete oživit svůj osobní počítač, herní stroj, mobilní zařízení, server, superpočítač či gadget, Ubuntu je zde pro vás. Nyní můžete mít týž operační systém na všech svých zařízeních a již dále si nemusíte pamatovat odlišné přístupy ke správě na každém z nich.</p>
-				<a href="{% link _pages/o-ubuntu/index.html %}" class="button">Více o Ubuntu</a>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="padded">
-	<div class="wrapper">
-		<article>
-			<div class="padded">
-				<h2>Stáhnout Ubuntu</h2>
-			</div>
-			<div class="user-switchable">
-				<ul>
-					<li class="desktop">
-						<a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}">
-							<div class="content">
-								<span>Ubuntu pro počítač</span>
-							</div>
-						</a>
-					</li>
-          <li class="server">
-						<a href="{% link _pages/server.html %}">
-							<div class="content">
-								<span>Ubuntu Cloud a Server</span>
-							</div>
-						</a>
-					</li>
-          <li class="flavours">
-						<a href="{% link _pages/desktop/odnoze-ubuntu.html %}">
-							<div class="content">
-								<span>Odnože Ubuntu</span>
-							</div>
-						</a>
-					</li>
-          <li class="phone">
-            <a href="{% link _pages/telefony-a-tablety/index.html %}">
-              <div class="content">
-                <span>Ubuntu pro telefony a tablety</span>
-              </div>
-            </a>
-          </li>
-				</ul>
-			</div>
-		</article>
-	</div>
+<section class="p-strip--image is-light" style="background-image: url('{{ 'images/hero-banner-20.04.jpg' | relative_url }}'); background-size: cover; background-position: center center;">
+  <div class="row">
+    <div class="col-6 p-card--overlay">
+      <h1>Získejte Ubuntu</h1>
+      <p class="p-card__content">
+        Ať už chcete oživit svůj osobní počítač, herní stroj, mobilní zařízení, server, superpočítač či gadget, Ubuntu je zde pro vás. Nyní můžete mít týž operační systém na všech svých zařízeních a již dále si nemusíte pamatovat odlišné přístupy ke správě na každém z nich.
+      </p>
+      <p class="p-card__content">
+        <a href="{% link _pages/o-ubuntu/index.html %}" class="p-button">Více o Ubuntu</a>
+      </p>
+    </div>
+  </div>
 </section>
 
-<section class="padded">
-	<div class="wrapper">
-		<article class="padded">
-			<h2>Podporováno společností Canonical</h2>
-			<p>Canonical poskytuje služby pro přizpůsobení Ubuntu danému hardwaru největším světovým výrobcům počítačů, což má za následek skutečnost, že je Ubuntu předinstalováváno na zhruba 10% všech nových počítačů. Se zaměstnanci a kancelářemi po celém světě má Canonical zdroje, které potřebujete k zajištění hladkého běhu Ubuntu na svém zařízení.</p>
-		</article>
-	</div>
+<section class="p-strip is-shallow">
+  <div class="row u-equal-height u-vertically-center">
+    <h2>Stáhnout Ubuntu</h2>
+    <a href="{% link _pages/ziskat-ubuntu/stahnout-desktop/index.html %}" class="col-6">
+      <div style="height: 18em; background-image: url('{{ 'images/tiles/desktop-tile.jpg' | relative_url }}'); background-size: cover; background-position: center center;">
+        <div class="p-card--overlay">
+          <h3 class="p-heading--four">Ubuntu pro počítač</h3>
+        </div>
+      </div>
+    </a>
+    <a href="{% link _pages/server.html %}" class="col-6">
+      <div style="height: 18em; background-image: url('{{ 'images/tiles/server-tile.jpg' | relative_url }}'); background-size: cover; background-position: center center;">
+        <div class="p-card--overlay">
+          <h3 class="p-heading--four">Ubuntu Cloud a Server</h3>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="row u-equal-height u-vertically-center">
+    <a href="{% link _pages/desktop/odnoze-ubuntu.html %}" class="col-6">
+      <div style="height: 18em; background-image: url('{{ 'images/tiles/flavours-tile.jpg' | relative_url }}'); background-size: cover; background-position: center center;">
+        <div class="p-card--overlay">
+          <h3 class="p-heading--four">Odnože Ubuntu</h3>
+        </div>
+      </div>
+    </a>
+    <a href="{% link _pages/telefony-a-tablety/index.html %}" class="col-6">
+      <div style="height: 18em; background-image: url('{{ 'images/tiles/phone-tile.jpg' | relative_url }}'); background-size: cover; background-position: center center;">
+        <div class="p-card--overlay">
+          <h3 class="p-heading--four">Ubuntu pro telefony a tablety</h3>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="p-strip is-bordered">
+  <div class="row">
+    <article class="col-12">
+      <h2>Podporováno společností Canonical</h2>
+      <p>
+        Canonical poskytuje služby pro přizpůsobení Ubuntu danému hardwaru největším světovým výrobcům počítačů, což má za následek skutečnost, že je Ubuntu předinstalováváno na zhruba 10% všech nových počítačů. Se zaměstnanci a kancelářemi po celém světě má Canonical zdroje, které potřebujete k zajištění hladkého běhu Ubuntu na svém zařízení.
+      </p>
+    </article>
+  </div>
 </section>

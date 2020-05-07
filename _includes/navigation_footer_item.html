@@ -1,0 +1,17 @@
+{% for p in site.pages %}
+  {% if include.item.external or p.url == include.item.url %}
+    <div class="col-3">
+      <ul class="u-no-margin u-no-padding">
+        <li>
+          <strong>
+            {% if include.item.title %}{{ include.item.title }}{% else %}{{ p.title }}{% endif %}
+          </strong>
+          {% for item in include.item.sub %}
+            {% include navigation_footer_item_subnav.html item=item %}
+          {% endfor %}
+        </li>
+      </ul>
+    </div>
+    {% break %}
+  {% endif %}
+{% endfor %}

@@ -9,141 +9,138 @@ redirect_from:
   - /produkty/cojeubuntu/server
 layout: default
 ---
-<section class="hero">
-	<div class="img-container">
-		<div class="bg-container" style="background-image: url('{{ 'images/server-hero.jpg' | relative_url }}');"></div>
-		<div class="wrapper">
-			<div class="intro">
-				<h1>Ubuntu server</h1>
-				<p>Přední serverová platforma s širokými možnostmi škálování vaší infrastruktury. Ať už chcete rozvíjet své zázemí na technologii OpenStack, clusterech Hadoop nebo 50 000 uzlovou serverovou farmu, Ubuntu dokážete nasadit v nejkratším termínu vůbec.</p>
-			</div>
-		</div>
-	</div>
+<section class="p-strip--image is-dark" style="background-image: url('{{ 'images/server-hero.jpg' | relative_url }}'); background-size: cover; background-position: top 25% center;">
+  <div class="row">
+    <div class="col-6 p-card--overlay">
+      <h1>Ubuntu server</h1>
+      <p class="p-card__content">
+        Přední serverová platforma s širokými možnostmi škálování vaší infrastruktury. Ať už chcete rozvíjet své zázemí na technologii OpenStack, clusterech Hadoop nebo 50 000 uzlovou serverovou farmu, Ubuntu dokážete nasadit v nejkratším termínu vůbec.
+      </p>
+    </div>
+  </div>
 </section>
 
-<section class="padded grey" id="lts">
-	<div class="wrapper">
-		<article>
-			<div class="row-boxes two">
-				<ul>
-					<li>
-						<div class="box">
-							<h2>Ubuntu {{ site.data.ubuntu_releases.latest.lts.version }} LTS</h2>
-							<p>Ubuntu {{ site.data.ubuntu_releases.latest.lts.version }} LTS {{ site.data.ubuntu_releases.latest.lts.name }} je vydaní s dlouhodobou podporou, která činí 5 let od {{ site.data.ubuntu_releases.latest.lts.released | date: "%-d. %-m. %Y" }}.</p>
-							<p><a href="http://cz.releases.ubuntu.com/{{ site.data.ubuntu_releases.latest.lts.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.lts.version }}-live-server-amd64.iso" id="lts-download-link" class="button">Stáhnout Ubuntu Server {{ site.data.ubuntu_releases.latest.lts.version }} LTS (64bit)</a></p>
-              <p><a href="http://cz.releases.ubuntu.com/{{ site.data.ubuntu_releases.latest.lts.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.lts.version }}-live-server-amd64.iso.torrent" class="text blue">Stáhnout přes BitTorrent</a></p>
-							<p><a href="http://cdimage.ubuntu.com/releases/{{ site.data.ubuntu_releases.latest.lts.version }}/release" class="text blue">Alternativní obrazy pro další architektury</a></p>
-						</div>
-					</li>
-					<li>
-						<div class="box">
-							<img src="{{ 'images/small/image-server.svg' | relative_url }}" alt="ubuntu on raspberry-pi" class="responsive">
-						</div>
-					</li>
-				</ul>
-			</div>
-		</article>
-	</div>
+<section class="p-strip--light" id="lts">
+  <div class="row u-equal-height u-vertically-center">
+    <div class="col-6">
+      <h2>Ubuntu {{ site.data.ubuntu_releases.latest.lts.version }} LTS</h2>
+      <p>
+        Ubuntu {{ site.data.ubuntu_releases.latest.lts.version }} LTS {{ site.data.ubuntu_releases.latest.lts.name }} je vydaní s dlouhodobou podporou, která činí 5 let od data vydání {{ site.data.ubuntu_releases.latest.lts.released | date: "%-d. %-m. %Y" }}.
+      </p>
+      <p><a href="http://cz.releases.ubuntu.com/{{ site.data.ubuntu_releases.latest.lts.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.lts.version }}-live-server-amd64.iso" id="lts-download-link" class="p-button--positive">Stáhnout Ubuntu Server {{ site.data.ubuntu_releases.latest.lts.version }} LTS (64bit)</a></p>
+      <p>
+        <small>
+          <a href="http://cz.releases.ubuntu.com/{{ site.data.ubuntu_releases.latest.lts.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.lts.version }}-live-server-amd64.iso.torrent">Stáhnout přes BitTorrent</a>
+          <br>
+          <a href="http://cdimage.ubuntu.com/releases/{{ site.data.ubuntu_releases.latest.lts.version }}/release">Alternativní obrazy pro další architektury</a>
+        </small>
+      </p>
+    </div>
+    <div class="col-6 u-align--center">
+      <img src="{{ 'images/small/image-server.svg' | relative_url }}" alt="ubuntu on server">
+    </div>
+  </div>
 </section>
 
 {% if site.data.ubuntu_releases.latest.lts.version != site.data.ubuntu_releases.latest.release.version %}
-	<section class="padded grey border-top" id="standard">
-		<div class="wrapper">
-			<div class="row-boxes two">
-				<ul>
-					<li>
-						<div class="box">
-							<h2>Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}</h2>
-							<p>Nejnovější vydání Ubuntu pro počítače a notebooky. Ubuntu {{ site.data.ubuntu_releases.latest.release.version }} {{ site.data.ubuntu_releases.latest.release.name }} přináší 9 měsíců bezpečnostních a údržbových aktualizací.</p>
-							<p>Pro konzervativnější a déle podporované vydání stahujte <a href="#lts" class="text blue">Ubuntu s dlouhodobou podporou výše</a></p>
-							<p><a href="http://cz.releases.ubuntu.com/{{ site.data.ubuntu_releases.latest.release.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.release.version }}-live-server-amd64.iso" id="standard-download-link" class="button">Stáhnout Ubuntu Server {{ site.data.ubuntu_releases.latest.release.version }} (64bit)</a></p>
-              <p><a href="http://cz.releases.ubuntu.com/{{ site.data.ubuntu_releases.latest.release.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.release.version }}-live-server-amd64.iso.torrent" class="text blue">Stáhnout přes BitTorrent</a></p>
-							<p><a href="http://cdimage.ubuntu.com/releases/{{ site.data.ubuntu_releases.latest.release.version }}/release" class="text blue">Alternativní obrazy pro další architektury</a></p>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section>
+  <section class="p-strip--light" id="standard">
+    <div class="row">
+      <div class="col-6">
+        <h2>Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}</h2>
+        <p>
+          Nejnovější vydání Ubuntu pro počítače a notebooky. Ubuntu {{ site.data.ubuntu_releases.latest.release.version }} {{ site.data.ubuntu_releases.latest.release.name }} přináší 9 měsíců bezpečnostních a údržbových aktualizací.
+        </p>
+        <p>
+          Pro konzervativnější a déle podporované vydání stahujte <a href="#lts">Ubuntu s dlouhodobou podporou výše</a>.
+        </p>
+        <p><a href="http://cz.releases.ubuntu.com/{{ site.data.ubuntu_releases.latest.release.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.release.version }}-live-server-amd64.iso" id="standard-download-link" class="p-button--positive">Stáhnout Ubuntu Server {{ site.data.ubuntu_releases.latest.release.version }} (64bit)</a></p>
+        <p>
+          <small>
+            <a href="http://cz.releases.ubuntu.com/{{ site.data.ubuntu_releases.latest.release.version }}/ubuntu-{{ site.data.ubuntu_releases.latest.release.version }}-live-server-amd64.iso.torrent">Stáhnout přes BitTorrent</a>
+            <br>
+            <a href="http://cdimage.ubuntu.com/releases/{{ site.data.ubuntu_releases.latest.release.version }}/release">Alternativní obrazy pro další architektury</a>
+      </div>
+    </div>
+  </section>
 {% endif %}
 
-<section class="padded">
-	<div class="wrapper">
-    <div class="row-boxes two">
-      <ul>
-        <li>
-          <img src="https://assets.ubuntu.com/v1/f02f0a4b-r-eol-ubuntu-full-2018-02-28.png" alt="release cycles" class="responsive" style="max-width: 30em;">
-        </li>
-        <li>
-          <h2>Na pravidelná vydání nových verzí systému se můžete spolehnout</h2>
-          <p>Serverová vydání s dlouhodobou podporou (LTS) jsou podporovány Canonicalem po dobu pěti let. Každých šest měsíců vycházejí meziverze, které přinášejí podporu nových zařízení do podporovaných LTS systémů.</p>
-        </li>
+<section class="p-strip">
+  <div class="row u-equal-height u-vertically-center">
+    <div class="col-6 u-align--center">
+      <img src="https://assets.ubuntu.com/v1/f02f0a4b-r-eol-ubuntu-full-2018-02-28.png" alt="release cycles">
+    </div>
+    <div class="col-6">
+      <h2>Na pravidelná vydání nových verzí systému se můžete spolehnout</h2>
+      <p>
+        Serverová vydání s dlouhodobou podporou (LTS) jsou podporovány Canonicalem po dobu pěti let. Každých šest měsíců vycházejí meziverze, které přinášejí podporu nových zařízení do podporovaných LTS systémů.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="p-strip--light">
+  <div class="row">
+    <h2>Jak můžete Ubuntu server využít</h2>
+    <div class="col-6">
+      <h3>Výkon a mnohoúčelnost</h3>
+      <p>
+        Není důležité, jestli chcete rozvinout NoSQL databázi, webovou farmu nebo cloudové zázemí, Ubuntu má všechny potřebné vlastnosti které potřebujete. Ubuntu je certifikováno vedoucími OEM výrobci hardwaru, což vám s komplexními implementačními nástroji umožní získat z vaší infrastruktury co nejvíce.
+      </p>
+    </div>
+    <div class="col-6">
+      <h3>Výkonná, bezpečná a všestranná technologie pro rychle rostoucí podniky</h3>
+      <p>
+        Pravidelný vývojový cyklus Ubuntu zajišťuje podporu nejnovějších aplikací. Tenká instalace a integrovaná implementace systému spolu se snadnými postupy dělají Ubuntu Server skvělé řešení pro snadné zavádění a následnou správu i v rozsáhlém měřítku.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6">
+      <h3>OpenStack</h3>
+      <p>
+        Postavte si vlastní cloud s Autopilotem, nejsnazším způsobem jak vytvořit a spravovat cloud OpenStack.
+      </p>
+      <a href="https://www.ubuntu.com/download/cloud" class="p-button--neutral p-link--external" target="_blank">Začněte s Autopilotem</a>
+    </div>
+    <div class="col-6">
+      <h3>Alternativní platformy</h3>
+      <p>
+        Kromě nejbežnějších platforem podporuje Ubuntu také architektury <a href="https://www.ubuntu.com/download/server/arm" class="p-link--external" target="_blank">ARM</a>, <a href="https://www.ubuntu.com/download/server/power" class="p-link--external" target="_blank">Power</a> nebo <a href="https://www.ubuntu.com/download/server/s390x" class="p-link--external" target="_blank">IBM Z a IBM LinuxONE</a>. Infrastrukturu můžete postavit na libovolném hardwaru dle svého výběru.
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 u-align--center">
+      <h2>S KAŽDÝM VAŠIM HARDWAREM I SOFTWAREM</h2>
+      <ul class="p-inline-images">
+        <li class="p-inline-images__item"><img class="p-inline-images__logo" src="{{ 'images/partners/logo-lenovo.svg' | relative_url }}" alt="Lenovo"></li>
+        <li class="p-inline-images__item"><img class="p-inline-images__logo" src="{{ 'images/partners/logo-dell.svg' | relative_url }}" alt="Dell"></li>
+        <li class="p-inline-images__item"><img class="p-inline-images__logo" src="{{ 'images/partners/logo-ibm.svg' | relative_url }}" alt="IBM"></li>
+        <li class="p-inline-images__item"><img class="p-inline-images__logo" src="{{ 'images/partners/logo-hp.svg' | relative_url }}" alt="HP"></li>
+        <li class="p-inline-images__item"><img class="p-inline-images__logo" src="{{ 'images/partners/logo-intel.svg' | relative_url }}" alt="Intel"></li>
+        <li class="p-inline-images__item"><img class="p-inline-images__logo" src="{{ 'images/partners/logo-cisco.svg' | relative_url }}" alt="Cisco"></li>
+        <li class="p-inline-images__item"><img class="p-inline-images__logo" src="{{ 'images/partners/logo-amd.svg' | relative_url }}" alt="AMD"></li>
+        <li class="p-inline-images__item"><img class="p-inline-images__logo" src="{{ 'images/partners/logo-arm.svg' | relative_url }}" alt="Intel"></li>
+      </ul>
+      <ul class="p-inline-images">
+        <li class="p-inline-images__item"><img class="p-inline-images__logo" src="{{ 'images/partners/logo-openstack.svg' | relative_url }}" alt="OpenStack"></li>
+        <li class="p-inline-images__item"><img class="p-inline-images__logo" src="{{ 'images/partners/logo-openbravo.png' | relative_url }}" alt="Openbravo"></li>
       </ul>
     </div>
-	</div>
+  </div>
 </section>
 
-<section class="padded grey">
-	<div class="wrapper">
-    <div class="padded">
-      <h2>Jak můžete Ubuntu server využít</h2>
+<section class="p-strip is-bordered">
+  <div class="row">
+    <div class="col-12">
+      <h2>Životaplná komunita</h2>
+      <p>
+        Vyměňujte si své poznatky a nápady s tisíci dalšími IT profesionály.
+      </p>
+      <p>
+        Chcete si promluvit s dalšími Ubuntu uživateli? Sdílejte své nápady a získávejte rady z obrovské aktivní komunity znalců. Jako komunity nastavujeme vysoké standardy tolerance a přátelství, vítáme vaše podněty, komentáře a vaši aktivitu.
+      </p>
+      <a href="https://discourse.ubuntu.com/" class="p-button--neutral p-link--external" target="_blank">Navštivte komunitu</a>
     </div>
-		<div class="row-boxes two">
-			<ul>
-				<li>
-					<div class="box">
-						<h3>Výkon a mnohoúčelnost</h3>
-						<p>Není důležité, jestli chcete rozvinout NoSQL databázi, webovou farmu nebo cloudové zázemí, Ubuntu má všechny potřebné vlastnosti které potřebujete. Ubuntu je certifikováno vedoucími OEM výrobci hardwaru, což vám s komplexními implementačními nástroji umožní získat z vaší infrastruktury co nejvíce.</p>
-					</div>
-				</li>
-				<li>
-					<div class="box">
-						<h3>Výkonná, bezpečná a všestranná technologie pro rychle rostoucí podniky.</h3>
-						<p>Pravidelný vývojový cyklus Ubuntu zajišťuje podporu nejnovějších aplikací. Tenká instalace a integrovaná implementace systému spolu se snadnými postupy dělají Ubuntu Server skvělé řešení pro snadné zavádění a následnou správu i v rozsáhlém měřítku.</p>
-					</div>
-				</li>
-        <li>
-          <div class="box">
-            <h3>OpenStack</h3>
-            <p>Postavte si vlastní cloud s Autopilotem, nejsnazším způsobem jak vytvořit a spravovat cloud OpenStack.</p>
-            <a href="https://www.ubuntu.com/download/cloud" class="text blue">Začněte s Autopilotem</a>
-          </div>
-        </li>
-        <li>
-          <div class="box">
-            <h3>Alternativní platformy</h3>
-            <p>Kromě nejbežnějších platforem podporuje Ubuntu také architektury <a href="https://www.ubuntu.com/download/server/arm" class="text blue">ARM</a>, <a href="https://www.ubuntu.com/download/server/power" class="text blue">Power</a> nebo <a href="https://www.ubuntu.com/download/server/s390x" class="text blue">IBM Z a IBM LinuxONE</a>. Infrastrukturu můžete postavit na libovolném hardwaru dle svého výběru.</p>
-          </div>
-        </li>
-			</ul>
-		</div>
-    <div class="padded">
-			<h2>S KAŽDÝM VAŠIM HARDWAREM I SOFTWAREM</h2>
-			<ul class="inline-icons">
-				<li class="inactive"><img src="{{ 'images/partners/logo-lenovo.svg' | relative_url }}" alt="Lenovo"></li>
-				<li class="inactive"><img src="{{ 'images/partners/logo-dell.svg' | relative_url }}" alt="Dell"></li>
-				<li class="inactive"><img src="{{ 'images/partners/logo-ibm.svg' | relative_url }}" alt="IBM"></li>
-				<li class="inactive"><img src="{{ 'images/partners/logo-hp.svg' | relative_url }}" alt="HP"></li>
-				<li class="inactive"><img src="{{ 'images/partners/logo-intel.svg' | relative_url }}" alt="Intel"></li>
-				<li class="inactive"><img src="{{ 'images/partners/logo-cisco.svg' | relative_url }}" alt="Cisco"></li>
-				<li class="inactive"><img src="{{ 'images/partners/logo-amd.svg' | relative_url }}" alt="AMD"></li>
-				<li class="inactive"><img src="{{ 'images/partners/logo-arm.svg' | relative_url }}" alt="Intel"></li>
-			</ul>
-			<ul class="inline-icons">
-				<li class="inactive"><img src="{{ 'images/partners/logo-openstack.svg' | relative_url }}" alt="OpenStack"></li>
-				<li class="inactive"><img src="{{ 'images/partners/logo-openbravo.png' | relative_url }}" alt="Openbravo"></li>
-			</ul>
-		</div>
-	</div>
-</section>
-
-<section class="padded">
-	<div class="wrapper">
-		<article class="padded">
-			<h2>Životaplná komunita</h2>
-			<p>Vyměňujte si své poznatky a nápady s tisíci dalšími IT profesionály.</p>
-			<p>Chcete si promluvit s dalšími Ubuntu uživateli? Sdílejte své nápady a získávejte rady z obrovské aktivní komunity znalců. Jako komunity nastavujeme vysoké standardy tolerance a přátelství, vítáme vaše podněty, komentáře a vaši aktivitu.</p>
-			<a href="https://discourse.ubuntu.com/" class="button green">Navštivte komunitu</a>
-		</article>
-	</div>
+  </div>
 </section>
