@@ -86,17 +86,17 @@ footer .p-inline-list--social a {
 }
 
 footer .p-inline-list--social .github a:hover {
-	color: #24292e;
+  color: #24292e;
 }
 
 footer .p-inline-list--social .mastodon a:hover {
-	color: #3088d4;
+  color: #3088d4;
 }
 
 footer .p-inline-list--social .telegram a:hover {
-	color: #179cde;
+  color: #179cde;
 }
 
 footer .p-inline-list--social .twitter a:hover {
-	color: #1da1f2;
+  color: #1da1f2;
 }
