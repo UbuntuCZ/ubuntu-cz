@@ -9,7 +9,7 @@ redirect_from:
   - /produkty/cojeubuntu
 layout: default
 ---
-<section class="p-strip--image is-dark" style="background-image: url('{{ 'images/wallpaper-20.04.jpg' | relative_url }}'); background-size: cover; background-position: top 15% center;">
+<section class="p-strip--image is-shallow is-dark" style="background-image: url('{{ 'images/wallpaper-20.04.jpg' | relative_url }}'); background-size: cover; background-position: top 25% center;">
   <div class="row">
     <div class="col-6">
       <h1>Ubuntu {{ site.data.ubuntu_releases.latest.release.version }}{% if site.data.ubuntu_releases.latest.lts.version == site.data.ubuntu_releases.latest.release.version %} LTS{% endif %}</h1>
@@ -27,6 +27,7 @@ layout: default
 </section>
 
 {% include rss_feed.html classes='p-strip is-shallow' rss=site.data.rss_feeds.rootcz-ubuntu %}
+{% include rss_feed.html classes='p-strip is-shallow u-hide--small' rss=site.data.rss_feeds.forum %}
 
 <section class="p-strip--light">
   <div class="row u-equal-height u-vertically-center u-align--center">
