@@ -24,8 +24,4 @@ module Jekyll_Get_Remote_Content
     end
   end
 
-  Jekyll::Hooks.register :site, :post_read do |site|
-    FeedFetcher.fetchFor(site)
-  end
-
 end

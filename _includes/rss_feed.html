@@ -1,6 +1,6 @@
 <section class="{{ include.classes }}">
   <div class="row u-equal-height">
-    <h4><a href="{{ include.rss.url }}" class="p-link--external" target="_blank">{{ include.rss.title | strip_html | escape }}</a></h4>
+    <h4>{{ include.rss.title | strip_html | escape }}</h4>
     {% for item in include.rss.items limit:4 %}
       <div class="col-3 u-image-position">
         <h5><a href="{{ item.url }}" title="{{ item.title | strip_html | escape | truncate: 80 }}" class="p-link--external" target="_blank">{{ item.title | strip_html | escape | truncate: 80 }}</a></h5>

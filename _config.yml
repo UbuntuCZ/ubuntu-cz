@@ -14,6 +14,13 @@ remote_content:
   - name: 'omgubuntu'
     url: 'https://feeds.feedburner.com/d0od?format=xml'
 
+merge_rss:
+  - key: english
+    title: 'Anglické novinky ze světa Ubuntu'
+    feeds:
+      - 'ubuntublog'
+      - 'omgubuntu'
+
 # Build settings
 markdown: kramdown
 include: [
