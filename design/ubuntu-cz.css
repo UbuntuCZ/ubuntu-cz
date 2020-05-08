@@ -1,9 +1,4 @@
 /*** content ***/
-.p-strip--dark a,
-.p-strip--accent a,
-.p-strip--image.is-dark a {
-  color: white !important;
-}
 
 @media (min-width: 772px) {
   .p-inline-images--narrow-margin .p-inline-images__item {
