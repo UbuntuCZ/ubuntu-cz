@@ -27,13 +27,13 @@ layout: default
 
 <section class="p-strip">
   <div class="row">
-    <div class="col-6">
-      <h2>Dostupné na celé řadě zařízení</h2>
+    <div class="col-8">
+      <h2>Rostoucí počet podporovaných zařízení</h2>
       <p>
-        Pokud jste majiteli některého z podporovaných mobilních zařízení nebo uvažujete o nákupu mobilního telefonu, jež umožňuje běh Ubuntu Touch, můžete si Ubuntu na tento telefon nainstalovat sami s pomocí instalátoru UBports.
+        Mobilní verze Ubuntu je k dispozici na desítkách mobilních zařízení. Ačkoliv je již opět možné sehnat nové zařízení s předinstalovaným systémem Ubuntu Touch, většinou je nezbytné sytém na podporované zařízení nainstalovat svépomocí nástrojem UBports Installer.
       </p>
       <p>
-        Instalátor podporuje tři hlavní platformy, takže jej můžete spustit takřka na každém počítači. Jednoduše připojte své mobilní (podporované) zařízení k počítači a následujte průvodce instalací.
+        Instalátor podporuje tři hlavní platformy, takže ho můžete spustit takřka na každém počítači. Jednoduše připojte své (podporované) mobilní zařízení k počítači a následujte průvodce instalací.
       </p>
       <p>
         <a href="https://ubuntu-touch.io/get-ut" class="p-button--positive p-link--external" target="_blank">Stáhněte si instalátor</a>
@@ -43,27 +43,24 @@ layout: default
         <a href="{% link _pages/telefony-a-tablety/old.html %}">Zařízení v minulosti v prodeji se systémem Ubuntu Touch</a>
       </p>
     </div>
-    <div class="col-6">
-      <img src="{{ 'images/ubports/phone-devices-row.png' | relative_url }}" alt="Ubuntu devices overview">
+    <div class="col-4">
+      <img src="{{ 'images/ubports/phone-lockscreen.png' | relative_url }}" alt="Zámek obrazovky Ubuntu Touch">
     </div>
   </div>
 </section>
 
-<section class="p-strip--light">
+<section class="p-strip--dark is-shallow" style="background-color: black;">
   <div class="row u-equal-height u-vertically-center">
-    <div class="col-6 u-align--center">
-      <img src="{{ 'images/ubports/image-developers.jpg' | relative_url }}" alt="ubuntu phone">
+    <div class="col-4 u-align--center">
+      <img src="{{ 'images/ubports/image-apps.png' | relative_url }}" alt="Aplikace Ubuntu Touch">
     </div>
-    <div class="col-6">
-      <h3>Vývoj</h3>
+    <div class="col-8">
+      <h3>Příběh</h3>
       <p>
-        Ubuntu Touch je díky živé komunitě a projektu UBports pravidelně aktualizovaný operační systém dostupný na stále rostoucím počtu zařízení.
+        V dubnu 2017 ukončil Canonical vývoj mobilního operačního systému Ubuntu Touch. V návaznosti převzala tou dobou již existující komunita UBports projekt pod svá křídla. Nyní je UBports zapsána jako <a href="https://ubports.com/foundation/ubports-foundation" class="p-link--external" target="_blank" style="color: #fff;">nadace</a> a pokračuje v práci na nových funkčích, vylepšeních, aktualizacích a také na rozšiřování počtu zařízení, na nichž lze Ubuntu nainstalovat.
       </p>
       <p>
-        UBports je skupina vývojářů i celá komunita, která v dubnu 2017 v návaznosti na ukončení vývoje ze strany Canonicalu převzala celý projekt pod svá křídla.
-      </p>
-      <p>
-        V rámci mobilního Ubuntu dochází také k údržbě a dalšímu vývoji plánovaného konvergentního prostředí Unity 8 a také klíčových mobilních aplikací.
+        V rámci mobilního Ubuntu dochází také k údržbě a dalšímu vývoji konvergentního prostředí Lomiri (dříve Unity&nbsp;8) a také klíčových mobilních aplikací.
       </p>
       <p>
         <a href="https://open-store.io" class="p-button p-link--external" target="_blank">Obchod OpenStore s mobilními aplikacemi Ubuntu</a>
@@ -72,16 +69,16 @@ layout: default
   </div>
 </section>
 
-<section class="p-strip--dark is-shallow" style="background-color: black;">
+<section class="p-strip--light is-shallow">
   <div class="row u-equal-height u-vertically-center">
-    <div class="col-6">
-      <img src="{{ 'images/ubports/phone-scopes.jpg' | relative_url }}" alt="Ubuntu scopes">
-    </div>
-    <div class="col-6">
-      <h3>Přistupujte k obsahu přirozeně pomocí Scopes</h3>
+    <div class="col-8">
+      <h3>Konvergentní prostředí</h3>
       <p>
-        Unikátní technologie Ubuntu Scopes sdružuje vše co potřebujete do jedné obrazovky bez nutnosti spouštět a přepínat mezi více aplikacemi. Telefony a tablety Ubuntu byly vytvořeny tak, aby se točily kolem obsahu a služeb, které využíváte nejčastěji.
+        Prostředí Lomiri, které je hlavní součástí mobilního Ubuntu, se přizpůsobí jakékoliv obrazovce. Funguje od menších displejů mobilních zařízení, přes tablety až po klasické notebooky a stolní počítače. Pro každou z možností navíc nabízí unikátní funkce, které se pro dané použití hodí. Jeho užitečnost pocítí i ti, kteří svůj telefon připojí k externímu displeji. Mohou tak využít klasické dekstopové prostředí pro případnou práci doma i na cestách.
       </p>
+    </div>
+    <div class="col-4">
+      <img src="{{ 'images/ubports/ubuntu-convergence.gif' | relative_url }}" alt="Konvergence grafického prostředí Lomiri">
     </div>
   </div>
 </section>
@@ -91,14 +88,14 @@ layout: default
     <div class="col-6">
       <h3>Profesionálně navržené funkce</h3>
       <p>
-        Telefony a tablety Ubuntu jsou navrženy s důrazem na detail. Nebyla opomenuta žádná součást a důkladným promyšleným vývojem si prošly všechny obrazovky, jako ta zamykací či základní aplikace, mezi které patří například aplikace pro psaní zpráv a aplikace hodiny pro nastavování budíků. A spouštěč aplikací prostředí Ubuntu přináší vše na dosah prstů, ať již děláte se svým zařízením cokoliv.
+        Telefony a tablety Ubuntu jsou navrženy s důrazem na detail. Nebyla opomenuta žádná součást a důkladným promyšleným vývojem si prošly všechny obrazovky, jako ta zamykací či základní aplikace, mezi které patří například aplikace pro psaní zpráv a aplikace hodiny pro nastavování budíků. V prostředí Ubuntu Touch máte vše na dosah prstů, ať již děláte se svým zařízením cokoliv.
       </p>
     </div>
   </div>
 </section>
 
 <section class="p-strip--light">
-  <div class="row u-equal-height u-vertically-center">
+  <div class="row u-equal-height">
     <div class="col-6">
       <h3>OpenSource</h3>
       <p>
@@ -106,9 +103,9 @@ layout: default
       </p>
     </div>
     <div class="col-6">
-      <h3>Staví na Ubuntu, vyvíjí projekt UBports</h3>
+      <h3>Staví na Ubuntu, vede nadace UBports</h3>
       <p>
-        Společnost Canonical je celosvětová firma vyvíjející software a poskytující komerční návrhářskou a vývojovou podporu projektu Ubuntu. Tento systém je základem i pro mobilní operační systém Ubuntu Touch, i když jej již společnost Canonical sama aktivně nevyvíjí.
+        Společnost Canonical je celosvětová firma vyvíjející software a poskytující komerční návrhářskou a vývojovou podporu projektu Ubuntu. Tento systém a grafické rozhraní Mir je základem i pro mobilní operační systém Ubuntu Touch, ačkoliv ho společnost Canonical sama nadále aktivně nevyvíjí.
       </p>
     </div>
   </div>
@@ -150,9 +147,10 @@ layout: default
     <div class="col-4">
       <h3>Také s českými a slovenskými aplikacemi</h3>
       <p>
-        V katalogu OpenStore naleznete například aplikaci pro vyhledávání jízdních řádů Transport.
+        V katalogu OpenStore naleznete například aplikaci pro vyhledávání jízdních řádů Transport, či prohlížeč oblíbené sbírky vtipů Rouming.cz
       </p>
-      <a href="https://open-store.io/app/transport.zubozrout" class="p-link--external" target="_blank">Stáhnout zdarma</a>
+      <a href="https://open-store.io/app/transport.zubozrout" class="p-link--external" target="_blank">Stáhnout Transport</a><br>
+      <a href="https://open-store.io/app/roumenator.xdub" class="p-link--external" target="_blank">Stáhnout Roumenator</a>
     </div>
     <div class="col-4">
       <h3>Začněte vyvíjet své aplikace pro Ubuntu</h3>
