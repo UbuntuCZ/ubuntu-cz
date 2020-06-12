@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="100"
+   width="100"
+   version="1.1"
+   viewBox="0 0 100 100"
+   id="svg20"
+   sodipodi:docname="icon-laptop.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata26">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>laptop</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1853"
+     inkscape:window-height="1025"
+     id="namedview22"
+     showgrid="false"
+     inkscape:zoom="3.1891892"
+     inkscape:cx="49"
+     inkscape:cy="37"
+     inkscape:window-x="67"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg20" />
+  <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+  <title
+     id="title2">laptop</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <g
+     id="Homepage-final"
+     style="fill:none;fill-rule:evenodd"
+     transform="translate(0.75345,15.593161)">
+    <g
+       id="Final-homepage"
+       transform="translate(-783,-1405)">
+      <g
+         id="Sections-strip"
+         transform="translate(0,1123)">
+        <g
+           id="illustration"
+           transform="translate(279,255)">
+          <g
+             id="ilustration">
+            <g
+               id="laptop"
+               transform="translate(503,10)">
+              <g
+                 id="svg4874">
+                <g
+                   id="layer1"
+                   transform="translate(0.8658,0.49946)">
+                  <g
+                     id="g4845"
+                     transform="matrix(0,-1,-1,0,98.441,100.542)">
+                    <g
+                       id="g4778"
+                       transform="matrix(-1,0,0,1,99.127,0)">
+                      <g
+                         id="g4780"
+                         transform="matrix(-1,0,0,1,98.033,0)">
+                        <rect
+                           id="rect4782"
+                           transform="matrix(-1,0,0,1,97.082,0)"
+                           height="96.873001"
+                           width="96.970001"
+                           y="0.3655"
+                           x="0.056377999" />
+                        <path
+                           id="path4297"
+                           d="m 21.326,2.3841 v 93.845 h 50.505 c 10.101,0 9.983,-3.948 10.101,-14.127 v -65.591 c -0.118,-10.178 0,-14.127 -10.101,-14.127 l -50.505,10e-5 z"
+                           inkscape:connector-curvature="0"
+                           style="stroke:#666666;stroke-width:1.89999998" />
+                        <path
+                           id="Combined-Shape"
+                           d="M 16.781,43.235 V 0.824 C 8.7052,0.82377 9.7143,2.8432 9.7143,12.94 v 72.699 c 0,10.097 -1.0091,12.116 7.0667,12.116 V 54.906 H 13.93 V 43.235 Z"
+                           inkscape:connector-curvature="0"
+                           style="fill:#666666;fill-rule:nonzero" />
+                      </g>
+                    </g>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
